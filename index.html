@@ -484,6 +484,24 @@ h1 em,h2 em,h3 em,h4 em,h5 em,h6 em{color:var(--heading-accent-blue)!important}
 </style><style>
 /* Darker ice-blue emphasis on light sections; retain original ice blue on dark surfaces */
 #process .section-heading h2 em,#work .section-heading h2 em,#services .section-intro h2 em,.section:not(.hero):not(.contact) .section-heading h2 em,.section:not(.hero):not(.contact) .section-intro h2 em{color:#548FB5!important}
+</style><style>
+/* Portfolio carousel: stable card dimensions across all project descriptions */
+#work .portfolio-showcase{height:clamp(590px,47vw,680px)}
+#work .portfolio-stage,#work .portfolio-copy{height:100%;min-height:0}
+#work .portfolio-copy{min-width:0;overflow:hidden}
+#work .portfolio-title{min-height:2.2em}
+#work .portfolio-summary{min-height:5.25em}
+#work .portfolio-type{min-height:3em}
+@media(max-width:900px){
+#work .portfolio-showcase{height:auto}
+#work .portfolio-stage{height:390px;min-height:390px}
+#work .portfolio-copy{height:auto;min-height:455px}
+}
+@media(max-width:600px){
+#work .portfolio-stage{height:285px;min-height:285px}
+#work .portfolio-copy{min-height:475px}
+#work .portfolio-summary{min-height:6.8em}
+}
 </style></head><body>
 <header class="header" id="home"><a href="#home" class="brand brand-header" aria-label="Akarshify — Attraction Automated"><span class="brand-name">akarshify<span>.</span></span><span class="brand-tagline">ATTRACTION AUTOMATED</span></a><button class="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav id="nav"><a href="services.html">Services</a><a href="#work">Our Work</a><a href="#process">How We Work</a><a href="about.html">About</a><a href="#contact">Contact</a><a class="nav-cta" href="#contact">LET'S TALK</a></nav></header>
 <main><section class="hero section"><div class="hero-copy"><p class="eyebrow">WELCOME TO AKARSHIFY</p><h2>Your business,<br><em>better connected.</em></h2><p class="lead">We create professional landing pages that establish your business online and develop targeted advertising campaigns that help you reach wider audiences, increase visibility, and connect with potential customers.</p><div class="actions"><a href="services.html" class="btn">EXPLORE OUR SERVICES</a><a href="#contact" class="btn outline">DISCUSS YOUR PROJECT</a></div></div><div class="hero-journey" aria-label="Illustration of website development and digital advertising working together">

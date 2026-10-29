@@ -524,8 +524,9 @@ h1 em,h2 em,h3 em,h4 em,h5 em,h6 em{color:var(--heading-accent-blue)!important}
 @media(prefers-reduced-motion:reduce){.header nav .nav-cta{transition:none!important}.header nav .nav-cta:hover,.header nav .nav-cta:focus-visible{transform:none!important}}
 </style><style>
 /* Centered contact modal: distinct from the Let's Talk enquiry CTA. */
-.header .nav-contact-trigger{border:0;background:transparent;color:inherit;font-family:"Google Sans",Arial,sans-serif;font-size:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit;cursor:pointer;padding:.5rem 0}
-.header .nav-contact-trigger:hover,.header .nav-contact-trigger:focus-visible{color:#2563EB}
+.header .nav-contact-trigger{border:1px solid rgba(168,216,240,.5);border-radius:8px;background:rgba(168,216,240,.07);color:inherit;font-family:"Google Sans",Arial,sans-serif;font-size:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit;cursor:pointer;padding:.58rem .95rem;transition:background .2s ease,border-color .2s ease,transform .2s ease,color .2s ease}
+.header .nav-contact-trigger:hover,.header .nav-contact-trigger:focus-visible{color:#A8D8F0;background:rgba(168,216,240,.14);border-color:#A8D8F0;transform:translateY(-2px)}
+@media(prefers-reduced-motion:reduce){.header .nav-contact-trigger{transition:none}.header .nav-contact-trigger:hover,.header .nav-contact-trigger:focus-visible{transform:none}}
 .nav-contact-overlay[hidden]{display:none!important}
 .nav-contact-overlay{position:fixed;inset:0;z-index:3000;display:grid;place-items:center;padding:20px;background:rgba(5,12,26,.68);backdrop-filter:blur(5px)}
 .nav-contact-card{position:relative;width:min(390px,100%);max-height:calc(100dvh - 40px);overflow:auto;padding:28px;border:1px solid rgba(168,216,240,.24);border-radius:18px;background:#0B1426;color:#F5F7FA;box-shadow:0 24px 70px rgba(0,0,0,.38);font-family:"Google Sans",Arial,sans-serif;text-align:left;animation:contactAppear .22s ease-out}

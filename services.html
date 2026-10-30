@@ -431,6 +431,49 @@ body{background:var(--cloud);color:var(--midnight)}
 </style><style>/* Pipeline cards use a clean sans-serif hierarchy, separate from editorial section headings. */
 .pipeline-grid .pipeline-step h3{font-family:"Google Sans",Arial,sans-serif!important;font-size:clamp(1.15rem,1.45vw,1.4rem)!important;font-weight:650!important;line-height:1.3!important;letter-spacing:-.02em!important;text-transform:none!important}
 </style>
+<style>
+/* Advertisement Pipeline — Midnight Current card system */
+.pipeline{background:#F8F7F4;color:#0B1426}
+.pipeline-grid{gap:16px;align-items:stretch}
+.pipeline-grid .pipeline-step{
+  position:relative;isolation:isolate;box-sizing:border-box;
+  display:flex;flex-direction:column;min-height:310px;
+  padding:clamp(1.35rem,2vw,1.85rem);
+  background:#0B1426;color:#F8F7F4;
+  border:1px solid rgba(168,216,240,.16);
+  border-top:2px solid #2563EB;border-radius:5px;
+  box-shadow:none;transition:border-color .28s ease,box-shadow .28s ease;
+}
+.pipeline-grid .pipeline-step:hover{border-color:rgba(168,216,240,.52);border-top-color:#2563EB;box-shadow:0 8px 22px rgba(11,20,38,.10)}
+.pipeline-grid .pipeline-step>span{color:#A8D8F0;font-size:.68rem;letter-spacing:.11em;font-weight:700}
+.pipeline-grid .pipeline-step h3{
+  color:#F8F7F4!important;font-family:"Google Sans",Arial,sans-serif!important;
+  font-size:clamp(1.15rem,1.45vw,1.4rem)!important;
+  font-weight:650!important;line-height:1.28!important;
+  letter-spacing:-.02em!important;margin:1.65rem 0 .8rem;
+}
+.pipeline-grid .pipeline-step p{color:#C8D8E8;font-size:clamp(.82rem,.9vw,.9rem);line-height:1.7;margin:0}
+@media(min-width:1051px){
+  .pipeline-grid .pipeline-step:not(:last-child)::after{
+    content:"";position:absolute;top:46%;left:calc(100% + 1px);
+    width:15px;height:2px;background:#2563EB;z-index:2;
+    transform-origin:left center;pointer-events:none;
+  }
+  .pipeline-grid.carriages-ready:not(.carriages-arriving) .pipeline-step::after{opacity:0}
+  .pipeline-grid.carriages-ready.carriages-arriving .pipeline-step::after{
+    animation:pipeline-link-activate 650ms ease-out both;
+    animation-delay:calc(var(--carriage-delay) + 730ms);
+  }
+  @keyframes pipeline-link-activate{
+    0%{opacity:0;background:#2563EB;transform:scaleX(0)}
+    55%{opacity:1;background:#C7F23A;transform:scaleX(1)}
+    100%{opacity:1;background:#2563EB;transform:scaleX(1)}
+  }
+}
+@media(max-width:1050px){.pipeline-grid .pipeline-step{min-height:275px}}
+@media(max-width:560px){.pipeline-grid .pipeline-step{min-height:0;padding:1.6rem}.pipeline-grid .pipeline-step h3{margin-top:1.2rem}}
+@media(prefers-reduced-motion:reduce){.pipeline-grid .pipeline-step,.pipeline-grid .pipeline-step::after{animation:none!important;transition:none!important}}
+</style>
 </head><body>
 <header class="header" id="top"><a href="index.html#home" class="brand brand-header" aria-label="Akarshify — Attraction Automated"><span class="brand-name">akarshify<span>.</span></span><span class="brand-tagline">ATTRACTION AUTOMATED</span></a><button class="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav id="nav"><a href="index.html#home" class="nav-home" aria-label="Home" title="Home"><svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-7h6v7"/></svg></a><a href="services.html" aria-current="page">Services</a><a href="index.html#work">Our Work</a><a href="index.html#process">How We Work</a><a href="about.html">About</a><a href="index.html#contact">Contact</a><a class="nav-cta" href="index.html#contact">LET'S TALK</a></nav></header>
 <main>

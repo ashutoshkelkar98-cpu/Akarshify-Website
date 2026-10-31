@@ -686,6 +686,35 @@ body{background:var(--cloud);color:var(--midnight)}
   #benefits .outcome:not(:last-child)::after{height:17px!important}
 }
 </style>
+<style>
+/* Journey refinements: roomier cards, visible connectors and restrained flowing signal. */
+@media(min-width:801px){
+  #benefits .outcome-grid{max-width:690px!important}
+  #benefits .outcome{width:56%!important;max-width:none!important;padding:1.35rem 1.5rem!important}
+}
+@media(min-width:601px) and (max-width:800px){
+  #benefits .outcome{width:56%!important;padding:1.3rem 1.4rem!important}
+}
+#benefits .outcome h3{font-size:clamp(1.3rem,1.75vw,1.65rem)!important;line-height:1.25!important;margin:.55rem 0 .65rem!important}
+#benefits .outcome p{font-size:.92rem!important;line-height:1.6!important}
+#benefits .outcome-connector{height:74px!important;overflow:visible!important;position:relative;z-index:0}
+#benefits .outcome-connector path{fill:none;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+#benefits .outcome-connector .connector-track{stroke:#6BA9E8;stroke-width:1.8;opacity:.68}
+#benefits .outcome-connector .connector-flow{
+  stroke:#B4E3FF;stroke-width:2.5;opacity:.85;
+  stroke-dasharray:24 1200;stroke-dashoffset:0;
+  animation:benefits-signal 6s linear infinite;
+}
+#benefits .connector-two .connector-flow{animation-delay:3s}
+@keyframes benefits-signal{from{stroke-dashoffset:0}to{stroke-dashoffset:-1224}}
+@media(max-width:600px){
+  #benefits .outcome{width:100%!important;padding:1.3rem!important}
+  #benefits .outcome-connector{display:none!important}
+}
+@media(prefers-reduced-motion:reduce){
+  #benefits .outcome-connector .connector-flow{animation:none!important;opacity:0!important}
+}
+</style>
 </head><body>
 <header class="header" id="top"><a href="index.html#home" class="brand brand-header" aria-label="Akarshify — Attraction Automated"><span class="brand-name">akarshify<span>.</span></span><span class="brand-tagline">ATTRACTION AUTOMATED</span></a><button class="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav id="nav"><a href="index.html#home" class="nav-home" aria-label="Home" title="Home"><svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-7h6v7"/></svg></a><a href="services.html" aria-current="page">Services</a><a href="index.html#work">Our Work</a><a href="index.html#process">How We Work</a><a href="about.html">About</a><a href="index.html#contact">Contact</a><a class="nav-cta" href="index.html#contact">LET'S TALK</a></nav></header>
 <main>
@@ -702,9 +731,9 @@ body{background:var(--cloud);color:var(--midnight)}
 <section class="outcomes section" id="benefits"><p class="eyebrow">03 / HOW IT HELPS YOUR BUSINESS</p><h2>More than being online.<br>Make your presence <em>useful.</em></h2><p>A good digital presence should help customers understand your business and make it easier to connect. The exact outcome depends on the solution, your market and your team's follow-up.</p>
 <div class="outcome-grid" aria-label="Customer journey from discovery to action">
   <article class="outcome outcome-one"><span>01 / DISCOVERY</span><h3>Be easier to find</h3><p>Give people a clear place to discover your business, understand what you offer, and explore your services online.</p></article>
-  <svg class="outcome-connector connector-one" viewBox="0 0 1000 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M 515 2 H 875 Q 950 2 950 32 Q 950 62 875 62 H 545"/><path class="connector-tip" d="M 557 55 L 545 62 L 557 69"/></svg>
+  <svg class="outcome-connector connector-one" viewBox="0 0 1000 110" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="connector-track" d="M 540 8 H 875 Q 950 8 950 55 Q 950 102 875 102 H 540"/><path class="connector-flow" d="M 540 8 H 875 Q 950 8 950 55 Q 950 102 875 102 H 540"/></svg>
   <article class="outcome outcome-two"><span>02 / CONFIDENCE</span><h3>Explain your value</h3><p>Present your products, services, and essential information clearly, helping visitors decide whether your business meets their needs.</p></article>
-  <svg class="outcome-connector connector-two" viewBox="0 0 1000 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M 485 2 H 125 Q 50 2 50 32 Q 50 62 125 62 H 455"/><path class="connector-tip" d="M 443 55 L 455 62 L 443 69"/></svg>
+  <svg class="outcome-connector connector-two" viewBox="0 0 1000 110" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="connector-track" d="M 460 8 H 125 Q 50 8 50 55 Q 50 102 125 102 H 460"/><path class="connector-flow" d="M 460 8 H 125 Q 50 8 50 55 Q 50 102 125 102 H 460"/></svg>
   <article class="outcome outcome-three"><span>03 / ACTION</span><h3>Make contact simpler</h3><p>Offer straightforward ways to enquire, request details, or get in touch when someone is ready to take the next step.</p></article>
 </div></section>
 

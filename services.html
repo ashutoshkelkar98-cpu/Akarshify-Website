@@ -640,6 +640,30 @@ body{background:var(--cloud);color:var(--midnight)}
   #benefits .outcome:not(:last-child)::after{height:19px!important}
 }
 </style>
+<style>
+/* Right-side compact serpentine journey: left → right → left. */
+@media(min-width:801px){
+  #benefits{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);column-gap:clamp(2rem,5vw,5.5rem);align-items:start}
+  #benefits>.eyebrow,#benefits>h2,#benefits>p{grid-column:1;min-width:0}
+  #benefits>.eyebrow{grid-row:1}
+  #benefits>h2{grid-row:2}
+  #benefits>p{grid-row:3}
+  #benefits .outcome-grid{grid-column:2;grid-row:1 / span 4;width:100%;max-width:680px!important;margin:0!important;justify-self:end}
+  #benefits .outcome{width:53%!important;max-width:none!important}
+  #benefits .outcome-one{align-self:flex-start!important}
+  #benefits .outcome-two{align-self:flex-end!important}
+  #benefits .outcome-three{align-self:flex-start!important}
+  #benefits .outcome-connector{height:46px!important}
+}
+@media(min-width:601px) and (max-width:800px){
+  #benefits .outcome-one,#benefits .outcome-three{align-self:flex-start!important}
+  #benefits .outcome-two{align-self:flex-end!important}
+}
+@media(max-width:600px){
+  #benefits{display:block}
+  #benefits .outcome-one,#benefits .outcome-two,#benefits .outcome-three{align-self:stretch!important}
+}
+</style>
 </head><body>
 <header class="header" id="top"><a href="index.html#home" class="brand brand-header" aria-label="Akarshify — Attraction Automated"><span class="brand-name">akarshify<span>.</span></span><span class="brand-tagline">ATTRACTION AUTOMATED</span></a><button class="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav id="nav"><a href="index.html#home" class="nav-home" aria-label="Home" title="Home"><svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-7h6v7"/></svg></a><a href="services.html" aria-current="page">Services</a><a href="index.html#work">Our Work</a><a href="index.html#process">How We Work</a><a href="about.html">About</a><a href="index.html#contact">Contact</a><a class="nav-cta" href="index.html#contact">LET'S TALK</a></nav></header>
 <main>
@@ -656,9 +680,9 @@ body{background:var(--cloud);color:var(--midnight)}
 <section class="outcomes section" id="benefits"><p class="eyebrow">03 / HOW IT HELPS YOUR BUSINESS</p><h2>More than being online.<br>Make your presence <em>useful.</em></h2><p>A good digital presence should help customers understand your business and make it easier to connect. The exact outcome depends on the solution, your market and your team's follow-up.</p>
 <div class="outcome-grid" aria-label="Customer journey from discovery to action">
   <article class="outcome outcome-one"><span>01 / DISCOVERY</span><h3>Be easier to find</h3><p>Give people a clear place to discover your business, understand what you offer, and explore your services online.</p></article>
-  <svg class="outcome-connector connector-one" viewBox="0 0 1000 110" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M 425 3 H 765 Q 875 3 875 55 Q 875 107 755 107 H 505"/><path class="connector-tip" d="M 520 96 L 505 107 L 520 118" transform="translate(0 -11)"/></svg>
+  <svg class="outcome-connector connector-one" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M 470 0 H 850 Q 955 0 955 50 Q 955 100 850 100 H 530"/><path class="connector-tip" d="M 547 89 L 530 100 L 547 111"/></svg>
   <article class="outcome outcome-two"><span>02 / CONFIDENCE</span><h3>Explain your value</h3><p>Present your products, services, and essential information clearly, helping visitors decide whether your business meets their needs.</p></article>
-  <svg class="outcome-connector connector-two" viewBox="0 0 1000 110" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M 725 3 H 835 Q 935 3 935 55 Q 935 107 835 107 H 585"/><path class="connector-tip" d="M 600 96 L 585 107 L 600 118" transform="translate(0 -11)"/></svg>
+  <svg class="outcome-connector connector-two" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M 530 0 H 150 Q 45 0 45 50 Q 45 100 150 100 H 470"/><path class="connector-tip" d="M 453 89 L 470 100 L 453 111"/></svg>
   <article class="outcome outcome-three"><span>03 / ACTION</span><h3>Make contact simpler</h3><p>Offer straightforward ways to enquire, request details, or get in touch when someone is ready to take the next step.</p></article>
 </div></section>
 

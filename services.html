@@ -586,6 +586,33 @@ body{background:var(--cloud);color:var(--midnight)}
 }
 @media(prefers-reduced-motion:reduce){.toolkit .toolkit-grid .tool{transition:none!important}}
 </style>
+<style>
+/* How It Helps: open, staggered journey — deliberately not a repeating cycle. */
+#benefits .outcome-grid{display:flex!important;flex-direction:column;gap:0!important;max-width:1050px;margin:clamp(2rem,4vw,3.5rem) auto 0;overflow:visible}
+#benefits .outcome{box-sizing:border-box;flex:none;width:45%;min-width:0;max-width:490px;padding:1.45rem 1.65rem!important;border:1px solid rgba(168,216,240,.26)!important;border-radius:10px;background:#17263D;box-shadow:none;position:relative;z-index:1}
+#benefits .outcome-one{align-self:flex-start}
+#benefits .outcome-two{align-self:center}
+#benefits .outcome-three{align-self:flex-end;border-color:rgba(199,242,58,.38)!important}
+#benefits .outcome span{display:block;font-family:"Google Sans",Arial,sans-serif;color:#A8D8F0!important;font-size:.72rem;font-weight:700;letter-spacing:.12em}
+#benefits .outcome-three span{color:#C7F23A!important}
+#benefits .outcome h3{font-family:"Playfair Display",Georgia,serif!important;font-size:clamp(1.35rem,2vw,1.8rem)!important;font-weight:500!important;line-height:1.25!important;color:#F8F7F4!important;margin:.75rem 0 .7rem!important}
+#benefits .outcome p{font-family:"Google Sans",Arial,sans-serif!important;color:#D5E4F1!important;font-size:.92rem!important;line-height:1.65!important;margin:0!important}
+#benefits .outcome-connector{display:block;width:100%;height:92px;overflow:visible;flex:none;pointer-events:none}
+#benefits .outcome-connector path{fill:none;stroke:#6BA9E8;stroke-width:2;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round;opacity:.72}
+#benefits .outcome-connector .connector-tip{stroke-width:2.2;opacity:.9}
+@media(max-width:800px){
+  #benefits .outcome{width:58%}
+  #benefits .outcome-connector{height:72px}
+}
+@media(max-width:600px){
+  #benefits .outcome-grid{max-width:480px;padding-left:26px;position:relative;gap:22px!important}
+  #benefits .outcome{width:100%;max-width:none;align-self:stretch;padding:1.3rem!important}
+  #benefits .outcome-connector{display:none}
+  #benefits .outcome:not(:last-child)::after{content:"";position:absolute;left:-17px;top:100%;height:23px;border-left:2px solid #6BA9E8}
+  #benefits .outcome::before{content:"";position:absolute;left:-22px;top:25px;width:9px;height:9px;border:2px solid #6BA9E8;background:#0B1426;border-radius:50%}
+  #benefits .outcome-three::before{border-color:#C7F23A;background:#C7F23A}
+}
+</style>
 </head><body>
 <header class="header" id="top"><a href="index.html#home" class="brand brand-header" aria-label="Akarshify — Attraction Automated"><span class="brand-name">akarshify<span>.</span></span><span class="brand-tagline">ATTRACTION AUTOMATED</span></a><button class="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav id="nav"><a href="index.html#home" class="nav-home" aria-label="Home" title="Home"><svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-7h6v7"/></svg></a><a href="services.html" aria-current="page">Services</a><a href="index.html#work">Our Work</a><a href="index.html#process">How We Work</a><a href="about.html">About</a><a href="index.html#contact">Contact</a><a class="nav-cta" href="index.html#contact">LET'S TALK</a></nav></header>
 <main>
@@ -600,7 +627,13 @@ body{background:var(--cloud);color:var(--midnight)}
 <section class="toolkit section" id="tools"><div class="toolkit-intro"><p class="eyebrow">OUR APPROACH / TOOLS & TECHNOLOGIES</p><h2>The right tools<br>for the <em>job.</em></h2><p>We choose tools according to project requirements rather than adding complexity for its own sake. Specific platforms and subscriptions are confirmed during planning.</p></div>
 <div class="toolkit-grid"><div class="tool"><span class="tool-index" aria-hidden="true">01</span><h3>Web Technologies</h3><p>We work with HTML, CSS, JavaScript, and modern web technologies to develop responsive, functional websites tailored to your business requirements.</p></div><div class="tool"><span class="tool-index" aria-hidden="true">02</span><h3>Development Workflow</h3><p>GitHub helps us maintain an organised development workflow by tracking changes, managing project files, and keeping the development process structured from start to finish.</p></div><div class="tool"><span class="tool-index" aria-hidden="true">03</span><h3>Hosting &amp; Deployment</h3><p>Cloudflare and Hostinger are among the platforms we use for website hosting and deployment, with additional solutions selected according to each project's technical requirements.</p></div><div class="tool"><span class="tool-index" aria-hidden="true">04</span><h3>Campaign Platforms</h3><p>Advertising campaigns are managed through platforms such as Google Ads and Meta Ads, with additional channels considered according to campaign objectives, audience preferences, and budget.</p></div></div></section>
 <section class="outcomes section" id="benefits"><p class="eyebrow">03 / HOW IT HELPS YOUR BUSINESS</p><h2>More than being online.<br>Make your presence <em>useful.</em></h2><p>A good digital presence should help customers understand your business and make it easier to connect. The exact outcome depends on the solution, your market and your team's follow-up.</p>
-<div class="outcome-grid"><div class="outcome"><span>01 / DISCOVERY</span><h3>Be easier to find</h3><p>Give potential customers a clear place to discover your business and explore what you offer.</p></div><div class="outcome"><span>02 / CONFIDENCE</span><h3>Explain your value</h3><p>Present services, products, and essential information in a consistent, credible way.</p></div><div class="outcome"><span>03 / ACTION</span><h3>Make contact simpler</h3><p>Help visitors enquire, request information, or take the next step with less friction.</p></div></div></section>
+<div class="outcome-grid" aria-label="Customer journey from discovery to action">
+  <article class="outcome outcome-one"><span>01 / DISCOVERY</span><h3>Be easier to find</h3><p>Give people a clear place to discover your business, understand what you offer, and explore your services online.</p></article>
+  <svg class="outcome-connector connector-one" viewBox="0 0 1000 110" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M 425 3 H 765 Q 875 3 875 55 Q 875 107 755 107 H 505"/><path class="connector-tip" d="M 520 96 L 505 107 L 520 118" transform="translate(0 -11)"/></svg>
+  <article class="outcome outcome-two"><span>02 / CONFIDENCE</span><h3>Explain your value</h3><p>Present your products, services, and essential information clearly, helping visitors decide whether your business meets their needs.</p></article>
+  <svg class="outcome-connector connector-two" viewBox="0 0 1000 110" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M 725 3 H 835 Q 935 3 935 55 Q 935 107 835 107 H 585"/><path class="connector-tip" d="M 600 96 L 585 107 L 600 118" transform="translate(0 -11)"/></svg>
+  <article class="outcome outcome-three"><span>03 / ACTION</span><h3>Make contact simpler</h3><p>Offer straightforward ways to enquire, request details, or get in touch when someone is ready to take the next step.</p></article>
+</div></section>
 
 </main><footer><div><a href="index.html#home" class="brand">akarshify<span>.</span></a><p>Practical digital services, clear expectations and collaborative work.</p></div><div><h4>NAVIGATION</h4><a href="index.html#home">Home</a><a href="services.html">Services</a><a href="index.html#work">Our Work</a><a href="about.html">About</a></div><div><h4>EXPLORE</h4><a href="#what-we-do">What We Do</a><a href="#how-we-do-it">How We Do It</a><a href="#benefits">How It Helps</a></div><div class="footer-bottom">© <span id="year"></span> Akarshify. <span>BUILT WITH PURPOSE.</span></div></footer>
 <script>const menu=document.querySelector('.menu'),nav=document.getElementById('nav');menu.addEventListener('click',()=>{const active=nav.classList.toggle('active');menu.setAttribute('aria-expanded',String(active))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('active');menu.setAttribute('aria-expanded','false')}));document.getElementById('year').textContent=new Date().getFullYear();(function(){const grid=document.querySelector('.pipeline-grid');if(!grid||window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;const cards=[...grid.querySelectorAll('.pipeline-step')];cards.forEach((card,i)=>card.style.setProperty('--carriage-delay',(i*115)+'ms'));grid.classList.add('carriages-ready');let running=false,resetTimer=null;const observer=new IntersectionObserver(entries=>{const visible=entries[0].isIntersecting;if(visible&&!running){running=true;clearTimeout(resetTimer);grid.classList.remove('carriages-arriving');void grid.offsetWidth;grid.classList.add('carriages-arriving')}else if(!visible&&running){running=false;resetTimer=setTimeout(()=>{if(!running)grid.classList.remove('carriages-arriving')},80)}},{threshold:.12,rootMargin:'0px 0px -8% 0px'});observer.observe(grid)})();</script><script>

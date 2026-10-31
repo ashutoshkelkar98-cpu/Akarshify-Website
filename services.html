@@ -51,12 +51,12 @@ body{min-height:100vh}.header{position:sticky}.header nav a[aria-current="page"]
 .pipeline-step{--carriage-delay:0ms;opacity:1;transform:none}
 @media(prefers-reduced-motion:no-preference){
 .pipeline-grid.carriages-ready:not(.carriages-arriving) .pipeline-step{opacity:0;transform:translateX(80px)}
-.pipeline-grid.carriages-ready.carriages-arriving .pipeline-step{animation:carriage-dock 900ms cubic-bezier(.22,.72,.25,1) both;animation-delay:var(--carriage-delay)}
+.pipeline-grid.carriages-ready.carriages-arriving .pipeline-step{animation:carriage-dock 650ms cubic-bezier(.22,.72,.25,1) both;animation-delay:var(--carriage-delay)}
 @keyframes carriage-dock{0%{opacity:0;transform:translateX(80px)}35%{opacity:1}82%{transform:translateX(-2px)}100%{opacity:1;transform:translateX(0)}}
 }
 @media(max-width:800px) and (prefers-reduced-motion:no-preference){
 .pipeline-grid.carriages-ready:not(.carriages-arriving) .pipeline-step{transform:translateY(24px)}
-.pipeline-grid.carriages-ready.carriages-arriving .pipeline-step{animation:carriage-stack 700ms ease-out both;animation-delay:var(--carriage-delay)}
+.pipeline-grid.carriages-ready.carriages-arriving .pipeline-step{animation:carriage-stack 520ms ease-out both;animation-delay:var(--carriage-delay)}
 @keyframes carriage-stack{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 }
 .offer-content .btn.outline{color:#fff;border-color:#fff;transition:background-color .25s ease,color .25s ease,border-color .25s ease,transform .25s ease}.offer-content .btn.outline:hover,.offer-content .btn.outline:focus-visible{background:#fff;color:#18223a;border-color:#fff}.offer:nth-child(2) .offer-content .btn.outline:hover,.offer:nth-child(2) .offer-content .btn.outline:focus-visible{color:#4169D5}
@@ -461,8 +461,8 @@ body{background:var(--cloud);color:var(--midnight)}
   }
   .pipeline-grid.carriages-ready:not(.carriages-arriving) .pipeline-step::after{opacity:0}
   .pipeline-grid.carriages-ready.carriages-arriving .pipeline-step::after{
-    animation:pipeline-link-activate 650ms ease-out both;
-    animation-delay:calc(var(--carriage-delay) + 730ms);
+    animation:pipeline-link-activate 420ms ease-out both;
+    animation-delay:calc(var(--carriage-delay) + 510ms);
   }
   @keyframes pipeline-link-activate{
     0%{opacity:0;background:#2563EB;transform:scaleX(0)}
@@ -491,7 +491,7 @@ body{background:var(--cloud);color:var(--midnight)}
 <div class="outcome-grid"><div class="outcome"><span>01 / DISCOVERY</span><h3>Be easier to find</h3><p>Give potential customers a clear place to discover your business and explore what you offer.</p></div><div class="outcome"><span>02 / CONFIDENCE</span><h3>Explain your value</h3><p>Present services, products, and essential information in a consistent, credible way.</p></div><div class="outcome"><span>03 / ACTION</span><h3>Make contact simpler</h3><p>Help visitors enquire, request information, or take the next step with less friction.</p></div></div></section>
 
 </main><footer><div><a href="index.html#home" class="brand">akarshify<span>.</span></a><p>Practical digital services, clear expectations and collaborative work.</p></div><div><h4>NAVIGATION</h4><a href="index.html#home">Home</a><a href="services.html">Services</a><a href="index.html#work">Our Work</a><a href="about.html">About</a></div><div><h4>EXPLORE</h4><a href="#what-we-do">What We Do</a><a href="#how-we-do-it">How We Do It</a><a href="#benefits">How It Helps</a></div><div class="footer-bottom">© <span id="year"></span> Akarshify. <span>BUILT WITH PURPOSE.</span></div></footer>
-<script>const menu=document.querySelector('.menu'),nav=document.getElementById('nav');menu.addEventListener('click',()=>{const active=nav.classList.toggle('active');menu.setAttribute('aria-expanded',String(active))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('active');menu.setAttribute('aria-expanded','false')}));document.getElementById('year').textContent=new Date().getFullYear();(function(){const grid=document.querySelector('.pipeline-grid');if(!grid||window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;const cards=[...grid.querySelectorAll('.pipeline-step')];cards.forEach((card,i)=>card.style.setProperty('--carriage-delay',(i*175)+'ms'));grid.classList.add('carriages-ready');let running=false,resetTimer=null;const observer=new IntersectionObserver(entries=>{const visible=entries[0].isIntersecting;if(visible&&!running){running=true;clearTimeout(resetTimer);grid.classList.remove('carriages-arriving');void grid.offsetWidth;grid.classList.add('carriages-arriving')}else if(!visible&&running){running=false;resetTimer=setTimeout(()=>{if(!running)grid.classList.remove('carriages-arriving')},80)}},{threshold:.12,rootMargin:'0px 0px -8% 0px'});observer.observe(grid)})();</script><script>
+<script>const menu=document.querySelector('.menu'),nav=document.getElementById('nav');menu.addEventListener('click',()=>{const active=nav.classList.toggle('active');menu.setAttribute('aria-expanded',String(active))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('active');menu.setAttribute('aria-expanded','false')}));document.getElementById('year').textContent=new Date().getFullYear();(function(){const grid=document.querySelector('.pipeline-grid');if(!grid||window.matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;const cards=[...grid.querySelectorAll('.pipeline-step')];cards.forEach((card,i)=>card.style.setProperty('--carriage-delay',(i*115)+'ms'));grid.classList.add('carriages-ready');let running=false,resetTimer=null;const observer=new IntersectionObserver(entries=>{const visible=entries[0].isIntersecting;if(visible&&!running){running=true;clearTimeout(resetTimer);grid.classList.remove('carriages-arriving');void grid.offsetWidth;grid.classList.add('carriages-arriving')}else if(!visible&&running){running=false;resetTimer=setTimeout(()=>{if(!running)grid.classList.remove('carriages-arriving')},80)}},{threshold:.12,rootMargin:'0px 0px -8% 0px'});observer.observe(grid)})();</script><script>
 /* Trigger only when visible; works whether or not the introductory curtain is shown. */
 (function(){
  const hero=document.querySelector('.services-hero');

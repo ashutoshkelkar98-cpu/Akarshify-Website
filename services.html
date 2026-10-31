@@ -715,6 +715,18 @@ body{background:var(--cloud);color:var(--midnight)}
   #benefits .outcome-connector .connector-flow{animation:none!important;opacity:0!important}
 }
 </style>
+<style>
+/* Compact, connected chartreuse journey */
+@media(min-width:801px){#benefits .outcome-grid{max-width:650px!important}#benefits .outcome{width:56%!important;padding:1.2rem 1.4rem!important}}
+#benefits .outcome h3{color:#A8D8F0!important}
+#benefits .outcome-connector{height:52px!important}
+#benefits .outcome-connector .connector-track{stroke:#C7F23A!important;opacity:.7!important}
+#benefits .outcome-connector .connector-flow{stroke:#E4FFA2!important;stroke-width:3!important;stroke-dasharray:24 1200!important;filter:drop-shadow(0 0 4px #C7F23A);animation:journey-signal 12s linear infinite!important}
+#benefits .connector-two .connector-flow{animation-delay:-6s!important}
+@keyframes journey-signal{to{stroke-dashoffset:-1224}}
+@media(max-width:600px){#benefits .outcome:not(:last-child)::after{border-left-color:#C7F23A!important}}
+@media(prefers-reduced-motion:reduce){#benefits .outcome-connector .connector-flow{animation:none!important;opacity:0!important}}
+</style>
 </head><body>
 <header class="header" id="top"><a href="index.html#home" class="brand brand-header" aria-label="Akarshify — Attraction Automated"><span class="brand-name">akarshify<span>.</span></span><span class="brand-tagline">ATTRACTION AUTOMATED</span></a><button class="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav id="nav"><a href="index.html#home" class="nav-home" aria-label="Home" title="Home"><svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-7h6v7"/></svg></a><a href="services.html" aria-current="page">Services</a><a href="index.html#work">Our Work</a><a href="index.html#process">How We Work</a><a href="about.html">About</a><a href="index.html#contact">Contact</a><a class="nav-cta" href="index.html#contact">LET'S TALK</a></nav></header>
 <main>
@@ -731,9 +743,9 @@ body{background:var(--cloud);color:var(--midnight)}
 <section class="outcomes section" id="benefits"><p class="eyebrow">03 / HOW IT HELPS YOUR BUSINESS</p><h2>More than being online.<br>Make your presence <em>useful.</em></h2><p>A good digital presence should help customers understand your business and make it easier to connect. The exact outcome depends on the solution, your market and your team's follow-up.</p>
 <div class="outcome-grid" aria-label="Customer journey from discovery to action">
   <article class="outcome outcome-one"><span>01 / DISCOVERY</span><h3>Be easier to find</h3><p>Give people a clear place to discover your business, understand what you offer, and explore your services online.</p></article>
-  <svg class="outcome-connector connector-one" viewBox="0 0 1000 110" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="connector-track" d="M 540 8 H 875 Q 950 8 950 55 Q 950 102 875 102 H 540"/><path class="connector-flow" d="M 540 8 H 875 Q 950 8 950 55 Q 950 102 875 102 H 540"/></svg>
+  <svg class="outcome-connector connector-one" viewBox="0 0 1000 110" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="connector-track" d="M 560 0 H 860 Q 950 0 950 50 Q 950 100 860 100 H 440"/><path class="connector-flow" d="M 560 0 H 860 Q 950 0 950 50 Q 950 100 860 100 H 440"/></svg>
   <article class="outcome outcome-two"><span>02 / CONFIDENCE</span><h3>Explain your value</h3><p>Present your products, services, and essential information clearly, helping visitors decide whether your business meets their needs.</p></article>
-  <svg class="outcome-connector connector-two" viewBox="0 0 1000 110" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="connector-track" d="M 460 8 H 125 Q 50 8 50 55 Q 50 102 125 102 H 460"/><path class="connector-flow" d="M 460 8 H 125 Q 50 8 50 55 Q 50 102 125 102 H 460"/></svg>
+  <svg class="outcome-connector connector-two" viewBox="0 0 1000 110" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="connector-track" d="M 440 0 H 140 Q 50 0 50 50 Q 50 100 140 100 H 560"/><path class="connector-flow" d="M 440 0 H 140 Q 50 0 50 50 Q 50 100 140 100 H 560"/></svg>
   <article class="outcome outcome-three"><span>03 / ACTION</span><h3>Make contact simpler</h3><p>Offer straightforward ways to enquire, request details, or get in touch when someone is ready to take the next step.</p></article>
 </div></section>
 

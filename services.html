@@ -613,6 +613,33 @@ body{background:var(--cloud);color:var(--midnight)}
   #benefits .outcome-three::before{border-color:#C7F23A;background:#C7F23A}
 }
 </style>
+<style>
+/* Compact benefits journey: preserve stagger, reduce empty space and align arrows. */
+#benefits .outcome-grid{
+  max-width:860px!important;
+  margin:2.25rem auto 0!important;
+}
+#benefits .outcome{
+  width:49%!important;
+  max-width:430px!important;
+  padding:1.15rem 1.35rem!important;
+}
+#benefits .outcome h3{margin:.55rem 0 .5rem!important}
+#benefits .outcome p{font-size:.88rem!important;line-height:1.55!important}
+#benefits .outcome-connector{height:48px!important;overflow:visible}
+#benefits .outcome-connector path{stroke-width:1.8}
+@media(max-width:800px){
+  #benefits .outcome-grid{max-width:720px!important}
+  #benefits .outcome{width:58%!important}
+  #benefits .outcome-connector{height:48px!important}
+}
+@media(max-width:600px){
+  #benefits .outcome-grid{max-width:480px!important;margin:1.75rem auto 0!important;gap:18px!important}
+  #benefits .outcome{width:100%!important;max-width:none!important;padding:1.2rem!important}
+  #benefits .outcome-connector{display:none!important}
+  #benefits .outcome:not(:last-child)::after{height:19px!important}
+}
+</style>
 </head><body>
 <header class="header" id="top"><a href="index.html#home" class="brand brand-header" aria-label="Akarshify — Attraction Automated"><span class="brand-name">akarshify<span>.</span></span><span class="brand-tagline">ATTRACTION AUTOMATED</span></a><button class="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav id="nav"><a href="index.html#home" class="nav-home" aria-label="Home" title="Home"><svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-7h6v7"/></svg></a><a href="services.html" aria-current="page">Services</a><a href="index.html#work">Our Work</a><a href="index.html#process">How We Work</a><a href="about.html">About</a><a href="index.html#contact">Contact</a><a class="nav-cta" href="index.html#contact">LET'S TALK</a></nav></header>
 <main>

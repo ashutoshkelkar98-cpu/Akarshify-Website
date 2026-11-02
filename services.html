@@ -756,6 +756,34 @@ body{background:var(--cloud);color:var(--midnight)}
   #benefits .outcome-connector{display:none!important}
 }
 </style>
+<style>
+/* Measured edge-connected benefits journey: compact and consistent. */
+@media(min-width:801px){
+ #benefits{padding-top:clamp(2.5rem,4vw,4rem)!important;padding-bottom:clamp(2.5rem,4vw,4rem)!important}
+ #benefits .outcome-grid{max-width:610px!important;margin:0!important;gap:28px!important;position:relative;isolation:isolate}
+ #benefits .outcome{width:54%!important;padding:1rem 1.25rem!important}
+}
+@media(min-width:601px) and (max-width:800px){
+ #benefits .outcome-grid{position:relative;isolation:isolate;gap:28px!important}
+ #benefits .outcome{width:54%!important;padding:1rem 1.25rem!important}
+}
+#benefits .outcome{position:relative;z-index:2;border:1px solid rgba(168,216,240,.26)!important}
+#benefits .outcome-three{border-color:rgba(168,216,240,.26)!important}
+#benefits .outcome span,#benefits .outcome-three span{color:#A8D8F0!important}
+#benefits .outcome h3{color:#A8D8F0!important;font-size:clamp(1.2rem,1.55vw,1.5rem)!important;margin:.42rem 0 .48rem!important}
+#benefits .outcome p{font-size:.86rem!important;line-height:1.5!important}
+#benefits .journey-wires{position:absolute;inset:0;width:100%;height:100%;z-index:1;overflow:visible;pointer-events:none}
+#benefits .journey-wires .wire-track{fill:none;stroke:#C7F23A;stroke-width:1.6;opacity:.75}
+#benefits .journey-wires .wire-glow{fill:none;stroke:#E4FFA2;stroke-width:3;stroke-linecap:round;filter:drop-shadow(0 0 4px #C7F23A);stroke-dasharray:22 1000;animation:wire-travel 13s linear infinite}
+#benefits .journey-wires .wire-two{animation-delay:-6.5s}
+@keyframes wire-travel{to{stroke-dashoffset:-1022}}
+@media(max-width:600px){
+ #benefits .outcome-grid{gap:16px!important}
+ #benefits .outcome{width:100%!important;padding:1.15rem!important}
+ #benefits .journey-wires{display:none}
+}
+@media(prefers-reduced-motion:reduce){#benefits .journey-wires .wire-glow{animation:none;opacity:0}}
+</style>
 </head><body>
 <header class="header" id="top"><a href="index.html#home" class="brand brand-header" aria-label="Akarshify — Attraction Automated"><span class="brand-name">akarshify<span>.</span></span><span class="brand-tagline">ATTRACTION AUTOMATED</span></a><button class="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav id="nav"><a href="index.html#home" class="nav-home" aria-label="Home" title="Home"><svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-7h6v7"/></svg></a><a href="services.html" aria-current="page">Services</a><a href="index.html#work">Our Work</a><a href="index.html#process">How We Work</a><a href="about.html">About</a><a href="index.html#contact">Contact</a><a class="nav-cta" href="index.html#contact">LET'S TALK</a></nav></header>
 <main>
@@ -772,9 +800,7 @@ body{background:var(--cloud);color:var(--midnight)}
 <section class="outcomes section" id="benefits"><p class="eyebrow">03 / HOW IT HELPS YOUR BUSINESS</p><h2>More than being online.<br>Make your presence <em>useful.</em></h2><p>A good digital presence should help customers understand your business and make it easier to connect. The exact outcome depends on the solution, your market and your team's follow-up.</p>
 <div class="outcome-grid" aria-label="Customer journey from discovery to action">
   <article class="outcome outcome-one"><span>01 / DISCOVERY</span><h3>Be easier to find</h3><p>Give people a clear place to discover your business, understand what you offer, and explore your services online.</p></article>
-  <svg class="outcome-connector connector-one" viewBox="0 0 1000 110" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="connector-track" d="M 540 0 H 855 Q 930 0 930 50 Q 930 100 855 100 H 460"/><path class="connector-flow" d="M 540 0 H 855 Q 930 0 930 50 Q 930 100 855 100 H 460"/></svg>
   <article class="outcome outcome-two"><span>02 / CONFIDENCE</span><h3>Explain your value</h3><p>Present your products, services, and essential information clearly, helping visitors decide whether your business meets their needs.</p></article>
-  <svg class="outcome-connector connector-two" viewBox="0 0 1000 110" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="connector-track" d="M 460 0 H 145 Q 70 0 70 50 Q 70 100 145 100 H 540"/><path class="connector-flow" d="M 460 0 H 145 Q 70 0 70 50 Q 70 100 145 100 H 540"/></svg>
   <article class="outcome outcome-three"><span>03 / ACTION</span><h3>Make contact simpler</h3><p>Offer straightforward ways to enquire, request details, or get in touch when someone is ready to take the next step.</p></article>
 </div></section>
 
@@ -796,4 +822,48 @@ body{background:var(--cloud);color:var(--midnight)}
  hero.classList.add('hero-motion-ready');
  observer.observe(hero);
 })();
-</script></body></html>
+</script><script>
+/* Anchor the connector endpoints to the actual card edges, including on resize. */
+(function(){
+ const grid=document.querySelector('#benefits .outcome-grid');
+ if(!grid)return;
+ const cards=[...grid.querySelectorAll('.outcome')];
+ if(cards.length!==3)return;
+ const ns='http://www.w3.org/2000/svg';
+ const svg=document.createElementNS(ns,'svg');
+ svg.setAttribute('class','journey-wires');
+ svg.setAttribute('aria-hidden','true');
+ const pairs=[[0,1],[1,2]];
+ const wires=pairs.map((_,i)=>{
+   const track=document.createElementNS(ns,'path');
+   track.setAttribute('class','wire-track');
+   const glow=document.createElementNS(ns,'path');
+   glow.setAttribute('class','wire-glow wire-'+(i===0?'one':'two'));
+   svg.append(track,glow);
+   return [track,glow];
+ });
+ grid.prepend(svg);
+ function position(){
+   if(window.matchMedia('(max-width:600px)').matches)return;
+   const root=grid.getBoundingClientRect();
+   svg.setAttribute('viewBox','0 0 '+root.width+' '+root.height);
+   pairs.forEach(([from,to],i)=>{
+     const a=cards[from].getBoundingClientRect(),b=cards[to].getBoundingClientRect();
+     const right=i===0;
+     const x1=(right?a.right:a.left)-root.left;
+     const x2=(right?b.right:b.left)-root.left;
+     const y1=a.bottom-root.top,y2=b.top-root.top;
+     const outer=right?Math.max(x1,x2)+Math.min(28,root.width*.045):Math.min(x1,x2)-Math.min(28,root.width*.045);
+     const mid=(y1+y2)/2;
+     const radius=Math.min(15,(y2-y1)/2);
+     const dir=right?1:-1;
+     const d='M '+x1+' '+y1+' H '+(outer-dir*radius)+' Q '+outer+' '+y1+' '+outer+' '+(y1+radius)+' V '+(y2-radius)+' Q '+outer+' '+y2+' '+(outer-dir*radius)+' '+y2+' H '+x2;
+     wires[i].forEach(p=>p.setAttribute('d',d));
+   });
+ }
+ if('ResizeObserver' in window){new ResizeObserver(position).observe(grid);cards.forEach(c=>new ResizeObserver(position).observe(c))}
+ window.addEventListener('resize',position,{passive:true});
+ requestAnimationFrame(position);
+})();
+</script>
+</body></html>

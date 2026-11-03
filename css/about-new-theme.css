@@ -1,0 +1,21 @@
+/* Isolated About Us theme experiment; original pages remain unchanged. */
+:root{--navy:#252B35;--slate:#252B35;--blue:#087F83;--ice:#F6F7F5;--lime:#00A6A6;--white:#F6F7F5;--mist:#F6F7F5}
+body.theme-experiment{background:#F6F7F5;color:#252B35}
+.theme-experiment .hero{background:#252B35;color:#F6F7F5}
+.theme-experiment .hero em{color:#00A6A6}
+.theme-experiment .hero .eyebrow{color:#00A6A6}
+.theme-experiment .hero p:last-child{color:#F6F7F5}
+.theme-experiment .intro{background:#F6F7F5}
+.theme-experiment .intro h2 em,.theme-experiment .values h2 em{color:#087F83}
+.theme-experiment .intro-copy,.theme-experiment .value-card p{color:#252B35}
+.theme-experiment .values{background:#252B35;color:#F6F7F5}
+.theme-experiment .values .eyebrow{color:#00A6A6}
+.theme-experiment .values h2 em{color:#00A6A6}
+.theme-experiment .value-card{background:#F6F7F5;border-color:#F6F7F5;color:#252B35}
+.theme-experiment .value-card span{color:#087F83}
+.theme-experiment .header{background:#F6F7F5!important;color:#252B35!important}
+.theme-experiment .header .nav-cta{background:#00A6A6!important;color:#252B35!important}
+.theme-experiment footer.site-footer{background:#252B35!important;color:#F6F7F5!important}
+.theme-experiment footer.site-footer p,.theme-experiment footer.site-footer a,.theme-experiment footer.site-footer h4{color:#F6F7F5!important}
+.theme-return-link{position:fixed;right:18px;bottom:18px;z-index:200;background:#00A6A6;color:#252B35;padding:12px 18px;border-radius:8px;font:700 14px Arial,sans-serif;box-shadow:0 5px 20px #0004}
+.theme-return-link:hover{background:#F6F7F5}

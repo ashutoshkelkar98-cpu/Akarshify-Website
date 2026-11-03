@@ -1,16 +1,24 @@
-# AVORA — Website Prototype V1
+# Akarshify Website
 
-A responsive single-page concept for AVORA, an independent digital services studio.
+Static HTML, CSS and JavaScript website for Akarshify, an independent digital services studio.
 
-## Features
-- Full-screen terracotta introduction with a vertical slide-up reveal
-- Cover appears once per browser session
-- Responsive homepage with services, selected work, process, about, and contact sections
-- Contemporary ivory, charcoal, terracotta and sage palette
-- Mobile navigation and reduced-motion support
+## Project structure
 
-## Preview
-Open `index.html` in a browser, or deploy the repository as a static site using Cloudflare Pages. No build command is required; output directory is `/`.
+- `index.html` — homepage and enquiry form
+- `pages/about.html` — original About Us page
+- `pages/about-new-theme.html` — isolated Charcoal / Pearl / Bright Teal About Us experiment
+- `pages/services.html` — Services page
+- `css/header.css` and `css/footer.css` — shared component styles
+- `css/about-new-theme.css` — experimental About Us theme overrides
+- `js/header.js` and `js/footer.js` — shared navigation and footer
+- `assets/` — reserved for future logos, images and icons
 
-## Before launch
-Replace `hello@example.com` with the agency contact address. AVORA is a temporary brand name. Visuals are illustrative and content is preliminary. This is a design prototype, not a finished production site.
+## Preview and deployment
+
+Deploy as a static site with `index.html` at the repository root. Page URLs are `/pages/about.html`, `/pages/about-new-theme.html`, and `/pages/services.html`. Legacy root-level About and Services URLs have intentionally been retired.
+
+The enquiry form currently uses Web3Forms as a temporary testing integration. Replace it with a supported email submission solution when hosting is finalized.
+
+## Theme experiment
+
+The original About Us page has a **New Theme** button; the experimental version has an **Original Theme** return button. The experimental palette is Charcoal `#252B35`, Pearl `#F6F7F5`, and Bright Teal `#00A6A6`. Other pages retain their original theme.

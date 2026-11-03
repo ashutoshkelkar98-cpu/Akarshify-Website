@@ -16,6 +16,6 @@
     '<div class="footer-services"><h4>SERVICES</h4>' +
     '<a href="services.html#what-we-do">Website Development</a>' +
     '<a href="services.html#what-we-do">Digital Advertising</a></div>' +
-    '<div class="footer-bottom">© <span id="year"></span> Akarshify. <span>BUILT WITH PURPOSE.</span></div>' +
+    '<div class="footer-bottom"><span class="footer-copyright">© <span id="year"></span> Akarshify. All rights reserved.</span><span class="footer-signoff">BUILT WITH PURPOSE.</span></div>' +
     '</footer>');
 })();

@@ -52,3 +52,14 @@ body>main>.hero>.hero-copy,body>main>.hero>.hero-journey{position:relative;z-ind
   body>main>.hero::before{left:-570px;opacity:.4}
   body>main>.hero::after{left:-365px;opacity:.4}
 }
+
+/* Contact CTA hover: white surface with midnight text; no legacy chartreuse. */
+#contact .contact-action:hover,
+#contact .contact-action:focus-visible{
+  background:#FFFFFF!important;
+  color:#0B1426!important;
+  border-color:#FFFFFF!important;
+  box-shadow:0 12px 30px rgba(11,20,38,.2)!important;
+}
+#contact .contact-action:hover .contact-action-label,
+#contact .contact-action:focus-visible .contact-action-label{color:#0B1426!important}

@@ -1,0 +1,13 @@
+/* Akarshify three-color identity: Midnight #0B1426, White #FFFFFF, Cobalt #2563EB.
+   Loaded after page styles to preserve existing layout, animations and graphics. */
+:root{--cream:#FFFFFF;--rust:#2563EB;--ink:#0B1426;--sage:#2563EB;--sand:#FFFFFF;--midnight:#0B1426;--slate:#0B1426;--ice:#FFFFFF;--electric:#2563EB;--chartreuse:#2563EB;--cloud:#FFFFFF;--mist:#FFFFFF;--heading-accent-blue:#2563EB}
+html{scroll-behavior:smooth}
+body{background:#FFFFFF;color:#0B1426}
+.hero,.services-hero{background-color:#0B1426;color:#FFFFFF}
+.hero h1,.hero h2,.services-hero h1,.services-hero h2{color:#FFFFFF}
+.hero em,.services-hero em,.hero .accent,.services-hero .accent{color:#2563EB}
+section.services,section.work,section.process,section.contact,section.pipeline,section.toolkit,section.outcomes,section.intro,section.values{background-color:#FFFFFF;color:#0B1426}
+section.services h2,section.work h2,section.process h2,section.contact h2,section.pipeline h2,section.toolkit h2,section.outcomes h2,section.intro h2,section.values h2{color:#0B1426}
+a:focus-visible,button:focus-visible{outline-color:#2563EB}
+::selection{background:#2563EB;color:#FFFFFF}
+/* Preserve all original CSS keyframes, transforms, transitions, illustrations and JS behavior. */

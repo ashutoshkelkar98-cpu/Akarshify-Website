@@ -75,3 +75,23 @@ body>main>.hero>.hero-copy,body>main>.hero>.hero-journey{position:relative;z-ind
 
 /* Services benefits section: keep supporting paragraph legible on white. */
 section.outcomes > p:not(.eyebrow){color:#0B1426!important}
+
+/* Fourth palette color: pure black for body copy on white/light surfaces.
+   Keep white copy in dark heroes, cards, CTAs and footer unchanged. */
+:root{--body-copy:#000000}
+body{color:#000000}
+main > section:not(.hero):not(.services-hero) > p:not(.eyebrow),
+main > section:not(.hero):not(.services-hero) > div > p:not(.eyebrow),
+main > section:not(.hero):not(.services-hero) > div > div > p:not(.eyebrow),
+section.intro p:not(.eyebrow),
+section.values > p:not(.eyebrow),
+section.services > p:not(.eyebrow),
+section.work > p:not(.eyebrow),
+section.process > p:not(.eyebrow),
+section.pipeline > p:not(.eyebrow),
+section.toolkit > p:not(.eyebrow),
+section.outcomes > p:not(.eyebrow),
+#what-we-do > p:not(.eyebrow){color:#000000!important}
+/* Preserve high contrast where copy is on a midnight surface. */
+.services-hero .lead,.hero p:not(.eyebrow),
+#contact .contact-panel p:not(.eyebrow){color:#FFFFFF!important}

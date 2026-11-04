@@ -12,42 +12,20 @@ a:focus-visible,button:focus-visible{outline-color:#2563EB}
 ::selection{background:#2563EB;color:#FFFFFF}
 /* Preserve all original CSS keyframes, transforms, transitions, illustrations and JS behavior. */
 
-/* Contact CTA: restrained architectural diagonal motif, distinct from the hero/footer circles.
-   The existing contact panel copy, enquiry form, and behavior remain unchanged. */
-#contact .contact-decoration{
-  position:absolute;right:-6%;top:0;width:48%;height:100%;aspect-ratio:auto;
-  transform:none;opacity:1;overflow:hidden;pointer-events:none;
-  animation:none!important;
-}
-#contact .contact-decoration>span{display:none!important;animation:none!important}
-#contact .contact-decoration::before{
-  content:"";position:absolute;inset:-35% -35% -35% 0;
-  background:repeating-linear-gradient(132deg,
-    transparent 0,transparent 66px,
-    rgba(37,99,235,.19) 67px,rgba(37,99,235,.19) 68px,
-    transparent 69px,transparent 134px);
-  -webkit-mask-image:linear-gradient(to right,transparent,black 38%,black 85%,transparent);
-  mask-image:linear-gradient(to right,transparent,black 38%,black 85%,transparent);
-  animation:akarshify-contact-lines 18s ease-in-out infinite alternate;
-}
-#contact .contact-decoration::after{
-  content:"";position:absolute;right:15%;top:13%;width:42%;height:74%;
-  border-left:1px solid rgba(37,99,235,.25);
-  border-right:1px solid rgba(37,99,235,.13);
-  transform:skewX(-24deg);
-}
-@keyframes akarshify-contact-lines{
-  from{transform:translateX(-12px)}
-  to{transform:translateX(12px)}
-}
-@media(max-width:900px){
-  #contact .contact-decoration{right:-15%;width:52%;opacity:.65}
-}
+/* Compact, text-first contact CTA: no decorative illustration. */
+#contact .contact-decoration{display:none!important}
+#contact .contact-panel{min-height:0;padding:clamp(38px,5vw,64px) clamp(24px,5vw,70px);display:flex;align-items:center;justify-content:center;text-align:center}
+#contact .contact-panel::before{display:none}
+#contact .contact-panel-content{width:100%;max-width:680px;margin:0 auto;text-align:center}
+#contact .contact-panel-content .eyebrow{margin-bottom:14px}
+#contact .contact-panel-content h2{margin:0 auto 18px;font-size:clamp(2.5rem,4.4vw,4.5rem)!important}
+#contact .contact-description{max-width:570px;margin:0 auto 24px}
+#contact .contact-action{margin:0 auto}
+#contact .contact-email-option{margin:16px auto 0;text-align:center}
 @media(max-width:600px){
-  #contact .contact-decoration{right:-24%;width:60%;opacity:.35}
-}
-@media(prefers-reduced-motion:reduce){
-  #contact .contact-decoration::before{animation:none!important}
+  #contact .contact-panel{padding:38px 22px;border-radius:16px}
+  #contact .contact-panel-content h2{font-size:clamp(2.2rem,9vw,3.1rem)!important}
+  #contact .contact-description{margin-bottom:22px}
 }
 
 /* Homepage hero: understated footer-inspired concentric circles.

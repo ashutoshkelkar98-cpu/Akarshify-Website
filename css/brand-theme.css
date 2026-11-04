@@ -95,3 +95,6 @@ section.outcomes > p:not(.eyebrow),
 /* Preserve high contrast where copy is on a midnight surface. */
 .services-hero .lead,.hero p:not(.eyebrow),
 #contact .contact-panel p:not(.eyebrow){color:#FFFFFF!important}
+
+/* Dark-surface copy rule: never use black paragraphs on midnight cards. */
+.pipeline-grid .pipeline-step p{color:#6495ED!important}

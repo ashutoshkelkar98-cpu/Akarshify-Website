@@ -69,3 +69,6 @@ body>main>.hero>.hero-copy,body>main>.hero>.hero-journey{position:relative;z-ind
   background:linear-gradient(118deg,#0B1426 12%,#142746 100%);
 }
 .services-hero .lead{color:#FFFFFF!important}
+
+/* Keep the Services hero emphasis Cornflower Blue, overriding legacy --ice styling. */
+.services-hero h1 em{color:#6495ED!important}

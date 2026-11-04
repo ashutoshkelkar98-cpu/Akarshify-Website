@@ -96,4 +96,4 @@ section.outcomes > p:not(.eyebrow),
 #contact .contact-panel p:not(.eyebrow){color:#FFFFFF!important}
 
 /* Dark-surface copy rule: never use black paragraphs on midnight cards. */
-main section.pipeline .pipeline-grid .pipeline-step > p:not(.eyebrow){color:#6495ED!important}
+main section.pipeline .pipeline-grid .pipeline-step > p:not(.eyebrow){color:#FFFFFF!important}

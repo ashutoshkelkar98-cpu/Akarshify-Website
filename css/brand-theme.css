@@ -11,3 +11,35 @@ section.services h2,section.work h2,section.process h2,section.contact h2,sectio
 a:focus-visible,button:focus-visible{outline-color:#2563EB}
 ::selection{background:#2563EB;color:#FFFFFF}
 /* Preserve all original CSS keyframes, transforms, transitions, illustrations and JS behavior. */
+
+/* Contact CTA: footer-inspired concentric rings, replacing the orbit motif.
+   Keep the existing markup, content, and enquiry button behavior intact. */
+#contact .contact-decoration{
+  right:-110px;top:50%;width:min(48vw,590px);height:auto;aspect-ratio:1;
+  transform:translateY(-50%);opacity:1;pointer-events:none;
+  animation:akarshify-rings-breathe 12s ease-in-out infinite;
+}
+#contact .contact-orbit{
+  position:absolute;display:block;border:1px solid rgba(37,99,235,.28);
+  border-radius:50%;inset:0;
+}
+#contact .contact-orbit-one{
+  border-color:rgba(37,99,235,.24);
+  box-shadow:0 0 0 48px rgba(37,99,235,.027),0 0 0 96px rgba(37,99,235,.018);
+}
+#contact .contact-orbit-two{inset:17%;border-color:rgba(37,99,235,.34)}
+#contact .contact-orbit-three{inset:34%;border-color:rgba(37,99,235,.44)}
+#contact .contact-orbit-tracer,#contact .contact-center{display:none!important;animation:none!important}
+@keyframes akarshify-rings-breathe{
+  0%,100%{opacity:.76;transform:translateY(-50%) scale(1)}
+  50%{opacity:1;transform:translateY(-50%) scale(1.025)}
+}
+@media(max-width:900px){
+  #contact .contact-decoration{width:500px;right:-280px;opacity:.5}
+}
+@media(max-width:600px){
+  #contact .contact-decoration{width:400px;right:-290px;opacity:.3}
+}
+@media(prefers-reduced-motion:reduce){
+  #contact .contact-decoration{animation:none!important;transform:translateY(-50%)}
+}

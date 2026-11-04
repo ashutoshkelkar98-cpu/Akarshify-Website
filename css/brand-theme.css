@@ -43,3 +43,28 @@ a:focus-visible,button:focus-visible{outline-color:#2563EB}
 @media(prefers-reduced-motion:reduce){
   #contact .contact-decoration{animation:none!important;transform:translateY(-50%)}
 }
+
+/* Homepage hero: understated footer-inspired concentric circles.
+   The decoration stays behind the copy and the animated digital-journey graphic. */
+body>main>.hero{position:relative;isolation:isolate;overflow:hidden}
+body>main>.hero::before{
+  content:"";position:absolute;z-index:-1;left:-330px;top:50%;
+  width:720px;height:720px;border:1px solid rgba(37,99,235,.18);
+  border-radius:50%;transform:translateY(-50%);pointer-events:none;
+  box-shadow:0 0 0 75px rgba(37,99,235,.025),0 0 0 150px rgba(37,99,235,.018);
+}
+body>main>.hero::after{
+  content:"";position:absolute;z-index:-1;left:-180px;top:50%;
+  width:420px;height:420px;border:1px solid rgba(37,99,235,.25);
+  border-radius:50%;transform:translateY(-50%);pointer-events:none;
+  box-shadow:0 0 0 85px rgba(37,99,235,.025),inset 0 0 0 90px rgba(37,99,235,.018);
+}
+body>main>.hero>.hero-copy,body>main>.hero>.hero-journey{position:relative;z-index:1}
+@media(max-width:850px){
+  body>main>.hero::before{left:-470px;opacity:.6}
+  body>main>.hero::after{left:-310px;opacity:.6}
+}
+@media(max-width:600px){
+  body>main>.hero::before{left:-570px;opacity:.4}
+  body>main>.hero::after{left:-365px;opacity:.4}
+}

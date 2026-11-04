@@ -1,15 +1,15 @@
-/* Akarshify three-color identity: Midnight #0B1426, White #FFFFFF, Cobalt #2563EB.
+/* Akarshify three-color identity: Midnight #0B1426, White #FFFFFF, Cornflower #6495ED.
    Loaded after page styles to preserve existing layout, animations and graphics. */
-:root{--cream:#FFFFFF;--rust:#2563EB;--ink:#0B1426;--sage:#2563EB;--sand:#FFFFFF;--midnight:#0B1426;--slate:#0B1426;--ice:#FFFFFF;--electric:#2563EB;--chartreuse:#2563EB;--cloud:#FFFFFF;--mist:#FFFFFF;--heading-accent-blue:#2563EB}
+:root{--cream:#FFFFFF;--rust:#6495ED;--ink:#0B1426;--sage:#6495ED;--sand:#FFFFFF;--midnight:#0B1426;--slate:#0B1426;--ice:#FFFFFF;--electric:#6495ED;--chartreuse:#6495ED;--cloud:#FFFFFF;--mist:#FFFFFF;--heading-accent-blue:#6495ED}
 html{scroll-behavior:smooth}
 body{background:#FFFFFF;color:#0B1426}
 .hero,.services-hero{background-color:#0B1426;color:#FFFFFF}
 .hero h1,.hero h2,.services-hero h1,.services-hero h2{color:#FFFFFF}
-.hero em,.services-hero em,.hero .accent,.services-hero .accent{color:#2563EB}
+.hero em,.services-hero em,.hero .accent,.services-hero .accent{color:#6495ED}
 section.services,section.work,section.process,section.contact,section.pipeline,section.toolkit,section.outcomes,section.intro,section.values{background-color:#FFFFFF;color:#0B1426}
 section.services h2,section.work h2,section.process h2,section.contact h2,section.pipeline h2,section.toolkit h2,section.outcomes h2,section.intro h2,section.values h2{color:#0B1426}
-a:focus-visible,button:focus-visible{outline-color:#2563EB}
-::selection{background:#2563EB;color:#FFFFFF}
+a:focus-visible,button:focus-visible{outline-color:#6495ED}
+::selection{background:#6495ED;color:#FFFFFF}
 /* Preserve all original CSS keyframes, transforms, transitions, illustrations and JS behavior. */
 
 /* Compact, text-first contact CTA: no decorative illustration. */
@@ -33,15 +33,15 @@ a:focus-visible,button:focus-visible{outline-color:#2563EB}
 body>main>.hero{position:relative;isolation:isolate;overflow:hidden}
 body>main>.hero::before{
   content:"";position:absolute;z-index:-1;left:-330px;top:50%;
-  width:720px;height:720px;border:1px solid rgba(37,99,235,.18);
+  width:720px;height:720px;border:1px solid rgba(100,149,237,.18);
   border-radius:50%;transform:translateY(-50%);pointer-events:none;
-  box-shadow:0 0 0 75px rgba(37,99,235,.025),0 0 0 150px rgba(37,99,235,.018);
+  box-shadow:0 0 0 75px rgba(100,149,237,.025),0 0 0 150px rgba(100,149,237,.018);
 }
 body>main>.hero::after{
   content:"";position:absolute;z-index:-1;left:-180px;top:50%;
-  width:420px;height:420px;border:1px solid rgba(37,99,235,.25);
+  width:420px;height:420px;border:1px solid rgba(100,149,237,.25);
   border-radius:50%;transform:translateY(-50%);pointer-events:none;
-  box-shadow:0 0 0 85px rgba(37,99,235,.025),inset 0 0 0 90px rgba(37,99,235,.018);
+  box-shadow:0 0 0 85px rgba(100,149,237,.025),inset 0 0 0 90px rgba(100,149,237,.018);
 }
 body>main>.hero>.hero-copy,body>main>.hero>.hero-journey{position:relative;z-index:1}
 @media(max-width:850px){

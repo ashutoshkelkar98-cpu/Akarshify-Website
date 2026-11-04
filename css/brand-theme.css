@@ -63,3 +63,9 @@ body>main>.hero>.hero-copy,body>main>.hero>.hero-journey{position:relative;z-ind
 }
 #contact .contact-action:hover .contact-action-label,
 #contact .contact-action:focus-visible .contact-action-label{color:#0B1426!important}
+
+/* Services hero: subtle midnight gradient and high-contrast right-side description. */
+.services-hero{
+  background:linear-gradient(118deg,#0B1426 12%,#142746 100%);
+}
+.services-hero .lead{color:#FFFFFF!important}

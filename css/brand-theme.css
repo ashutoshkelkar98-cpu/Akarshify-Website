@@ -12,36 +12,42 @@ a:focus-visible,button:focus-visible{outline-color:#2563EB}
 ::selection{background:#2563EB;color:#FFFFFF}
 /* Preserve all original CSS keyframes, transforms, transitions, illustrations and JS behavior. */
 
-/* Contact CTA: footer-inspired concentric rings, replacing the orbit motif.
-   Keep the existing markup, content, and enquiry button behavior intact. */
+/* Contact CTA: restrained architectural diagonal motif, distinct from the hero/footer circles.
+   The existing contact panel copy, enquiry form, and behavior remain unchanged. */
 #contact .contact-decoration{
-  right:-110px;top:50%;width:min(48vw,590px);height:auto;aspect-ratio:1;
-  transform:translateY(-50%);opacity:1;pointer-events:none;
-  animation:akarshify-rings-breathe 12s ease-in-out infinite;
+  position:absolute;right:-6%;top:0;width:48%;height:100%;aspect-ratio:auto;
+  transform:none;opacity:1;overflow:hidden;pointer-events:none;
+  animation:none!important;
 }
-#contact .contact-orbit{
-  position:absolute;display:block;border:1px solid rgba(37,99,235,.28);
-  border-radius:50%;inset:0;
+#contact .contact-decoration>span{display:none!important;animation:none!important}
+#contact .contact-decoration::before{
+  content:"";position:absolute;inset:-35% -35% -35% 0;
+  background:repeating-linear-gradient(132deg,
+    transparent 0,transparent 66px,
+    rgba(37,99,235,.19) 67px,rgba(37,99,235,.19) 68px,
+    transparent 69px,transparent 134px);
+  -webkit-mask-image:linear-gradient(to right,transparent,black 38%,black 85%,transparent);
+  mask-image:linear-gradient(to right,transparent,black 38%,black 85%,transparent);
+  animation:akarshify-contact-lines 18s ease-in-out infinite alternate;
 }
-#contact .contact-orbit-one{
-  border-color:rgba(37,99,235,.24);
-  box-shadow:0 0 0 48px rgba(37,99,235,.027),0 0 0 96px rgba(37,99,235,.018);
+#contact .contact-decoration::after{
+  content:"";position:absolute;right:15%;top:13%;width:42%;height:74%;
+  border-left:1px solid rgba(37,99,235,.25);
+  border-right:1px solid rgba(37,99,235,.13);
+  transform:skewX(-24deg);
 }
-#contact .contact-orbit-two{inset:17%;border-color:rgba(37,99,235,.34)}
-#contact .contact-orbit-three{inset:34%;border-color:rgba(37,99,235,.44)}
-#contact .contact-orbit-tracer,#contact .contact-center{display:none!important;animation:none!important}
-@keyframes akarshify-rings-breathe{
-  0%,100%{opacity:.76;transform:translateY(-50%) scale(1)}
-  50%{opacity:1;transform:translateY(-50%) scale(1.025)}
+@keyframes akarshify-contact-lines{
+  from{transform:translateX(-12px)}
+  to{transform:translateX(12px)}
 }
 @media(max-width:900px){
-  #contact .contact-decoration{width:500px;right:-280px;opacity:.5}
+  #contact .contact-decoration{right:-15%;width:52%;opacity:.65}
 }
 @media(max-width:600px){
-  #contact .contact-decoration{width:400px;right:-290px;opacity:.3}
+  #contact .contact-decoration{right:-24%;width:60%;opacity:.35}
 }
 @media(prefers-reduced-motion:reduce){
-  #contact .contact-decoration{animation:none!important;transform:translateY(-50%)}
+  #contact .contact-decoration::before{animation:none!important}
 }
 
 /* Homepage hero: understated footer-inspired concentric circles.

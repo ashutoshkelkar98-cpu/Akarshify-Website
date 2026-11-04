@@ -82,7 +82,6 @@ section.outcomes > p:not(.eyebrow){color:#0B1426!important}
 body{color:#000000}
 main > section:not(.hero):not(.services-hero) > p:not(.eyebrow),
 main > section:not(.hero):not(.services-hero) > div > p:not(.eyebrow),
-main > section:not(.hero):not(.services-hero) > div > div > p:not(.eyebrow),
 section.intro p:not(.eyebrow),
 section.values > p:not(.eyebrow),
 section.services > p:not(.eyebrow),
@@ -97,4 +96,4 @@ section.outcomes > p:not(.eyebrow),
 #contact .contact-panel p:not(.eyebrow){color:#FFFFFF!important}
 
 /* Dark-surface copy rule: never use black paragraphs on midnight cards. */
-.pipeline-grid .pipeline-step p{color:#6495ED!important}
+main section.pipeline .pipeline-grid .pipeline-step > p:not(.eyebrow){color:#6495ED!important}

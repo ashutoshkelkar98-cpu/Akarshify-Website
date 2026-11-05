@@ -204,15 +204,15 @@ body>main>.hero .hero-copy h2,
 body>main>.hero .hero-copy h2 em{
   font-family:"Google Sans",Arial,sans-serif!important;
   font-style:normal!important;
-  font-weight:600!important;
-  text-transform:none!important;
-  letter-spacing:-.045em!important;
+  font-weight:400!important;
+  text-transform:uppercase!important;
+  letter-spacing:-.025em!important;
 }
 body>main>.hero .hero-copy h2{
-  font-size:clamp(3rem,5.5vw,6.25rem)!important;
+  font-size:clamp(2.5rem,4.4vw,5rem)!important;
   line-height:1.1!important;
 }
 body>main>.hero .hero-copy h2 em{color:#6495ED!important}
 @media(max-width:600px){
-  body>main>.hero .hero-copy h2{font-size:clamp(2.65rem,9vw,3.6rem)!important;letter-spacing:-.04em!important}
+  body>main>.hero .hero-copy h2{font-size:clamp(2.15rem,7.5vw,3rem)!important;letter-spacing:-.02em!important}
 }

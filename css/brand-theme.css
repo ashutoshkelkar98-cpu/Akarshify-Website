@@ -175,3 +175,25 @@ section#benefits.outcomes{
 @media(prefers-reduced-motion:reduce){
   #benefits .outcome-grid::after{animation:none!important}
 }
+
+/* About / Values: understated interactive lift, without changing the card layout. */
+section.values .value-card{
+  transition:transform .3s cubic-bezier(.2,.75,.25,1),
+    background-color .3s ease,border-color .3s ease,box-shadow .3s ease;
+  will-change:transform;
+}
+@media(hover:hover) and (pointer:fine){
+  section.values .value-card:hover{
+    transform:translateY(-7px);
+    background-color:#F0F5FF;
+    border-color:#6495ED;
+    box-shadow:0 15px 30px rgba(11,20,38,.09);
+  }
+}
+section.values .value-card h3{color:#0B1426}
+section.values .value-card p{color:#000000!important}
+section.values .value-card span{color:#6495ED}
+@media(prefers-reduced-motion:reduce){
+  section.values .value-card{transition:none!important;will-change:auto}
+  section.values .value-card:hover{transform:none!important}
+}

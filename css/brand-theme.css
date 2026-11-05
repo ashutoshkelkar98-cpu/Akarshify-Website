@@ -197,3 +197,22 @@ section.values .value-card span{color:#6495ED}
   section.values .value-card{transition:none!important;will-change:auto}
   section.values .value-card:hover{transform:none!important}
 }
+
+/* Homepage hero typography trial: Option 1 / modern sans-serif.
+   Scope deliberately limited to the homepage hero until reviewed. */
+body>main>.hero .hero-copy h2,
+body>main>.hero .hero-copy h2 em{
+  font-family:"Google Sans",Arial,sans-serif!important;
+  font-style:normal!important;
+  font-weight:600!important;
+  text-transform:none!important;
+  letter-spacing:-.045em!important;
+}
+body>main>.hero .hero-copy h2{
+  font-size:clamp(3rem,5.5vw,6.25rem)!important;
+  line-height:1.1!important;
+}
+body>main>.hero .hero-copy h2 em{color:#6495ED!important}
+@media(max-width:600px){
+  body>main>.hero .hero-copy h2{font-size:clamp(2.65rem,9vw,3.6rem)!important;letter-spacing:-.04em!important}
+}

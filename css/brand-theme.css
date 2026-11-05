@@ -375,3 +375,6 @@ body:has(>main>.hero.section) footer{--midnight:#16283F;--electric:#C17A50;--rus
 @media(prefers-reduced-motion:reduce){
   body>main>.hero.section::before,body>main>.hero.section::after{animation:none!important}
 }
+
+/* Ensure the services card description remains legible on its dark info strip. */
+body>main>#services .services-unified-card .services-unified-info p{color:#FFFFFF!important}

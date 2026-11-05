@@ -412,3 +412,6 @@ body>main>#process .process-quote>span{color:#DDA07B!important}
 @media(max-width:600px){
   body>main>#process .process-quote h3{font-size:clamp(1.9rem,7vw,2.65rem)!important}
 }
+
+/* Match homepage Our Promise card to the approved Oxford Blue palette. */
+body>main>#process .process-quote{background:#16283F!important}

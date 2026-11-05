@@ -280,3 +280,98 @@ body>main>section.values h2{
   body>main>section.intro h2,
   body>main>section.values h2{font-size:clamp(1.85rem,7vw,2.7rem)!important}
 }
+
+/* Homepage-only Oxford Blue + Copper experiment.
+   Compare abstract treatments with ?art=contours | ?art=diagonal | ?art=glow.
+   Other pages retain their existing brand theme. */
+body:has(>main>.hero.section){
+  --cream:#F5F2ED;--rust:#C17A50;--ink:#16283F;--sand:#F5F2ED;
+  --midnight:#16283F;--slate:#16283F;--electric:#C17A50;
+  --heading-accent-blue:#C17A50;
+  background:#F5F2ED;color:#16283F;
+}
+body:has(>main>.hero.section) ::selection{background:#C17A50;color:#16283F}
+body:has(>main>.hero.section) :is(a,button):focus-visible{outline-color:#C17A50}
+body>main>.hero.section{
+  background:linear-gradient(115deg,#16283F 0%,#1B3249 65%,#16283F 100%)!important;
+  color:#FFFFFF;position:relative;isolation:isolate;overflow:hidden;
+}
+body>main>.hero.section .hero-copy h2{color:#FFFFFF!important}
+body>main>.hero.section .hero-copy h2 em{color:#C17A50!important}
+body>main>.hero.section .eyebrow{color:#DDA07B!important}
+body>main>.hero.section .lead{color:#FFFFFF!important}
+body>main>.hero.section .btn{background:#C17A50!important;border-color:#C17A50!important;color:#16283F!important}
+body>main>.hero.section .btn:hover{background:#E0A17A!important;border-color:#E0A17A!important}
+body>main>.hero.section::before,body>main>.hero.section::after{
+  content:"";position:absolute;z-index:0;pointer-events:none;
+  border:0;border-radius:0;box-shadow:none;inset:auto;transform:none;
+}
+/* Default: offset contour-line field, no concentric circles. */
+html:not([data-akarsh-art]) body>main>.hero.section::before,
+html[data-akarsh-art="contours"] body>main>.hero.section::before{
+  width:75%;height:125%;right:-20%;top:-10%;
+  background:repeating-radial-gradient(ellipse at 90% 45%,transparent 0 24px,rgba(193,122,80,.19) 25px,transparent 26px 44px);
+  transform:rotate(-18deg) scaleX(1.2);opacity:.72;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 38%,#000 90%);
+  mask-image:linear-gradient(90deg,transparent,#000 38%,#000 90%);
+}
+html:not([data-akarsh-art]) body>main>.hero.section::after,
+html[data-akarsh-art="contours"] body>main>.hero.section::after{
+  width:65%;height:70%;right:-15%;bottom:-30%;
+  background:radial-gradient(ellipse,rgba(193,122,80,.14),transparent 70%);
+}
+/* Architectural: angled linear bands, visually distinct from contour art. */
+html[data-akarsh-art="diagonal"] body>main>.hero.section::before{
+  width:95%;height:150%;right:-22%;top:-20%;transform:rotate(-24deg);
+  background:repeating-linear-gradient(90deg,transparent 0 38px,rgba(193,122,80,.2) 39px,transparent 40px 84px);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 35%,#000 80%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 35%,#000 80%,transparent);
+}
+html[data-akarsh-art="diagonal"] body>main>.hero.section::after{
+  width:32%;height:100%;right:4%;top:0;
+  background:linear-gradient(145deg,transparent 12%,rgba(193,122,80,.13) 12% 34%,transparent 34% 53%,rgba(193,122,80,.09) 53% 68%,transparent 68%);
+}
+/* Atmospheric: quiet copper ambient light, without lines or rings. */
+html[data-akarsh-art="glow"] body>main>.hero.section::before{
+  width:78%;height:130%;right:-27%;top:-28%;
+  background:radial-gradient(ellipse at 60% 43%,rgba(193,122,80,.31),rgba(193,122,80,.10) 36%,transparent 70%);
+  filter:blur(18px);
+}
+html[data-akarsh-art="glow"] body>main>.hero.section::after{
+  width:55%;height:90%;left:-20%;bottom:-60%;
+  background:radial-gradient(ellipse,rgba(193,122,80,.12),transparent 70%);
+  filter:blur(22px);
+}
+body>main>.hero.section>.hero-copy,body>main>.hero.section>.hero-journey{position:relative;z-index:1}
+body>main>.hero.section .hero-journey{
+  border-color:rgba(193,122,80,.42)!important;
+  background:radial-gradient(ellipse at 80% 8%,rgba(193,122,80,.17),transparent 52%),linear-gradient(145deg,#16283F,#20384D)!important;
+}
+body>main>.hero.section .hero-journey .journey-head{color:#DDA07B!important}
+/* Main homepage sections and surfaces */
+body>main>#services,body>main>#work,body>main>#contact{background:#F5F2ED!important;color:#16283F!important}
+body>main>#process{background:#FFFFFF!important;color:#16283F!important}
+body>main>:is(#services,#work,#process,#contact) :is(h2,h3){color:#16283F}
+body>main>:is(#services,#work,#process,#contact) h2 em{color:#C17A50!important}
+body>main>:is(#services,#work,#process,#contact) .eyebrow{color:#AD633D!important}
+body>main>:is(#services,#work,#process) p:not(.eyebrow){color:#263746!important}
+body>main>:is(#services,#work,#process) .btn,
+body>main>#contact .btn{background:#C17A50;border-color:#C17A50;color:#16283F}
+body>main>:is(#services,#work,#process) .btn:hover,
+body>main>#contact .btn:hover{background:#DFA17C;border-color:#DFA17C;color:#16283F}
+body>main>#services .services-unified-card{border-color:rgba(193,122,80,.35)}
+body>main>#work .portfolio-showcase{--rust:#C17A50;--electric:#C17A50}
+body>main>#process .process-layout{--rust:#C17A50;--electric:#C17A50}
+body>main>#contact .contact-panel{background:#16283F!important;color:#FFFFFF}
+body>main>#contact .contact-panel h2{color:#FFFFFF!important}
+body>main>#contact .contact-panel h2 em{color:#C17A50!important}
+body>main>#contact .contact-panel p:not(.eyebrow){color:#FFFFFF!important}
+/* Preserve the existing footer composition; only recolor on homepage. */
+body:has(>main>.hero.section) footer{--midnight:#16283F;--electric:#C17A50;--rust:#C17A50;background-color:#16283F}
+@media(max-width:850px){
+  html[data-akarsh-art] body>main>.hero.section::before,
+  html:not([data-akarsh-art]) body>main>.hero.section::before{opacity:.4}
+}
+@media(prefers-reduced-motion:reduce){
+  body>main>.hero.section::before,body>main>.hero.section::after{animation:none!important}
+}

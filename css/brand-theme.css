@@ -390,3 +390,25 @@ body>main>#services .unified-ad .copper-heading-accent,
 body>main>#process .process-quote h3 em,
 body>main>#contact .contact-panel h2 em{color:#C17A50!important}
 body>main>#process .process-quote h3 em{font-style:normal}
+
+/* Homepage process promise: Google Sans editorial typography and accessible
+   contrast on Oxford Blue, overriding legacy dark-on-dark text rules. */
+body>main>#process .process-quote h3,
+body>main>#process .process-quote h3 em{
+  font-family:"Google Sans",Arial,sans-serif!important;
+  font-style:normal!important;
+  font-weight:400!important;
+  text-transform:uppercase!important;
+  letter-spacing:-.025em!important;
+  line-height:1.14!important;
+}
+body>main>#process .process-quote h3{
+  color:#FFFFFF!important;
+  font-size:clamp(2rem,3vw,3.3rem)!important;
+}
+body>main>#process .process-quote h3 em{color:#C17A50!important}
+body>main>#process .process-quote p:not(.eyebrow){color:#FFFFFF!important}
+body>main>#process .process-quote>span{color:#DDA07B!important}
+@media(max-width:600px){
+  body>main>#process .process-quote h3{font-size:clamp(1.9rem,7vw,2.65rem)!important}
+}

@@ -378,3 +378,15 @@ body:has(>main>.hero.section) footer{--midnight:#16283F;--electric:#C17A50;--rus
 
 /* Ensure the services card description remains legible on its dark info strip. */
 body>main>#services .services-unified-card .services-unified-info p{color:#FFFFFF!important}
+
+/* Oxford Blue cards: white headings with restrained Copper emphasis.
+   Homepage only; keep illustrative UI text and body descriptions legible. */
+body>main>.hero.section .hero-copy h2,
+body>main>#services .unified-ad strong,
+body>main>#process .process-quote h3,
+body>main>#contact .contact-panel h2{color:#FFFFFF!important}
+body>main>.hero.section .hero-copy h2 em,
+body>main>#services .unified-ad .copper-heading-accent,
+body>main>#process .process-quote h3 em,
+body>main>#contact .contact-panel h2 em{color:#C17A50!important}
+body>main>#process .process-quote h3 em{font-style:normal}

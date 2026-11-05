@@ -415,3 +415,29 @@ body>main>#process .process-quote>span{color:#DDA07B!important}
 
 /* Match homepage Our Promise card to the approved Oxford Blue palette. */
 body>main>#process .process-quote{background:#16283F!important}
+
+/* Oxford Blue & Copper homepage portfolio: typography and readable contrast. */
+body>main>#work .portfolio-copy{
+  background:#16283F!important;
+  color:#FFFFFF!important;
+}
+body>main>#work .portfolio-title,
+body>main>#work .portfolio-title .portfolio-title-accent{
+  font-family:"Google Sans",Arial,sans-serif!important;
+  font-style:normal!important;
+  font-weight:400!important;
+  text-transform:uppercase!important;
+  letter-spacing:-.025em!important;
+  line-height:1.12!important;
+}
+body>main>#work .portfolio-title{color:#FFFFFF!important;font-size:clamp(2rem,3.3vw,3.35rem)!important}
+body>main>#work .portfolio-title .portfolio-title-accent{color:#C17A50!important}
+body>main>#work .portfolio-index{color:#DDA07B!important}
+body>main>#work .portfolio-copy .portfolio-summary,
+body>main>#work .portfolio-copy .portfolio-type,
+body>main>#work .portfolio-copy .portfolio-note{color:#FFFFFF!important}
+body>main>#work .portfolio-copy .portfolio-dots span.current{background:#C17A50!important}
+body>main>#work .portfolio-copy :is(.portfolio-prev,.portfolio-next){border-color:rgba(255,255,255,.48)!important;color:#FFFFFF!important}
+@media(max-width:600px){
+  body>main>#work .portfolio-title{font-size:clamp(1.9rem,7vw,2.35rem)!important}
+}

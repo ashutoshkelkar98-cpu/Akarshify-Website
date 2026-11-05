@@ -441,3 +441,8 @@ body>main>#work .portfolio-copy :is(.portfolio-prev,.portfolio-next){border-colo
 @media(max-width:600px){
   body>main>#work .portfolio-title{font-size:clamp(1.9rem,7vw,2.35rem)!important}
 }
+
+/* Homepage navigation CTA follows the Oxford Blue & Copper palette. */
+body:has(>main>.hero.section) .header nav .nav-cta{background:#C17A50!important;border-color:#C17A50!important;color:#16283F!important}
+body:has(>main>.hero.section) .header nav .nav-cta:hover,
+body:has(>main>.hero.section) .header nav .nav-cta:focus-visible{background:#DFA17C!important;border-color:#DFA17C!important;color:#16283F!important}

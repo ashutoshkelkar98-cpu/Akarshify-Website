@@ -216,3 +216,67 @@ body>main>.hero .hero-copy h2 em{color:#6495ED!important}
 @media(max-width:600px){
   body>main>.hero .hero-copy h2{font-size:clamp(2.15rem,7.5vw,3rem)!important;letter-spacing:-.02em!important}
 }
+
+/* Main editorial heading system: Google Sans, with page/section hierarchy.
+   Scoped to large headings; cards, navigation, logo and modal headings unchanged. */
+body>main>section.services-hero h1,
+body>main>section.hero:not(.section) h1,
+body>main>section#services .section-intro h2,
+body>main>section#work .section-heading h2,
+body>main>section#process .section-heading h2,
+body>main>section#contact .contact-panel-content h2,
+body>main>section#what-we-do>h2,
+body>main>section#advertisement-pipeline .pipeline-heading h2,
+body>main>section#tools .toolkit-intro h2,
+body>main>section#benefits>h2,
+body>main>section.intro h2,
+body>main>section.values h2,
+body>main>section.services-hero h1 em,
+body>main>section.hero:not(.section) h1 em,
+body>main>section#services .section-intro h2 em,
+body>main>section#work .section-heading h2 em,
+body>main>section#process .section-heading h2 em,
+body>main>section#contact .contact-panel-content h2 em,
+body>main>section#what-we-do>h2 em,
+body>main>section#advertisement-pipeline .pipeline-heading h2 em,
+body>main>section#tools .toolkit-intro h2 em,
+body>main>section#benefits>h2 em,
+body>main>section.intro h2 em,
+body>main>section.values h2 em{
+  font-family:"Google Sans",Arial,sans-serif!important;
+  font-style:normal!important;
+  font-weight:400!important;
+  text-transform:uppercase!important;
+  letter-spacing:-.025em!important;
+  line-height:1.13!important;
+}
+body>main>section.services-hero h1,
+body>main>section.hero:not(.section) h1{
+  font-size:clamp(2.65rem,4.5vw,5.2rem)!important;
+}
+body>main>section#services .section-intro h2,
+body>main>section#work .section-heading h2,
+body>main>section#process .section-heading h2,
+body>main>section#contact .contact-panel-content h2,
+body>main>section#what-we-do>h2,
+body>main>section#advertisement-pipeline .pipeline-heading h2,
+body>main>section#tools .toolkit-intro h2,
+body>main>section#benefits>h2,
+body>main>section.intro h2,
+body>main>section.values h2{
+  font-size:clamp(2rem,3.3vw,3.8rem)!important;
+}
+@media(max-width:600px){
+  body>main>section.services-hero h1,
+  body>main>section.hero:not(.section) h1{font-size:clamp(2.2rem,8vw,3.2rem)!important}
+  body>main>section#services .section-intro h2,
+  body>main>section#work .section-heading h2,
+  body>main>section#process .section-heading h2,
+  body>main>section#contact .contact-panel-content h2,
+  body>main>section#what-we-do>h2,
+  body>main>section#advertisement-pipeline .pipeline-heading h2,
+  body>main>section#tools .toolkit-intro h2,
+  body>main>section#benefits>h2,
+  body>main>section.intro h2,
+  body>main>section.values h2{font-size:clamp(1.85rem,7vw,2.7rem)!important}
+}

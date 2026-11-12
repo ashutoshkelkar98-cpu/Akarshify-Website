@@ -1,0 +1,107 @@
+/* Akarshify Theme Update v2.0 — Ink & Vermilion
+   Shared editorial-minimalist palette. Loaded after legacy theme rules.
+   Preserve existing page structure, animations and interactions. */
+:root{
+ --cream:#F6F3EF;--rust:#D85B42;--ink:#20252B;--sage:#D85B42;
+ --sand:#F6F3EF;--midnight:#20252B;--slate:#20252B;
+ --ice:#F6F3EF;--electric:#D85B42;--chartreuse:#D85B42;
+ --cloud:#FFFFFF;--mist:#F6F3EF;--heading-accent-blue:#D85B42;
+}
+html{background:#F6F3EF}
+body{background:#F6F3EF!important;color:#20252B}
+::selection{background:#D85B42;color:#FFFFFF}
+:where(a,button,input,textarea,select):focus-visible{outline-color:#D85B42!important}
+.header{background:#F6F3EF!important}
+.header nav a:not(.nav-cta){color:#20252B!important}
+.header nav a:not(.nav-cta):after{background:#D85B42!important}
+.header nav a:not(.nav-cta):hover,.header nav a[aria-current="page"]:not(.nav-cta){color:#B84330!important}
+.header nav .nav-cta,
+body:has(>main>.hero.section) .header nav .nav-cta{
+ background:#D85B42!important;border-color:#D85B42!important;color:#FFFFFF!important
+}
+.header nav .nav-cta:hover,.header nav .nav-cta:focus-visible,
+body:has(>main>.hero.section) .header nav .nav-cta:hover,
+body:has(>main>.hero.section) .header nav .nav-cta:focus-visible{
+ background:#B84330!important;border-color:#B84330!important;color:#FFFFFF!important
+}
+/* Dark hero areas */
+body>main>.hero.section,body>main>.services-hero.section,body>main>.hero:first-child{
+ background:#20252B!important;color:#FFFFFF!important
+}
+body>main>.hero.section .hero-copy h2,
+body>main>.services-hero.section :is(h1,h2),
+body>main>.hero:first-child :is(h1,h2){color:#FFFFFF!important}
+body>main>.hero.section .hero-copy h2 em,
+body>main>.services-hero.section :is(h1,h2) em,
+body>main>.hero:first-child :is(h1,h2) em{color:#D85B42!important}
+body>main>.hero.section .eyebrow,
+body>main>.services-hero.section .eyebrow,
+body>main>.hero:first-child .eyebrow{color:#F2A18E!important}
+body>main>.hero.section .btn,
+body>main>.services-hero.section .btn{
+ background:#D85B42!important;border-color:#D85B42!important;color:#FFFFFF!important
+}
+body>main>.hero.section .btn:hover,
+body>main>.services-hero.section .btn:hover{background:#B84330!important;border-color:#B84330!important}
+body>main>.hero.section .hero-journey{
+ background:linear-gradient(145deg,#20252B,#303840)!important;
+ border-color:rgba(216,91,66,.45)!important
+}
+body>main>.hero.section .hero-journey .journey-head{color:#F2A18E!important}
+/* Homepage abstract options: recolor only; retain choice and animation */
+html:not([data-akarsh-art]) body>main>.hero.section::before,
+html[data-akarsh-art="contours"] body>main>.hero.section::before{
+ background:repeating-radial-gradient(ellipse at 90% 45%,transparent 0 24px,rgba(216,91,66,.19) 25px,transparent 26px 44px)!important
+}
+html[data-akarsh-art="diagonal"] body>main>.hero.section::before{
+ background:repeating-linear-gradient(90deg,transparent 0 38px,rgba(216,91,66,.2) 39px,transparent 40px 84px)!important
+}
+html[data-akarsh-art="glow"] body>main>.hero.section::before{
+ background:radial-gradient(ellipse at 60% 43%,rgba(216,91,66,.31),rgba(216,91,66,.1) 36%,transparent 70%)!important
+}
+/* Homepage light sections and editorial cards */
+body>main>:is(#services,#work,#contact){background:#F6F3EF!important;color:#20252B!important}
+body>main>#process{background:#FFFFFF!important;color:#20252B!important}
+body>main>:is(#services,#work,#process,#contact) :is(h2,h3){color:#20252B}
+body>main>:is(#services,#work,#process,#contact) h2 em{color:#D85B42!important}
+body>main>:is(#services,#work,#process,#contact) .eyebrow{color:#B84330!important}
+body>main>:is(#services,#work,#process) p:not(.eyebrow){color:#20252B!important}
+body>main>:is(#services,#work,#process,#contact) .btn{
+ background:#D85B42!important;border-color:#D85B42!important;color:#FFFFFF!important
+}
+body>main>:is(#services,#work,#process,#contact) .btn:hover{
+ background:#B84330!important;border-color:#B84330!important;color:#FFFFFF!important
+}
+body>main>#services .services-unified-card{border-color:rgba(216,91,66,.35)!important}
+body>main>#services .services-unified-card .services-unified-info p{color:#FFFFFF!important}
+body>main>#services .unified-ad .copper-heading-accent{color:#D85B42!important}
+body>main>#work .portfolio-copy,
+body>main>#process .process-quote,
+body>main>#contact .contact-panel{background:#20252B!important;color:#FFFFFF!important}
+body>main>#work .portfolio-title,
+body>main>#process .process-quote h3,
+body>main>#contact .contact-panel h2{color:#FFFFFF!important}
+body>main>#work .portfolio-title .portfolio-title-accent,
+body>main>#process .process-quote h3 em,
+body>main>#contact .contact-panel h2 em{color:#D85B42!important}
+body>main>#work .portfolio-index,
+body>main>#process .process-quote>span{color:#F2A18E!important}
+body>main>#work .portfolio-copy :is(.portfolio-summary,.portfolio-type,.portfolio-note),
+body>main>#process .process-quote p:not(.eyebrow),
+body>main>#contact .contact-panel p:not(.eyebrow){color:#FFFFFF!important}
+body>main>#work .portfolio-copy .portfolio-dots span.current{background:#D85B42!important}
+/* Services and About: use shared palette without removing their bespoke layouts. */
+body>main>:is(.intro,.values,#what-we-do,#tools,#benefits){background:#F6F3EF!important;color:#20252B!important}
+body>main>:is(.intro,.values,#what-we-do,#tools,#benefits) :is(h2,h3){color:#20252B}
+body>main>:is(.intro,.values,#what-we-do,#tools,#benefits) :is(em,.accent){color:#D85B42!important}
+body>main>:is(.intro,.values,#what-we-do,#tools,#benefits) p{color:#20252B}
+body>main>#advertisement-pipeline{background:#20252B!important;color:#FFFFFF!important}
+body>main>#advertisement-pipeline :is(h2,h3){color:#FFFFFF!important}
+body>main>#advertisement-pipeline :is(em,.accent){color:#D85B42!important}
+body>main>#advertisement-pipeline .pipeline-step{background:#303840!important;border-color:rgba(216,91,66,.3)!important}
+body>main>#advertisement-pipeline .pipeline-step>p:not(.eyebrow){color:#FFFFFF!important}
+body>main>#advertisement-pipeline .pipeline-step .eyebrow{color:#F2A18E!important}
+/* Preserve footer structure and decorations; unify its colors. */
+footer.site-footer{background:#20252B!important;--midnight:#20252B;--electric:#D85B42;--rust:#D85B42}
+footer.site-footer a:hover{ text-decoration-color:#D85B42!important }
+@media(prefers-reduced-motion:reduce){body>main>.hero.section::before,body>main>.hero.section::after{animation:none!important}}

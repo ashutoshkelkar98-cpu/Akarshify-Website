@@ -1,3 +1,14 @@
+## Theme v2.1 — Digital Journey character and layout correction (2026-11-12)
+
+### Homepage — illustrated character
+- Refined the SVG character's bushy hair silhouette, face framing, hands, and phone interaction details; tightened its SVG viewBox to improve the proportions shown on screen.
+- Changed the social-ad scene to a two-column layout so the phone and character each have dedicated space on desktop and mobile.
+- Reduced and repositioned the website-click confirmation so it no longer dominates the phone screen; applied Deep Atlantic and Saffron styling.
+- Preserved the 15-second browsing, ad discovery, curiosity lines, tap, and website redirect animations, along with reduced-motion handling.
+- **Files:** `index.html`, `css/theme-v2-1.css`, `CHANGELOG.md`.
+- **Commits:** [SVG refinement](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/12d0c6b671e01f7d634493f74f0f9da84ad6184e), [layout correction](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/b1811f886ef2a2e86b0390f32a80ff113b2ecc45).
+- **QA:** Committed to `main`, but the revised browser rendering has not yet been visually verified. This is an incremental SVG refinement, not a full illustration-quality replacement of the approved character sheet.
+
 ## Theme v2.1 — Approved SVG character implementation (2026-11-12)
 
 ### Homepage Digital Journey — character replacement

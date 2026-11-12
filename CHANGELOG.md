@@ -1,3 +1,14 @@
+## Theme v2.1 — Viewer scrolls to sponsored advertisement (2026-11-12)
+
+### Homepage Digital Journey — advertising interaction
+- Updated the animated character to hold a phone while browsing and scrolling through ordinary social posts.
+- The client's sponsored post slides into view after the scrolling sequence; the viewer taps it and the phone transitions to the client website.
+- Synchronized the figure's scrolling/tapping arm, miniature handset, enlarged phone display, sponsored-post reveal and existing website redirect within the 15-second loop.
+- Kept Deep Atlantic, White and Saffron, and included reduced-motion fallbacks.
+- **Files:** `index.html`, `css/theme-v2-1.css`, `CHANGELOG.md`.
+- **Commits:** [markup and cache update](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/d62a5b56fc9c0a1ff0aa345cd6f1ea7396487472), [animation styling](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/2e0d3a0a05d603ac35b0f6669737f6a633635a53).
+- **Verification:** Changes committed to `main`; browser playback and mobile overlap still require live visual review.
+
 ## Theme v2.1 — Animated viewer for Digital Journey (2026-11-12)
 
 ### Homepage advertising story

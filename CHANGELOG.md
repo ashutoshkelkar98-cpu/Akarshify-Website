@@ -1,3 +1,12 @@
+## Theme v2.1 — Saffron Digital Journey frame (2026-11-12)
+
+### Homepage animation border
+- Changed the outer border around the white Digital Journey animation panel to Saffron `#F4B544`, against the Deep Atlantic hero background.
+- Preserved the white panel, inner artwork, animation sequence, and behavior.
+- **Files:** `css/theme-v2-1.css`, `index.html`, `CHANGELOG.md`.
+- **Commits:** [border](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/e38db36a4406a40efebb023e8867b75174142dad), [cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/4fbfe7d21efd719551b411612c4c30b5112664cd).
+- **Verification:** Committed to `main`; live visual verification pending.
+
 ## Theme v2.1 — Homepage Digital Journey refinement (2026-11-12)
 
 ### Animated snippet and point tabs

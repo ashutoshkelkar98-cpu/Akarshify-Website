@@ -1,3 +1,14 @@
+## Theme v2.1 — Homepage Digital Journey refinement (2026-11-12)
+
+### Animated snippet and point tabs
+- Recolored the Digital Journey's outer frame, inner blue stage, white browser/phone mockups, and blue UI controls using the three-color palette.
+- Changed animated point/caption tabs to **white body text and saffron labels on blue**, improving contrast in the screenshot's campaign step.
+- Limited saffron to blue surfaces (including animated click and completion indicators); white mockup surfaces use blue controls instead.
+- Preserved all existing animation timings, scenes, transitions, and content.
+- **Files:** `css/theme-v2-1.css`, `index.html`, `CHANGELOG.md`.
+- **Commits:** [journey styling](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/a33e58de387a32b82a4566524faf93f3499b6db9), [cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/8ac9eba4bc13182236749d76f8a9022ba5c748cc).
+- **Verification:** Committed to `main`; live browser rendering not yet verified.
+
 # Akarshify Website — Changelog
 
 All notable website changes will be documented here, newest first.

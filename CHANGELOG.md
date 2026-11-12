@@ -4,8 +4,25 @@ All notable website changes will be documented here, newest first.
 
 This file tracks changes merged into the website repository. A GitHub commit does not by itself confirm a successful Cloudflare deployment or live visual verification.
 
-## Unreleased — Design exploration
-- Evaluating alternative three-color editorial/minimalist themes. No new palette has been applied.
+## Akarshify Theme Update v2.0 — Ink & Vermilion (2026-11-12)
+
+### Major change: Website-wide visual theme
+- Introduced the shared editorial-minimalist palette: Ink `#20252B`, Vermilion `#D85B42`, and Warm Ivory `#F6F3EF`.
+- Added `css/theme-v2.css` as a versioned override layer after the previous theme CSS.
+- Applied the theme across **Homepage**, **Services**, and **About Us** simultaneously.
+- Updated shared header navigation CTA, hero treatments, dark/light section colors, portfolio and promise panels, service pipeline, and footer palette.
+- Preserved existing wording, page structure, carousel interactions, animated journey, and enquiry functionality; no scripts were removed.
+- **Files:** `css/theme-v2.css`, `index.html`, `pages/services.html`, `pages/about.html`, `CHANGELOG.md`.
+- **Implementation commits:** [shared theme](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/96c16e6de9ab69b1b75daf6ddaaf03b9af90a13d), [homepage](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/ff8fb3d18069824704cacd2cb67cd3634f862c49), [About](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/9afc265464fa120a2e8f165c1301acff4e4a9159), [Services](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/d7ad1ac3be5ffc6616256b8f606420d62f7ad679).
+- **Verification:** Changes committed to `main`. Live Cloudflare rendering and mobile responsiveness not yet verified.
+
+### Change tracking convention
+- Group major releases under named headings (e.g. `Akarshify Theme Update v2.0`).
+- Use subheadings to identify affected features and pages.
+- Record purpose, files, preservation constraints, commit links, and actual verification status.
+
+## Unreleased — Further refinements
+- Review the v2.0 palette and typography across all pages after deployment; refine section-specific contrast and styling as needed.
 
 ## 2026-11-12 — Change tracking introduced
 - Added `CHANGELOG.md` to maintain a shared record of website updates.

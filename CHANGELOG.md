@@ -1,3 +1,14 @@
+## Theme v2.1 — Faster, more elaborate Digital Journey (2026-11-12)
+
+### Homepage animated snippet
+- Shortened the six-stage Digital Journey loop from 21 seconds to **15 seconds**, with more tightly coordinated stage and caption transitions.
+- Added staged website assembly, browser reveal, phone/feed arrival, animated ad CTA emphasis, click confirmation, redirect, and final visibility message.
+- Retained the existing business journey, wording, saffron outer panel, blue inner stage, and white/saffron point tabs.
+- Added explicit reduced-motion presentation with a static website scene.
+- **Files:** `css/theme-v2-1.css`, `index.html`, `CHANGELOG.md`.
+- **Commits:** [animation refinement](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/9aab04c99894b76922f7ef669174b2d1445ac0a7), [cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/9f3b8efc88726fabf89a457cf6f5b02a34a52a53).
+- **Verification:** Committed to `main`; live animation playback and responsive layout not yet independently verified.
+
 ## Theme v2.1 — Saffron Digital Journey panel (2026-11-12)
 
 ### Homepage animation frame

@@ -404,3 +404,91 @@ body>main>.hero.section .hero-journey .journey-story{
  body>main>.hero.section .hero-journey .js-site-image span,
  body>main>.hero.section .hero-journey .js-site-ready{opacity:1!important;transform:none!important}
 }
+
+/* Digital Journey v2.1 — animated human viewer of the sponsored ad.
+   Character observes phone, reaches toward ad, taps and follows redirect. */
+body>main>.hero.section .hero-journey .js-viewer{
+ position:absolute;z-index:5;right:4%;bottom:8px;width:100px;height:176px;
+ pointer-events:none;transform-origin:50% 100%;
+ animation:akarsh-viewer-arrive 15s ease-in-out infinite!important
+}
+body>main>.hero.section .hero-journey .js-viewer-head{
+ position:absolute;top:5px;left:29px;width:47px;height:51px;border-radius:47% 47% 46% 46%;
+ background:#FFFFFF;border:3px solid #102A43;z-index:3;
+ animation:akarsh-viewer-look 15s ease-in-out infinite!important
+}
+body>main>.hero.section .hero-journey .js-viewer-hair{
+ position:absolute;top:-3px;left:-3px;width:47px;height:21px;
+ border-radius:26px 26px 9px 6px;background:#102A43
+}
+body>main>.hero.section .hero-journey .js-viewer-head:after{
+ content:"";position:absolute;top:26px;left:12px;width:6px;height:6px;
+ border-radius:50%;background:#102A43;box-shadow:16px 0 #102A43
+}
+body>main>.hero.section .hero-journey .js-viewer-body{
+ position:absolute;left:11px;top:52px;width:81px;height:120px;
+ border-radius:38px 38px 12px 12px;background:#102A43;
+ border:2px solid #FFFFFF
+}
+body>main>.hero.section .hero-journey .js-viewer-arm{
+ position:absolute;z-index:4;top:80px;width:20px;height:83px;
+ border-radius:16px;background:#FFFFFF;border:3px solid #102A43;
+ transform-origin:50% 9px
+}
+body>main>.hero.section .hero-journey .js-viewer-arm-left{
+ left:4px;transform:rotate(18deg)
+}
+body>main>.hero.section .hero-journey .js-viewer-arm-right{
+ right:7px;animation:akarsh-viewer-tap 15s ease-in-out infinite!important
+}
+body>main>.hero.section .hero-journey .js-viewer-finger{
+ position:absolute;left:5px;bottom:-11px;width:8px;height:20px;
+ border-radius:8px;background:#FFFFFF;border:2px solid #102A43
+}
+body>main>.hero.section .hero-journey .js-viewer-signal{
+ position:absolute;z-index:6;right:47px;top:87px;
+ width:20px;height:20px;border:2px solid #F4B544;border-radius:50%;
+ opacity:0;animation:akarsh-viewer-signal 15s ease-out infinite!important
+}
+body>main>.hero.section .hero-journey .js-viewer-signal-two{
+ animation-delay:.15s!important
+}
+@keyframes akarsh-viewer-arrive{
+ 0%,32%{opacity:0;transform:translateX(28px) scale(.85)}
+ 40%,91%{opacity:1;transform:translateX(0) scale(1)}
+ 97%,100%{opacity:0;transform:translateX(14px) scale(.96)}
+}
+@keyframes akarsh-viewer-look{
+ 0%,40%{transform:rotate(0deg)}
+ 46%,64%{transform:rotate(-11deg)}
+ 70%,93%{transform:rotate(5deg)}
+ 100%{transform:rotate(0deg)}
+}
+@keyframes akarsh-viewer-tap{
+ 0%,45%{transform:rotate(-17deg)}
+ 53%{transform:rotate(34deg) translate(-19px,-13px)}
+ 59%,63%{transform:rotate(52deg) translate(-26px,-18px)}
+ 69%,100%{transform:rotate(-17deg)}
+}
+@keyframes akarsh-viewer-signal{
+ 0%,56%,65%,100%{opacity:0;transform:scale(.35)}
+ 60%{opacity:1;transform:scale(1.5)}
+}
+/* Reserve space for the viewer while keeping the sponsored post legible. */
+@media(min-width:540px){
+ body>main>.hero.section .hero-journey .journey-scene-social .js-phone{
+  margin-left:12%!important;margin-right:auto!important
+ }
+}
+@media(max-width:539px){
+ body>main>.hero.section .hero-journey .js-viewer{
+  right:-9px;bottom:4px;transform-origin:bottom right;
+  scale:.62
+ }
+ body>main>.hero.section .hero-journey .journey-scene-social .js-phone{
+  margin-left:0!important;margin-right:auto!important;width:min(195px,76%)!important
+ }
+}
+@media(prefers-reduced-motion:reduce){
+ body>main>.hero.section .hero-journey .js-viewer{display:none!important}
+}

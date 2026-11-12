@@ -1,3 +1,14 @@
+## Theme v2.1 — Animated viewer for Digital Journey (2026-11-12)
+
+### Homepage advertising story
+- Added a CSS-drawn human viewer beside the social-ad phone scene, with head movement, an animated reaching/tapping arm, and a tap pulse.
+- Synchronized the viewer with the existing 15-second sponsored-ad click and website redirect stages.
+- Used Deep Atlantic, White and Saffron; retained the saffron outer frame and existing scene copy.
+- Added small-screen positioning and hides the figure when reduced motion is preferred.
+- **Files:** `index.html`, `css/theme-v2-1.css`, `CHANGELOG.md`.
+- **Commits:** [figure markup and cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/60ec93f650fc6efabc3ecb175bb4d79ab16883f3), [figure animation](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/a185e2e2ad51ad5e46de118f915b6ffe7bc12daf).
+- **Verification:** Committed to `main`; live browser playback and responsive layout not yet independently verified.
+
 ## Theme v2.1 — Faster, more elaborate Digital Journey (2026-11-12)
 
 ### Homepage animated snippet

@@ -159,3 +159,107 @@ footer.site-footer a:hover{text-decoration-color:#F4B544!important}
 @media(prefers-reduced-motion:reduce){
  body>main>.hero.section::before,body>main>.hero.section::after{animation:none!important}
 }
+
+/* v2.1 refinement: homepage animated Digital Journey.
+   Saffron is confined to blue surfaces, including the animated point/caption tabs. */
+body>main>.hero.section .hero-journey{background:#FFFFFF!important;color:#102A43!important}
+body>main>.hero.section .hero-journey .journey-head,
+body>main>.hero.section .hero-journey .journey-live{color:#102A43!important}
+body>main>.hero.section .hero-journey .journey-story{
+ background:#102A43!important;border-color:#102A43!important
+}
+body>main>.hero.section .hero-journey .journey-story-line{
+ background:#173955!important;border:1px solid rgba(255,255,255,.4)!important;
+ color:#FFFFFF!important
+}
+body>main>.hero.section .hero-journey .journey-story-line b{
+ color:#F4B544!important
+}
+body>main>.hero.section .hero-journey .journey-scene-label{
+ color:#FFFFFF!important
+}
+body>main>.hero.section .hero-journey .journey-story-browser{
+ background:#FFFFFF!important;color:#102A43!important
+}
+body>main>.hero.section .hero-journey .js-browser-top,
+body>main>.hero.section .hero-journey .js-browser-inner{
+ background:#FFFFFF!important;color:#102A43!important
+}
+body>main>.hero.section .hero-journey .js-browser-top i,
+body>main>.hero.section .hero-journey .js-browser-top i:first-child,
+body>main>.hero.section .hero-journey .js-browser-top i:nth-child(2),
+body>main>.hero.section .hero-journey .js-browser-top i:nth-child(3){
+ background:#102A43!important
+}
+body>main>.hero.section .hero-journey .js-browser-top span,
+body>main>.hero.section .hero-journey .js-site-nav span,
+body>main>.hero.section .hero-journey .js-site-copy>span:not(.js-site-button){
+ color:#102A43!important
+}
+body>main>.hero.section .hero-journey .js-site-button,
+body>main>.hero.section .hero-journey .js-mobile-hero em{
+ background:#102A43!important;color:#FFFFFF!important
+}
+body>main>.hero.section .hero-journey .js-site-image{
+ background:#102A43!important
+}
+body>main>.hero.section .hero-journey .js-site-image span{
+ background:#FFFFFF!important
+}
+body>main>.hero.section .hero-journey .js-site-ready{
+ color:#FFFFFF!important
+}
+body>main>.hero.section .hero-journey .js-phone{
+ background:#FFFFFF!important;border-color:#102A43!important;color:#102A43!important
+}
+body>main>.hero.section .hero-journey .js-phone-notch{
+ background:#102A43!important
+}
+body>main>.hero.section .hero-journey .js-social-avatar{
+ background:#102A43!important;color:#FFFFFF!important
+}
+body>main>.hero.section .hero-journey .js-social-creative{
+ background:#102A43!important;color:#FFFFFF!important
+}
+body>main>.hero.section .hero-journey .js-social-creative small{
+ color:#FFFFFF!important
+}
+body>main>.hero.section .hero-journey .js-creative-circle{
+ border-color:rgba(244,181,68,.6)!important
+}
+body>main>.hero.section .hero-journey .js-social-actions span{
+ color:#102A43!important
+}
+body>main>.hero.section .hero-journey .js-social-link{
+ background:#102A43!important;color:#FFFFFF!important
+}
+body>main>.hero.section .hero-journey .js-tap-ring{
+ border-color:#F4B544!important
+}
+body>main>.hero.section .hero-journey .js-mobile-url,
+body>main>.hero.section .hero-journey .js-mobile-hero{
+ background:#FFFFFF!important;color:#102A43!important
+}
+body>main>.hero.section .hero-journey .js-mobile-hero span{
+ color:#102A43!important
+}
+body>main>.hero.section .hero-journey .journey-story-outcome{
+ background:#173955!important;border-color:#F4B544!important
+}
+body>main>.hero.section .hero-journey .journey-story-outcome strong,
+body>main>.hero.section .hero-journey .journey-story-outcome small{
+ color:#FFFFFF!important
+}
+body>main>.hero.section .hero-journey .js-outcome-dot{
+ background:#F4B544!important;border-color:#F4B544!important
+}
+body>main>.hero.section .hero-journey .js-click-event{
+ background:#173955!important;border-color:#F4B544!important;color:#FFFFFF!important;
+ box-shadow:0 8px 24px rgba(0,0,0,.24)!important
+}
+body>main>.hero.section .hero-journey .js-click-event-icon{
+ background:#F4B544!important;color:#102A43!important
+}
+body>main>.hero.section .hero-journey .js-click-event small{
+ color:#F4B544!important
+}

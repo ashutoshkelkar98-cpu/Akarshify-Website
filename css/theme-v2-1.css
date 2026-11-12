@@ -1,0 +1,161 @@
+/* Akarshify Theme Update v2.1 — Deep Atlantic / White / Saffron
+   Brand rule: saffron ONLY appears on Atlantic-blue surfaces.
+   Loaded after all previous styles. Existing content and JS remain intact. */
+:root{
+ --akarsh-blue:#102A43;--akarsh-white:#FFFFFF;--akarsh-accent:#F4B544;
+ --cream:#FFFFFF;--rust:#F4B544;--ink:#102A43;--sage:#FFFFFF;
+ --sand:#FFFFFF;--midnight:#102A43;--slate:#102A43;
+ --ice:#FFFFFF;--electric:#F4B544;--chartreuse:#F4B544;
+ --cloud:#FFFFFF;--mist:#FFFFFF;--heading-accent-blue:#F4B544;
+}
+html,body{background:#102A43!important;color:#FFFFFF}
+::selection{background:#F4B544;color:#102A43}
+:where(a,button,input,textarea,select):focus-visible{outline-color:#102A43}
+body :is(.header,.site-header){background:#FFFFFF!important;color:#102A43!important}
+.header nav a:not(.nav-cta){color:#102A43!important}
+.header nav a:not(.nav-cta):hover,.header nav a[aria-current="page"]:not(.nav-cta){color:#102A43!important}
+.header nav a:not(.nav-cta):after{background:#102A43!important}
+.header nav .nav-cta,body:has(>main>.hero.section) .header nav .nav-cta{
+ background:#102A43!important;border-color:#102A43!important;color:#FFFFFF!important
+}
+.header nav .nav-cta:hover,.header nav .nav-cta:focus-visible,
+body:has(>main>.hero.section) .header nav .nav-cta:hover,
+body:has(>main>.hero.section) .header nav .nav-cta:focus-visible{
+ background:#1B4569!important;border-color:#1B4569!important;color:#FFFFFF!important
+}
+/* Blue outer canvas; white foreground panels. */
+body>main{background:#102A43!important}
+body>main>:is(.hero,.services-hero){background:#102A43!important;color:#FFFFFF!important}
+body>main>:is(#services,#work,#process,#contact,.intro,.values,#what-we-do,#tools,#benefits){
+ background:#FFFFFF!important;color:#102A43!important
+}
+body>main>:is(#services,#work,#process,#contact,.intro,.values,#what-we-do,#tools,#benefits) :is(h1,h2,h3,h4){
+ color:#102A43!important
+}
+body>main>:is(#services,#work,#process,#contact,.intro,.values,#what-we-do,#tools,#benefits) :is(p,.eyebrow,.accent,em){
+ color:#102A43!important
+}
+body>main>:is(#services,#work,#process,#contact,.intro,.values,#what-we-do,#tools,#benefits) :is(a.btn,button.btn,.btn){
+ background:#102A43!important;border-color:#102A43!important;color:#FFFFFF!important
+}
+body>main>:is(#services,#work,#process,#contact,.intro,.values,#what-we-do,#tools,#benefits) :is(a.btn,button.btn,.btn):hover{
+ background:#1B4569!important;border-color:#1B4569!important;color:#FFFFFF!important
+}
+/* Hero: blue atmosphere with white typographic and UI surfaces. */
+body>main>.hero.section,
+body>main>.services-hero.section,
+body>main>.hero:first-child{background:#102A43!important;color:#FFFFFF!important}
+body>main>.hero.section :is(.hero-copy h2,.lead),
+body>main>.services-hero.section :is(h1,h2,p),
+body>main>.hero:first-child :is(h1,h2,p){color:#FFFFFF!important}
+body>main>.hero.section .hero-copy h2 em,
+body>main>.services-hero.section :is(h1,h2) em{color:#FFFFFF!important}
+body>main>.hero.section .eyebrow,
+body>main>.services-hero.section .eyebrow{color:#FFFFFF!important}
+body>main>.hero.section .btn,body>main>.services-hero.section .btn{
+ background:#F4B544!important;border-color:#F4B544!important;color:#102A43!important
+}
+body>main>.hero.section .btn:hover,body>main>.services-hero.section .btn:hover{
+ background:#FFCB6B!important;border-color:#FFCB6B!important;color:#102A43!important
+}
+/* Replace legacy orange/copper abstract backgrounds with white-blue geometry. */
+html:not([data-akarsh-art]) body>main>.hero.section::before,
+html[data-akarsh-art="contours"] body>main>.hero.section::before{
+ background:repeating-radial-gradient(ellipse at 90% 45%,transparent 0 24px,rgba(255,255,255,.2) 25px,transparent 26px 44px)!important
+}
+html[data-akarsh-art="diagonal"] body>main>.hero.section::before{
+ background:repeating-linear-gradient(90deg,transparent 0 38px,rgba(255,255,255,.2) 39px,transparent 40px 84px)!important
+}
+html[data-akarsh-art="glow"] body>main>.hero.section::before{
+ background:radial-gradient(ellipse at 60% 43%,rgba(255,255,255,.23),rgba(255,255,255,.08) 36%,transparent 70%)!important
+}
+body>main>.hero.section::after{background:radial-gradient(ellipse,rgba(255,255,255,.1),transparent 70%)!important}
+/* Digital journey: original scene motion remains; recolor its inner UI. */
+body>main>.hero.section .hero-journey{
+ background:#FFFFFF!important;color:#102A43!important;
+ border:1px solid rgba(255,255,255,.7)!important;box-shadow:0 22px 70px rgba(0,0,0,.16)!important
+}
+body>main>.hero.section .hero-journey :is(.journey-head,.journey-story-caption,.journey-scene-label,.journey-story-line,.journey-live){color:#102A43!important}
+body>main>.hero.section .hero-journey :is(.journey-story-browser,.journey-scene-site,.journey-scene-social){
+ background:#FFFFFF!important;border-color:rgba(16,42,67,.23)!important;color:#102A43!important
+}
+body>main>.hero.section .hero-journey :is(.journey-pulse,.js-outcome-dot){
+ background:#102A43!important;border-color:#102A43!important;box-shadow:0 0 0 4px rgba(16,42,67,.1)!important
+}
+/* Homepage service illustration: white panel, blue internal cards, saffron ONLY within blue. */
+body>main>#services .services-unified-card{background:#FFFFFF!important;border-color:rgba(16,42,67,.2)!important}
+body>main>#services .services-unified-art{background:#FFFFFF!important}
+body>main>#services :is(.unified-browser,.unified-browser-body){
+ background:#FFFFFF!important;border-color:rgba(16,42,67,.2)!important
+}
+body>main>#services :is(.unified-browser-bar,.unified-page-line,.unified-connection){
+ background:#102A43!important;border-color:#102A43!important
+}
+body>main>#services :is(.unified-ad,.unified-ad-core,.services-unified-info){
+ background:#102A43!important;color:#FFFFFF!important;border-color:#102A43!important
+}
+body>main>#services .unified-ad strong{color:#FFFFFF!important}
+body>main>#services .unified-ad .copper-heading-accent{color:#F4B544!important}
+body>main>#services .services-unified-info :is(p,h3,strong){color:#FFFFFF!important}
+body>main>#services .unified-cta{background:#102A43!important;color:#FFFFFF!important;border-color:#102A43!important}
+body>main>#services .unified-page-button{background:#102A43!important;color:#FFFFFF!important}
+body>main>#services .unified-ad-orbit{border-color:rgba(244,181,68,.6)!important}
+/* Project carousel: blue content card, white type, saffron markers. */
+body>main>#work .portfolio-copy{background:#102A43!important;color:#FFFFFF!important}
+body>main>#work .portfolio-copy :is(.portfolio-title,.portfolio-summary,.portfolio-type,.portfolio-note){color:#FFFFFF!important}
+body>main>#work .portfolio-copy .portfolio-title .portfolio-title-accent,
+body>main>#work .portfolio-copy .portfolio-index{color:#F4B544!important}
+body>main>#work .portfolio-copy .portfolio-dots span.current{background:#F4B544!important}
+body>main>#work .portfolio-copy :is(.portfolio-prev,.portfolio-next){color:#FFFFFF!important;border-color:rgba(255,255,255,.5)!important}
+/* Process quote and contact panel: immersive blue islands. */
+body>main>#process .process-quote,body>main>#contact .contact-panel{
+ background:#102A43!important;color:#FFFFFF!important
+}
+body>main>#process .process-quote :is(h3,p:not(.eyebrow)),
+body>main>#contact .contact-panel :is(h2,p:not(.eyebrow)){color:#FFFFFF!important}
+body>main>#process .process-quote h3 em,
+body>main>#contact .contact-panel h2 em,
+body>main>#process .process-quote>span{color:#F4B544!important}
+body>main>#contact .contact-panel .btn{
+ background:#F4B544!important;color:#102A43!important;border-color:#F4B544!important
+}
+body>main>#contact .contact-panel .btn:hover{
+ background:#FFCB6B!important;color:#102A43!important;border-color:#FFCB6B!important
+}
+/* Services pipeline is blue; steps remain blue so saffron can be used inside. */
+body>main>#advertisement-pipeline{background:#102A43!important;color:#FFFFFF!important}
+body>main>#advertisement-pipeline :is(h1,h2,h3,p){color:#FFFFFF!important}
+body>main>#advertisement-pipeline :is(.pipeline-step,.pipeline-grid .pipeline-step){
+ background:#173955!important;color:#FFFFFF!important;border-color:rgba(255,255,255,.18)!important
+}
+body>main>#advertisement-pipeline .pipeline-step :is(h3,p:not(.eyebrow)){color:#FFFFFF!important}
+body>main>#advertisement-pipeline .pipeline-step .eyebrow,
+body>main>#advertisement-pipeline :is(em,.accent){color:#F4B544!important}
+body>main>#advertisement-pipeline :is(.pipeline-inline-link,a.btn){color:#FFFFFF!important}
+/* About: white editorial panels with blue text and blue cards where appropriate. */
+body>main>.values :is(.value-card,.value-grid .value-card){
+ background:#102A43!important;border-color:#102A43!important;color:#FFFFFF!important
+}
+body>main>.values .value-card :is(h3,p){color:#FFFFFF!important}
+body>main>.values .value-card :is(.eyebrow,em,.accent){color:#F4B544!important}
+body>main>.values .value-card:hover{background:#173955!important;border-color:#102A43!important}
+/* Service toolkit: white foreground with blue elements, never saffron on white. */
+body>main>#tools :is(.tool,.toolkit-grid .tool){
+ background:#102A43!important;color:#FFFFFF!important;border-color:#102A43!important
+}
+body>main>#tools .tool :is(h3,p,.tool-copy,.tool-index){color:#FFFFFF!important}
+body>main>#tools .tool :is(.tool-icon,.toolkit-accent){color:#F4B544!important}
+body>main>#benefits :is(.outcome,.outcome-one,.outcome-two,.outcome-three){
+ color:#102A43!important;border-color:rgba(16,42,67,.25)!important
+}
+body>main>#benefits .outcome :is(h3,p){color:#102A43!important}
+/* Shared footer: white text on Atlantic; no saffron on white overlays. */
+footer.site-footer{
+ background:#102A43!important;color:#FFFFFF!important;
+ --midnight:#102A43;--electric:#F4B544;--rust:#F4B544
+}
+footer.site-footer :is(h2,h3,p,span,a){color:#FFFFFF}
+footer.site-footer a:hover{text-decoration-color:#F4B544!important}
+@media(prefers-reduced-motion:reduce){
+ body>main>.hero.section::before,body>main>.hero.section::after{animation:none!important}
+}

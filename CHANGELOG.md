@@ -4,6 +4,29 @@ All notable website changes will be documented here, newest first.
 
 This file tracks changes merged into the website repository. A GitHub commit does not by itself confirm a successful Cloudflare deployment or live visual verification.
 
+## Akarshify Theme Update v2.1 — Deep Atlantic, White & Saffron (2026-11-12)
+
+### 01 — Global color and surface hierarchy
+- Changed primary background to Deep Atlantic `#102A43`, foreground panels to White `#FFFFFF`, and accent to Saffron `#F4B544`.
+- Defined the rule **Saffron only on blue surfaces**. On white surfaces, use blue for headings, icons, and buttons.
+- Added `css/theme-v2-1.css` and switched Homepage, About Us, and Services to it in place of the v2.0 stylesheet.
+
+### 02 — Homepage and animated UI
+- Recolored hero artwork, digital-journey UI, services illustration, portfolio text panel, process promise, and contact panel using the new surface hierarchy.
+- Kept existing scene transitions, animations, carousel behavior, and enquiry code.
+
+### 03 — Services and About Us
+- Recolored advertising pipeline cards, toolkit items, About Us values cards, and light editorial sections.
+- Preserved page structure and copy.
+
+### 04 — Shared navigation and footer
+- Recolored shared navigation and footer using Blue and White, with Saffron reserved for blue-surface accents.
+
+### 05 — Files, commits, and verification
+- **Files:** `css/theme-v2-1.css`, `index.html`, `pages/about.html`, `pages/services.html`, `CHANGELOG.md`.
+- **Commits:** [theme stylesheet](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/bb3be598f965907bd84c54a4060c6b8e157a04a1), [homepage](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/cdaa8bab35e6b98f6701c4a0af43dcec1d8cff6f), [About Us](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/a924fe7a40d4faf19d98863a0c4e1a72a74d3b72), [Services](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/bb55dfbf9347366cef633ea0c159fedaaedcfdd3).
+- **Verification:** Committed to `main`; live Cloudflare rendering and mobile responsiveness not independently verified. Earlier hardcoded illustration colors may need further audit and refinement.
+
 ## Akarshify Theme Update v2.0 — Ink & Vermilion (2026-11-12)
 
 ### Major change: Website-wide visual theme

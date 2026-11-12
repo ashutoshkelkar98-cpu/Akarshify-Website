@@ -1,3 +1,12 @@
+## Theme v2.1 — Saffron Digital Journey panel (2026-11-12)
+
+### Homepage animation frame
+- Changed the outer Digital Journey panel fill from White to Saffron `#F4B544` and retained Deep Atlantic text for legibility.
+- Kept the inner animation stage blue and its browser mockups white; animation timing and behavior unchanged.
+- **Files:** `css/theme-v2-1.css`, `index.html`, `CHANGELOG.md`.
+- **Commits:** [panel fill](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/720bc4ebdbc904c5b830948468287a5f0b5d8f5d), [cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/a8a59c3e31280bca4c75933244bf69836d71d806).
+- **Verification:** Committed to `main`; live visual verification pending.
+
 ## Theme v2.1 — Saffron Digital Journey frame (2026-11-12)
 
 ### Homepage animation border

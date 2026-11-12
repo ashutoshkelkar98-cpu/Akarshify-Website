@@ -1,3 +1,13 @@
+## Theme v2.1 — Approved SVG character implementation (2026-11-12)
+
+### Homepage Digital Journey — character replacement
+- Replaced the previous box-based CSS character with an original, full-body inline SVG inspired by the approved character sheet: bushy hair, expressive eyes, saffron overshirt, white tee, dark jeans, white sneakers, and natural proportions.
+- Added independent SVG animation for head tilt, eyes, arms, handset, and three saffron curiosity lines at the sponsored-ad discovery moment.
+- Preserved the 15-second phone-feed, sponsored advertisement, tap, and client website redirect sequence; adjusted character scale for mobile and added reduced-motion styling.
+- **Files:** `index.html`, `css/theme-v2-1.css`, `CHANGELOG.md`.
+- **Commits:** [SVG markup](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/bb47ad462086c93509e7ccd75aed4d8391569bf5), [character animation](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/44ea04998c03c5f096e896b0daecc77af64b646f).
+- **Verification:** Committed to `main`; browser playback and responsive composition require visual QA. The illustration is an SVG recreation of the approved concept, not a pixel-identical conversion of the generated design sheet.
+
 ## Theme v2.1 — Cartoon viewer redesign (2026-11-12)
 
 ### Homepage Digital Journey character

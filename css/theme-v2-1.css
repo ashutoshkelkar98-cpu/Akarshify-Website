@@ -753,3 +753,59 @@ body>main>.hero.section .hero-journey .journey-person .jp-pupil{
  }
  body>main>.hero.section .hero-journey .journey-person .jp-curiosity{opacity:0!important}
 }
+
+/* Digital Journey composition QA: give the illustrated person breathing room. */
+body>main>.hero.section .hero-journey .journey-scene-social{
+ display:grid!important;
+ grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+ grid-template-rows:auto minmax(0,1fr);
+ column-gap:14px;align-items:end!important;
+ padding:0 16px 4px!important;
+}
+body>main>.hero.section .hero-journey .journey-scene-social .journey-scene-label{
+ grid-column:1/-1;align-self:start
+}
+body>main>.hero.section .hero-journey .journey-scene-social .js-phone{
+ grid-column:1;grid-row:2;
+ margin:0 auto!important;
+ width:min(208px,100%)!important;
+ height:min(263px,100%)!important;
+ align-self:end;
+}
+body>main>.hero.section .hero-journey .journey-scene-social .journey-person{
+ position:relative!important;grid-column:2;grid-row:2;
+ width:100%!important;height:100%!important;max-width:215px!important;
+ right:auto!important;bottom:auto!important;
+ justify-self:center;align-self:end;object-fit:contain;
+ filter:drop-shadow(0 4px 2px rgba(16,42,67,.10));
+}
+body>main>.hero.section .hero-journey .journey-scene-social .js-click-event{
+ left:50%!important;bottom:3px!important;max-width:78%!important;
+ padding:6px 10px!important;gap:7px!important;
+ background:#102A43!important;border:1px solid #F4B544!important;
+ box-shadow:0 5px 14px rgba(16,42,67,.22)!important;
+}
+body>main>.hero.section .hero-journey .journey-scene-social .js-click-event strong{
+ font-size:10px!important
+}
+body>main>.hero.section .hero-journey .journey-scene-social .js-click-event small{
+ font-size:8px!important
+}
+body>main>.hero.section .hero-journey .journey-scene-social .js-click-event-icon{
+ background:#F4B544!important;color:#102A43!important
+}
+@media(max-width:539px){
+ body>main>.hero.section .hero-journey .journey-scene-social{
+  grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+  column-gap:3px;padding:0 2px 4px!important
+ }
+ body>main>.hero.section .hero-journey .journey-scene-social .journey-person{
+  max-width:125px!important;scale:1!important
+ }
+ body>main>.hero.section .hero-journey .journey-scene-social .js-phone{
+  width:min(170px,100%)!important;height:250px!important
+ }
+ body>main>.hero.section .hero-journey .journey-scene-social .js-click-event{
+  max-width:95%!important;bottom:0!important
+ }
+}

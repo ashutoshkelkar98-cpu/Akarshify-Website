@@ -1,3 +1,12 @@
+## Theme v2.1 — Cartoon viewer redesign (2026-11-12)
+
+### Homepage Digital Journey character
+- Redesigned the animated viewer as an original flat 2-D cartoon character, with an oversized rounded head, expressive eyes and smile, playful hair silhouette, simplified arms, and a saffron top with deep-blue outlines.
+- Preserved the existing handset, scrolling, sponsored-ad discovery, tap, and website-redirect animation choreography.
+- Retained mobile sizing and reduced-motion behavior; visual playback still requires browser review.
+- **Files:** `css/theme-v2-1.css`, `index.html`, `CHANGELOG.md`.
+- **Commits:** [cartoon styling](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/33369bddf7dcb3fce8570c8550e342ab2691c3fc), [cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/01d618236d48fbaadf4934eab31d3ae8998b8ab2).
+
 ## Theme v2.1 — Viewer scrolls to sponsored advertisement (2026-11-12)
 
 ### Homepage Digital Journey — advertising interaction

@@ -263,3 +263,6 @@ body>main>.hero.section .hero-journey .js-click-event-icon{
 body>main>.hero.section .hero-journey .js-click-event small{
  color:#F4B544!important
 }
+
+/* Digital Journey: saffron outline around the white animation container. */
+body>main>.hero.section .hero-journey{border:2px solid #F4B544!important}

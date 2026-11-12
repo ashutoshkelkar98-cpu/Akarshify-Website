@@ -266,3 +266,7 @@ body>main>.hero.section .hero-journey .js-click-event small{
 
 /* Digital Journey: saffron outline around the white animation container. */
 body>main>.hero.section .hero-journey{border:2px solid #F4B544!important}
+
+/* Digital Journey outer panel: saffron surface with Atlantic lettering. */
+body>main>.hero.section .hero-journey{background:#F4B544!important;border-color:#F4B544!important;color:#102A43!important}
+body>main>.hero.section .hero-journey .journey-head,body>main>.hero.section .hero-journey .journey-live{color:#102A43!important}

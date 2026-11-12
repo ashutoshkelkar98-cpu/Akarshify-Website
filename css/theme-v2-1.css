@@ -596,3 +596,67 @@ body>main>.hero.section .hero-journey .js-phone-site{
  body>main>.hero.section .hero-journey .js-feed-before-ad{display:none!important}
  body>main>.hero.section .hero-journey .js-social-post{animation:none!important;opacity:1!important;transform:none!important}
 }
+
+/* Digital Journey: original flat 2-D cartoon viewer, rounded and expressive.
+   A playful editorial illustration rather than a realistic figure or licensed character. */
+body>main>.hero.section .hero-journey .js-viewer{
+ width:116px!important;height:184px!important;right:3%!important;
+ filter:drop-shadow(0 5px 0 rgba(0,0,0,.12));
+}
+body>main>.hero.section .hero-journey .js-viewer-head{
+ width:72px!important;height:70px!important;left:21px!important;top:3px!important;
+ border:3px solid #102A43!important;border-radius:49% 48% 45% 45%!important;
+ background:#FFFFFF!important;box-shadow:inset -5px -4px 0 rgba(16,42,67,.08);
+}
+body>main>.hero.section .hero-journey .js-viewer-hair{
+ top:-4px!important;left:-3px!important;width:73px!important;height:30px!important;
+ border-radius:40px 38px 12px 13px!important;background:#102A43!important;
+ transform:rotate(-3deg)
+}
+body>main>.hero.section .hero-journey .js-viewer-hair:before{
+ content:"";position:absolute;top:-7px;left:13px;width:18px;height:17px;
+ background:#102A43;border-radius:80% 15% 50% 10%;transform:rotate(-18deg)
+}
+body>main>.hero.section .hero-journey .js-viewer-head:after{
+ top:37px!important;left:17px!important;width:7px!important;height:8px!important;
+ border-radius:50%!important;box-shadow:25px 0 #102A43!important;
+ background:#102A43!important
+}
+body>main>.hero.section .hero-journey .js-viewer-head:before{
+ content:"";position:absolute;z-index:4;top:51px;left:29px;width:14px;height:6px;
+ border-bottom:3px solid #102A43;border-radius:0 0 50% 50%
+}
+body>main>.hero.section .hero-journey .js-viewer-body{
+ top:69px!important;left:14px!important;width:89px!important;height:112px!important;
+ background:#F4B544!important;border:3px solid #102A43!important;
+ border-radius:43px 43px 17px 17px!important;
+ box-shadow:inset -8px 0 0 rgba(16,42,67,.08)
+}
+body>main>.hero.section .hero-journey .js-viewer-body:before{
+ content:"";position:absolute;top:10px;left:29px;width:24px;height:12px;
+ border-radius:0 0 16px 16px;border-bottom:3px solid #102A43
+}
+body>main>.hero.section .hero-journey .js-viewer-arm{
+ top:94px!important;width:24px!important;height:75px!important;
+ background:#FFFFFF!important;border:3px solid #102A43!important;
+ border-radius:16px!important
+}
+body>main>.hero.section .hero-journey .js-viewer-arm-left{left:8px!important}
+body>main>.hero.section .hero-journey .js-viewer-arm-right{right:5px!important}
+body>main>.hero.section .hero-journey .js-viewer-finger{
+ width:10px!important;height:19px!important;left:5px!important;
+ background:#FFFFFF!important;border:2px solid #102A43!important
+}
+body>main>.hero.section .hero-journey .js-viewer-handset{
+ left:1px!important;top:109px!important;width:32px!important;height:53px!important;
+ background:#102A43!important;border:3px solid #FFFFFF!important;
+ box-shadow:0 0 0 2px #102A43!important;border-radius:8px!important
+}
+body>main>.hero.section .hero-journey .js-viewer-signal{
+ border-color:#FFFFFF!important;box-shadow:0 0 0 2px #F4B544
+}
+@media(max-width:539px){
+ body>main>.hero.section .hero-journey .js-viewer{
+  right:-12px!important;bottom:2px!important;scale:.58!important
+ }
+}

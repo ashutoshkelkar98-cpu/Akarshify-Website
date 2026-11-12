@@ -660,3 +660,96 @@ body>main>.hero.section .hero-journey .js-viewer-signal{
   right:-12px!important;bottom:2px!important;scale:.58!important
  }
 }
+
+/* Approved character: full-body, original SVG illustration.
+   Replaces the earlier CSS box-based figure without changing the phone demo. */
+body>main>.hero.section .hero-journey .journey-person{
+ position:absolute;z-index:6;right:1%;bottom:0;
+ display:block;width:155px;height:290px;max-width:45%;
+ overflow:visible;pointer-events:none;
+ transform-origin:50% 100%;
+ animation:jp-enter 15s ease-in-out infinite!important
+}
+body>main>.hero.section .hero-journey .journey-person .jp-head{
+ transform-origin:116px 143px;
+ animation:jp-head-look 15s ease-in-out infinite!important
+}
+body>main>.hero.section .hero-journey .journey-person .jp-right-arm{
+ transform-origin:156px 159px;
+ animation:jp-hand-tap 15s ease-in-out infinite!important
+}
+body>main>.hero.section .hero-journey .journey-person .jp-left-arm{
+ transform-origin:68px 158px;
+ animation:jp-hand-hold 15s ease-in-out infinite!important
+}
+body>main>.hero.section .hero-journey .journey-person .jp-phone{
+ transform-origin:130px 219px;
+ animation:jp-phone-move 15s ease-in-out infinite!important
+}
+body>main>.hero.section .hero-journey .journey-person .jp-curiosity{
+ opacity:0;transform-origin:174px 189px;
+ animation:jp-curiosity-lines 15s ease-out infinite!important
+}
+body>main>.hero.section .hero-journey .journey-person .jp-ad-on-phone{
+ animation:jp-mini-ad 15s ease-in-out infinite!important
+}
+body>main>.hero.section .hero-journey .journey-person .jp-pupil{
+ animation:jp-eyes 15s ease-in-out infinite!important
+}
+@keyframes jp-enter{
+ 0%,31%{opacity:0;transform:translateY(20px)}
+ 38%,92%{opacity:1;transform:translateY(0)}
+ 100%{opacity:0;transform:translateY(12px)}
+}
+@keyframes jp-head-look{
+ 0%,39%{transform:rotate(-3deg)}
+ 45%,53%{transform:rotate(3deg)}
+ 57%,70%{transform:rotate(9deg)}
+ 77%,100%{transform:rotate(-2deg)}
+}
+@keyframes jp-hand-hold{
+ 0%,40%{transform:rotate(-4deg)}
+ 44%,91%{transform:rotate(3deg)}
+ 100%{transform:rotate(-4deg)}
+}
+@keyframes jp-hand-tap{
+ 0%,40%{transform:rotate(0)}
+ 44%{transform:rotate(9deg)}
+ 48%{transform:rotate(-5deg)}
+ 52%{transform:rotate(9deg)}
+ 56%{transform:rotate(0)}
+ 62%{transform:rotate(-15deg)}
+ 66%{transform:rotate(4deg)}
+ 70%,100%{transform:rotate(0)}
+}
+@keyframes jp-phone-move{
+ 0%,39%{transform:rotate(-4deg)}
+ 46%,60%{transform:rotate(2deg)}
+ 65%,91%{transform:rotate(0)}
+ 100%{transform:rotate(-4deg)}
+}
+@keyframes jp-curiosity-lines{
+ 0%,54%,61%,100%{opacity:0;transform:scale(.55)}
+ 56%,59%{opacity:1;transform:scale(1)}
+}
+@keyframes jp-mini-ad{
+ 0%,51%{opacity:0}
+ 56%,100%{opacity:1}
+}
+@keyframes jp-eyes{
+ 0%,52%{transform:translateX(0)}
+ 56%,67%{transform:translate(2px,2px)}
+ 73%,100%{transform:translateX(0)}
+}
+@media(max-width:539px){
+ body>main>.hero.section .hero-journey .journey-person{
+  width:112px;height:211px;right:-4px;bottom:2px;max-width:43%
+ }
+}
+@media(prefers-reduced-motion:reduce){
+ body>main>.hero.section .hero-journey .journey-person,
+ body>main>.hero.section .hero-journey .journey-person *{
+  animation:none!important;opacity:1!important;transform:none!important
+ }
+ body>main>.hero.section .hero-journey .journey-person .jp-curiosity{opacity:0!important}
+}

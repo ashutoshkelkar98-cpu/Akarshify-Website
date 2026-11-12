@@ -492,3 +492,107 @@ body>main>.hero.section .hero-journey .js-viewer-signal-two{
 @media(prefers-reduced-motion:reduce){
  body>main>.hero.section .hero-journey .js-viewer{display:none!important}
 }
+
+/* Digital Journey refinement: browse -> scroll -> sponsored post -> tap -> redirect.
+   The foreground phone is an enlarged view of the handset the character holds. */
+body>main>.hero.section .hero-journey .js-feed-before-ad{
+ position:absolute;z-index:3;inset:35px 6px 9px;background:#FFFFFF;
+ display:flex;flex-direction:column;gap:10px;padding:6px;overflow:hidden;
+ animation:akarsh-ordinary-feed 15s ease-in-out infinite!important
+}
+body>main>.hero.section .hero-journey .js-feed-post{
+ display:flex;gap:8px;align-items:center;min-height:31px
+}
+body>main>.hero.section .hero-journey .js-feed-avatar{
+ width:23px;height:23px;flex:none;border-radius:50%;background:#102A43
+}
+body>main>.hero.section .hero-journey .js-feed-lines{
+ display:flex;flex:1;flex-direction:column;gap:5px
+}
+body>main>.hero.section .hero-journey .js-feed-lines i{
+ height:5px;border-radius:5px;background:#102A43;opacity:.35
+}
+body>main>.hero.section .hero-journey .js-feed-lines i:last-child{width:65%;opacity:.18}
+body>main>.hero.section .hero-journey .js-feed-photo{
+ height:100px;flex:none;border-radius:9px;background:#102A43;
+ display:flex;align-items:end;gap:6px;padding:12px
+}
+body>main>.hero.section .hero-journey .js-feed-photo i{
+ height:25px;flex:1;border-radius:4px;background:#FFFFFF;opacity:.7
+}
+body>main>.hero.section .hero-journey .js-feed-photo i:nth-child(2){height:52px;opacity:.9}
+body>main>.hero.section .hero-journey .js-feed-photo i:nth-child(3){height:38px;opacity:.6}
+@keyframes akarsh-ordinary-feed{
+ 0%,32%{opacity:0;transform:translateY(30px)}
+ 38%{opacity:1;transform:translateY(0)}
+ 44%{opacity:1;transform:translateY(-15px)}
+ 50%{opacity:1;transform:translateY(-55px)}
+ 55%{opacity:0;transform:translateY(-115px)}
+ 56%,100%{opacity:0;transform:translateY(-115px)}
+}
+body>main>.hero.section .hero-journey .js-social-post{
+ animation:akarsh-sponsored-reveal 15s ease-in-out infinite!important
+}
+@keyframes akarsh-sponsored-reveal{
+ 0%,49%{opacity:0;transform:translateY(85px)}
+ 56%,74%{opacity:1;transform:translateY(0)}
+ 78%,100%{opacity:0;transform:translateY(-8px)}
+}
+body>main>.hero.section .hero-journey .js-viewer-handset{
+ position:absolute;z-index:7;left:2px;top:95px;width:28px;height:47px;
+ border:3px solid #FFFFFF;border-radius:6px;background:#102A43;
+ transform:rotate(-12deg);
+ animation:akarsh-held-phone 15s ease-in-out infinite!important
+}
+body>main>.hero.section .hero-journey .js-viewer-handset-screen{
+ display:flex;flex-direction:column;gap:3px;margin:5px 3px;
+ overflow:hidden
+}
+body>main>.hero.section .hero-journey .js-viewer-handset-screen i{
+ display:block;height:6px;background:#FFFFFF;border-radius:2px;
+ animation:akarsh-mini-scroll 15s ease-in-out infinite!important
+}
+body>main>.hero.section .hero-journey .js-viewer-handset-screen i:nth-child(2){
+ height:12px;background:#F4B544
+}
+@keyframes akarsh-mini-scroll{
+ 0%,36%{transform:translateY(0)}
+ 43%{transform:translateY(-5px)}
+ 50%{transform:translateY(-13px)}
+ 57%,100%{transform:translateY(-13px)}
+}
+@keyframes akarsh-held-phone{
+ 0%,34%{opacity:0;transform:rotate(-12deg) translateY(12px)}
+ 40%,91%{opacity:1;transform:rotate(-12deg) translateY(0)}
+ 97%,100%{opacity:0;transform:rotate(-12deg) translateY(12px)}
+}
+/* The viewer uses the left hand to hold the handset and right hand to scroll/tap. */
+body>main>.hero.section .hero-journey .js-viewer-arm-left{
+ animation:akarsh-hold-arm 15s ease-in-out infinite!important
+}
+@keyframes akarsh-hold-arm{
+ 0%,37%{transform:rotate(18deg)}
+ 43%,92%{transform:rotate(-25deg) translate(3px,-6px)}
+ 100%{transform:rotate(18deg)}
+}
+body>main>.hero.section .hero-journey .js-viewer-arm-right{
+ animation:akarsh-scroll-and-tap 15s ease-in-out infinite!important
+}
+@keyframes akarsh-scroll-and-tap{
+ 0%,38%{transform:rotate(-17deg)}
+ 43%{transform:rotate(30deg) translate(-14px,-8px)}
+ 47%{transform:rotate(40deg) translate(-19px,-16px)}
+ 50%{transform:rotate(30deg) translate(-14px,-8px)}
+ 53%{transform:rotate(40deg) translate(-19px,-16px)}
+ 57%{transform:rotate(28deg) translate(-12px,-9px)}
+ 61%,65%{transform:rotate(52deg) translate(-26px,-18px)}
+ 71%,100%{transform:rotate(-17deg)}
+}
+/* The ad and redirected website remain the two distinct views. */
+body>main>.hero.section .hero-journey .js-phone-site{
+ z-index:5;animation:akarsh-redirect-15 15s ease-in-out infinite!important
+}
+@media(prefers-reduced-motion:reduce){
+ body>main>.hero.section .hero-journey .js-feed-before-ad{display:none!important}
+ body>main>.hero.section .hero-journey .js-social-post{animation:none!important;opacity:1!important;transform:none!important}
+}

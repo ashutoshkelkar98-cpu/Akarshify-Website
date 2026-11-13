@@ -909,3 +909,8 @@ footer.site-footer .footer-about .brand>span{color:#F4B544!important;}
 
 /* Shared footer: match the site's Deep Atlantic Blue canvas. */
 footer.site-footer{background:#102A43!important;}
+
+/* Match Tools & Technologies cards to the lighter Advertisement Pipeline panel blue. */
+body>main #tools .toolkit-grid .tool,
+body>main #tools .toolkit-grid .tool:hover,
+body>main #tools .toolkit-grid .tool:focus-within{background:#173955!important;}

@@ -1,3 +1,12 @@
+## Services — Card text contrast correction (2026-11-13)
+
+### Website Development and Digital Advertising cards
+- Corrected unreadable headings and descriptions on both blue service cards by explicitly setting headings and list items to white and descriptions to near-white.
+- Kept existing card colors, illustration, copy, and interaction styles unchanged.
+- **Files:** `css/theme-v2-1.css`, `pages/services.html`, `CHANGELOG.md`.
+- **Commits:** [contrast fix](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/84395681b449c07c69b8b88d18bacb0e477ebb7d), [cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/cac5c7b89c50bfe4d00a37f84ad5329053e19b32).
+- **QA:** Committed to `main`; visual browser check pending.
+
 ## Theme v2.1 — White and saffron hero heading emphasis (2026-11-13)
 
 ### Services and homepage heroes

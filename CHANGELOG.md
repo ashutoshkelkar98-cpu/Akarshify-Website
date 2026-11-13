@@ -1,3 +1,12 @@
+## Shared footer — Deep Atlantic Blue background (2026-11-13)
+
+### Footer theme consistency
+- Replaced the footer's legacy Midnight Navy `#0B1426` background with Deep Atlantic Blue `#102A43` across Homepage, Services, and About Us.
+- Preserved footer structure, links, typography, white content, and saffron wordmark dot.
+- **Files:** `css/theme-v2-1.css`, `index.html`, `pages/services.html`, `pages/about.html`, `CHANGELOG.md`.
+- **Commit:** [footer background update](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/daaccc41a7d4f4639baea8c0982889f60f95395c).
+- **QA:** Committed to `main`; live browser verification pending.
+
 ## Branding — Saffron wordmark dot (2026-11-13)
 
 ### Shared header and footer

@@ -864,3 +864,6 @@ body>main #what-we-do .service-overview .offer .offer-content li{
 body>main #what-we-do .service-overview .offer .offer-content small{
  color:#FFFFFF!important;
 }
+
+/* Advertisement Pipeline: saffron stage numbers on blue cards. */
+body>main #advertisement-pipeline .pipeline-grid .pipeline-step>span{color:#F4B544!important;}

@@ -849,3 +849,18 @@ body>main>.services-hero.section h1 em{
 body>main>.hero.section .hero-copy h2 em{
  color:#F4B544!important;font-style:normal!important;
 }
+
+/* Services overview cards: ensure high-contrast text on both dark blue surfaces. */
+body>main #what-we-do .service-overview .offer .offer-content h3{
+ color:#FFFFFF!important;
+}
+body>main #what-we-do .service-overview .offer .offer-content p{
+ color:#F0F5FA!important;opacity:1!important;
+}
+body>main #what-we-do .service-overview .offer .offer-content ul,
+body>main #what-we-do .service-overview .offer .offer-content li{
+ color:#FFFFFF!important;opacity:1!important;
+}
+body>main #what-we-do .service-overview .offer .offer-content small{
+ color:#FFFFFF!important;
+}

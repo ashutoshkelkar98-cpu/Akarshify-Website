@@ -902,3 +902,7 @@ body>main #tools .toolkit-grid .tool :is(h3,p,.tool-index){
  body>main #tools .toolkit-grid .tool:hover,
  body>main #tools .toolkit-grid .tool:focus-within{transform:none!important}
 }
+
+/* Brand wordmark: saffron terminal dot in header and footer on every page. */
+.header .brand-header .brand-name>span,
+footer.site-footer .footer-about .brand>span{color:#F4B544!important;}

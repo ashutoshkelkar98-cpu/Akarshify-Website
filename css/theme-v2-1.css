@@ -840,3 +840,12 @@ body>main>#services .services-unified-card:hover .unified-cta{
  background:#FFD078!important;color:#102A43!important;
  border-color:#FFD078!important;
 }
+
+/* Typography: restrained saffron emphasis only on Atlantic-blue hero surfaces. */
+body>main>.services-hero.section h1{color:#FFFFFF!important}
+body>main>.services-hero.section h1 em{
+ color:#F4B544!important;font-style:normal!important;
+}
+body>main>.hero.section .hero-copy h2 em{
+ color:#F4B544!important;font-style:normal!important;
+}

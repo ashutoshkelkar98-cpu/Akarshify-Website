@@ -906,3 +906,6 @@ body>main #tools .toolkit-grid .tool :is(h3,p,.tool-index){
 /* Brand wordmark: saffron terminal dot in header and footer on every page. */
 .header .brand-header .brand-name>span,
 footer.site-footer .footer-about .brand>span{color:#F4B544!important;}
+
+/* Shared footer: match the site's Deep Atlantic Blue canvas. */
+footer.site-footer{background:#102A43!important;}

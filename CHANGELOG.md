@@ -1,3 +1,11 @@
+## Services — Saffron advertisement pipeline labels (2026-11-13)
+
+### Advertisement Pipeline
+- Updated the five step labels (Discover, Plan, Connect, Launch, Learn) to Saffron `#F4B544` against their Deep Atlantic Blue cards, preserving the remaining typography and layout.
+- **Files:** `css/theme-v2-1.css`, `pages/services.html`, `CHANGELOG.md`.
+- **Commits:** [CSS](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/f14ae6bdb5c1d491057f4460aca05d7fe352ca96), [cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/275f31c165f8717a677082fe862393e53b966016).
+- **QA:** Committed to `main`; browser rendering not verified.
+
 ## Services — Card text contrast correction (2026-11-13)
 
 ### Website Development and Digital Advertising cards

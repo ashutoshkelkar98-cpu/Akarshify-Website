@@ -1,3 +1,12 @@
+## Theme v2.1 — White and saffron hero heading emphasis (2026-11-13)
+
+### Services and homepage heroes
+- Kept primary hero heading text white on Deep Atlantic Blue and styled existing emphasized phrases in Saffron: **“built around you.”** on Services and **“better connected.”** on the homepage.
+- Preserved the original wording, heading hierarchy and layout; no saffron accents were introduced on white panels.
+- **Files:** `css/theme-v2-1.css`, `pages/services.html`, `index.html`, `CHANGELOG.md`.
+- **Commits:** [theme CSS](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/24423a2613e340db3f33f04de86019c413e69bcd), [Services cache](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/a6cd584dd98681477d23ad8e61dc9de1a8178713), [homepage cache](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/aed81577a173078a7142f2c1db46be18a3fb534d).
+- **QA:** Committed to `main`; live browser verification pending.
+
 ## Homepage Services — Resting panel emphasis and saffron CTA (2026-11-13)
 
 ### Services illustration

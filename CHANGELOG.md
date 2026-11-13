@@ -1,3 +1,12 @@
+## Services — Toolkit cards use Advertisement Pipeline blue (2026-11-13)
+
+### Tools & Technologies
+- Changed all four toolkit card backgrounds from Deep Atlantic Blue `#102A43` to the lighter blue `#173955` already used on the five Advertisement Pipeline step panels.
+- Preserved white text, saffron icon tiles, and the lift-and-shadow hover treatment; the cards remain the same blue on hover.
+- **Files:** `css/theme-v2-1.css`, `pages/services.html`, `CHANGELOG.md`.
+- **Commits:** [background adjustment](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/34486bfc3d289be2ebd9b7f4372d07e267e81dcc), [cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/cdb1ab996e5a678655bd0704a12e1cd2e20b6ec1).
+- **QA:** Committed to `main`; live browser verification pending.
+
 ## Shared footer — Deep Atlantic Blue background (2026-11-13)
 
 ### Footer theme consistency

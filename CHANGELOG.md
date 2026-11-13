@@ -1,3 +1,12 @@
+## Branding — Saffron wordmark dot (2026-11-13)
+
+### Shared header and footer
+- Set the terminal dot in the `akarshify.` wordmark to Saffron `#F4B544` on all three pages, including both shared header and footer variants.
+- Left wordmark lettering, typography, tagline and layout unchanged. This explicit branding accent applies even where the header or footer background is white.
+- **Files:** `css/theme-v2-1.css`, `index.html`, `pages/services.html`, `pages/about.html`, `CHANGELOG.md`.
+- **Commits:** [wordmark styling](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/28597b388af3f25fb034285002bd1d5f8f9f3619).
+- **QA:** Committed to `main`; browser verification pending.
+
 ## Services — Toolkit card hover and icon redesign (2026-11-13)
 
 ### Tools & Technologies

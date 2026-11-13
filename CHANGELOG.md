@@ -1,3 +1,13 @@
+## Services — Toolkit card hover and icon redesign (2026-11-13)
+
+### Tools & Technologies
+- Removed the white-background hover transition from all four toolkit cards; they remain Deep Atlantic Blue at rest and on hover.
+- Added a gentle six-pixel hover lift, shadow and subtle saffron border emphasis; motion is disabled for reduced-motion preferences.
+- Updated icon tiles to Saffron `#F4B544` with white SVG icon strokes, preserving existing icon artwork and copy.
+- **Files:** `css/theme-v2-1.css`, `pages/services.html`, `CHANGELOG.md`.
+- **Commits:** [toolkit styling](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/c541be3191bcd975b0f5bf53abbe611a943eaae8), [cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/2d49ac2b2f4f0888610619ca4647a67ec84bfe8f).
+- **QA:** Committed to `main`; live visual verification pending.
+
 ## Services — Saffron advertisement pipeline labels (2026-11-13)
 
 ### Advertisement Pipeline

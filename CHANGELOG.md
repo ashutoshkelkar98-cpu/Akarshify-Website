@@ -1,3 +1,16 @@
+## Homepage Services — Resting panel emphasis and saffron CTA (2026-11-13)
+
+### Services illustration
+- Added a pale blue-tinted illustration backdrop, Deep Atlantic border, rounded panel edge and soft persistent shadow so the panel reads clearly against the white section before hover.
+- Preserved subtle hover elevation and existing service illustration animations.
+
+### Explore Our Services CTA
+- Changed the button on the Deep Atlantic information strip to Saffron with dark blue text; added lighter saffron hover/focus feedback.
+- Kept the button inside the white browser illustration Deep Atlantic Blue, consistent with the rule that saffron accents appear only on blue surfaces.
+- **Files:** `css/theme-v2-1.css`, `index.html`, `CHANGELOG.md`.
+- **Commits:** [CSS styling](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/06b34a2f0f1bc5e9b656d23383dc42a50593e13f), [cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/3f48db6d1eeb1dd39aab0c3ebbe3ec513d384d1f).
+- **QA:** Committed to `main`; live browser visual verification pending.
+
 ## Theme v2.1 — Digital Journey character and layout correction (2026-11-12)
 
 ### Homepage — illustrated character

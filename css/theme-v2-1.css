@@ -867,3 +867,38 @@ body>main #what-we-do .service-overview .offer .offer-content small{
 
 /* Advertisement Pipeline: saffron stage numbers on blue cards. */
 body>main #advertisement-pipeline .pipeline-grid .pipeline-step>span{color:#F4B544!important;}
+
+/* Tools & Technologies: keep blue cards on hover; subtle elevation only. */
+body>main #tools .toolkit-grid .tool,
+body>main #tools .toolkit-grid .tool:hover,
+body>main #tools .toolkit-grid .tool:focus-within{
+ background:#102A43!important;
+ border-color:rgba(255,255,255,.12)!important;
+ color:#FFFFFF!important;
+}
+body>main #tools .toolkit-grid .tool{
+ transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease!important;
+ transform:translateY(0)!important;
+}
+body>main #tools .toolkit-grid .tool:hover,
+body>main #tools .toolkit-grid .tool:focus-within{
+ transform:translateY(-6px)!important;
+ box-shadow:0 16px 30px rgba(16,42,67,.18)!important;
+ border-color:rgba(244,181,68,.38)!important;
+}
+body>main #tools .toolkit-grid .tool .tool-icon,
+body>main #tools .toolkit-grid .tool:hover .tool-icon{
+ background:#F4B544!important;
+ color:#FFFFFF!important;
+}
+body>main #tools .toolkit-grid .tool .tool-icon svg{
+ stroke:#FFFFFF!important;
+}
+body>main #tools .toolkit-grid .tool :is(h3,p,.tool-index){
+ color:#FFFFFF!important;
+}
+@media(prefers-reduced-motion:reduce){
+ body>main #tools .toolkit-grid .tool{transition:none!important}
+ body>main #tools .toolkit-grid .tool:hover,
+ body>main #tools .toolkit-grid .tool:focus-within{transform:none!important}
+}

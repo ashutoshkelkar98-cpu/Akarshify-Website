@@ -1,3 +1,16 @@
+## Homepage ticker and shared footer motif correction (2026-11-14)
+
+### Shared footer — match homepage hero contours
+- Replaced the previously introduced straight diagonal linework with the homepage hero's offset, curved contour-line pattern (same repeating-radial gradient, angle, opacity, and masking).
+- Ensured the decoration renders behind footer content using an isolated stacking context; kept the Deep Atlantic Blue background and existing footer navigation.
+
+### Homepage — service capability ticker
+- Restored clear white lettering for **STRATEGY · DESIGN · DEVELOPMENT · DIGITAL ADVERTISING · ONGOING SUPPORT** on a Deep Atlantic Blue ticker band immediately beneath the hero.
+- Kept the saffron separator dots and adjusted spacing and wrapping for narrow screens.
+- **Files:** `css/theme-v2-1.css`, `index.html`, `pages/services.html`, `pages/about.html`, `CHANGELOG.md`.
+- **Commits:** [footer and ticker CSS](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/e1f548e90910ea3b2b1aae8add7250819cc2a402), [homepage refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/8845f06ee4dd293d64cfaa530dc7111d3baed48d), [Services refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/b45c23a83563ea4b70c74ce0acb69f463cbf008c), [About refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/b7d0790be8a8209778f34363e198955c66d0ea0c).
+- **QA:** Committed to `main`; deployed desktop/mobile rendering has not yet been visually verified.
+
 ## Services — Preserve original animated illustration colors (2026-11-14)
 
 ### Website Development and Digital Advertising overview cards

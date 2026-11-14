@@ -935,17 +935,12 @@ footer.site-footer::after{
  pointer-events:none;
 }
 
-/* Service cards: Deep Atlantic / lighter Atlantic, no old midnight/cornflower blue. */
+/* Service cards: change the text-panel backgrounds only; preserve original animated illustration art. */
 body>main #what-we-do .service-overview .offer:first-child{
  background:#102A43!important;color:#FFFFFF!important;
 }
 body>main #what-we-do .service-overview .offer:nth-child(2){
  background:#173955!important;color:#FFFFFF!important;
-}
-body>main #what-we-do .service-overview .offer .offer-art,
-body>main #what-we-do .service-overview .offer:nth-child(2) .offer-art{
- background:linear-gradient(145deg,#173955 0%,#102A43 100%)!important;
- border-bottom:1px solid rgba(255,255,255,.12)!important;
 }
 body>main #what-we-do .service-overview .offer .offer-content small{
  color:#F4B544!important;opacity:1!important;
@@ -956,61 +951,6 @@ body>main #what-we-do .service-overview .offer .offer-content li{
 }
 body>main #what-we-do .service-overview .offer .offer-content p{
  color:#F1F5FA!important;
-}
-body>main #what-we-do .service-overview .offer .mini-site,
-body>main #what-we-do .service-overview .offer .mini-ad,
-body>main #what-we-do .service-overview .offer .mini-audience>span{
- background:#FFFFFF!important;border-color:#102A43!important;
-}
-body>main #what-we-do .service-overview .offer .mini-site-top{
- border-color:#102A43!important;
-}
-body>main #what-we-do .service-overview .offer .mini-site-top span{
- background:#173955!important;border-color:#102A43!important;
-}
-body>main #what-we-do .service-overview .offer .mini-site-top b,
-body>main #what-we-do .service-overview .offer .mini-site-copy i:first-child,
-body>main #what-we-do .service-overview .offer .mini-ad i:first-of-type{
- background:#102A43!important;
-}
-body>main #what-we-do .service-overview .offer .mini-site-copy i:nth-child(2),
-body>main #what-we-do .service-overview .offer .mini-site-copy i:nth-child(3),
-body>main #what-we-do .service-overview .offer .mini-ad i:nth-of-type(2){
- background:#9AAFC0!important;
-}
-body>main #what-we-do .service-overview .offer .mini-site-copy strong,
-body>main #what-we-do .service-overview .offer .mini-ad b{
- background:#102A43!important;border-color:#102A43!important;
-}
-body>main #what-we-do .service-overview .offer .mini-site-visual{
- background:#E8F0F6!important;border-color:#102A43!important;
-}
-body>main #what-we-do .service-overview .offer .mini-site-visual span:first-child{
- background:#173955!important;
-}
-body>main #what-we-do .service-overview .offer .mini-site-visual span:nth-child(2){
- background:#102A43!important;
-}
-body>main #what-we-do .service-overview .offer .mini-site-visual span:nth-child(3){
- background:#173955!important;
-}
-body>main #what-we-do .service-overview .offer .mini-ad-tag{
- color:#102A43!important;
-}
-body>main #what-we-do .service-overview .offer .mini-reach-lines path{
- stroke:#F4B544!important;
-}
-body>main #what-we-do .service-overview .offer .mini-audience i,
-body>main #what-we-do .service-overview .offer .mini-audience b{
- background:#102A43!important;
-}
-/* Pulse only uses blue/white inside white audience tiles. */
-@keyframes akarsh-reach-pulse-v21{
- 0%,12%,65%,100%{background:#FFFFFF}
- 23%,35%{background:#DCE9F4}
-}
-body>main #what-we-do .service-overview .offer .mini-audience>span{
- animation-name:akarsh-reach-pulse-v21!important;
 }
 body>main #what-we-do .service-overview .offer .pipeline-inline-link{
  color:#FFFFFF!important;text-decoration-color:#F4B544!important;

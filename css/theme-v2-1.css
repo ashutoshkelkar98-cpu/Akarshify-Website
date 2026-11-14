@@ -963,3 +963,52 @@ body>main #what-we-do .service-overview .offer .service-cta-disabled{
  color:#FFFFFF!important;border-color:rgba(255,255,255,.48)!important;
  background:transparent!important;opacity:.72!important;
 }
+
+/* 2026-11-14 — Match footer contour motif to homepage hero; restore hero ticker copy. */
+footer.site-footer{
+ position:relative!important;isolation:isolate!important;
+ overflow:hidden!important;
+}
+footer.site-footer::before{
+ content:""!important;position:absolute!important;z-index:0!important;
+ inset:auto!important;left:auto!important;bottom:auto!important;
+ width:75%!important;height:125%!important;right:-20%!important;top:-10%!important;
+ border:0!important;border-radius:0!important;box-shadow:none!important;
+ background:repeating-radial-gradient(ellipse at 90% 45%,
+  transparent 0 24px,rgba(255,255,255,.2) 25px,transparent 26px 44px)!important;
+ transform:rotate(-18deg) scaleX(1.2)!important;opacity:.72!important;
+ -webkit-mask-image:linear-gradient(90deg,transparent,#000 38%,#000 90%)!important;
+ mask-image:linear-gradient(90deg,transparent,#000 38%,#000 90%)!important;
+ pointer-events:none!important;
+}
+footer.site-footer::after{
+ content:""!important;position:absolute!important;z-index:0!important;
+ left:auto!important;top:auto!important;
+ width:65%!important;height:70%!important;right:-15%!important;bottom:-30%!important;
+ border:0!important;border-radius:0!important;box-shadow:none!important;
+ background:radial-gradient(ellipse,rgba(255,255,255,.1),transparent 70%)!important;
+ pointer-events:none!important;
+}
+footer.site-footer>*{position:relative;z-index:1}
+/* The five ticker labels were inheriting the wrong contrast against their band. */
+body>main>.ticker{
+ display:flex!important;align-items:center!important;justify-content:center!important;
+ flex-wrap:wrap!important;column-gap:12px!important;row-gap:9px!important;
+ padding:17px 6vw!important;
+ background:#102A43!important;color:#FFFFFF!important;
+ border-top:1px solid rgba(255,255,255,.16)!important;
+ border-bottom:1px solid rgba(255,255,255,.16)!important;
+ font-family:"Google Sans",Arial,sans-serif!important;
+ font-size:11px!important;font-weight:700!important;
+ letter-spacing:.12em!important;line-height:1.5!important;
+ text-align:center!important;
+}
+body>main>.ticker .ticker-dot{
+ display:inline-block!important;flex:0 0 6px!important;
+ width:6px!important;height:6px!important;
+ margin:0 2px!important;border-radius:50%!important;
+ background:#F4B544!important;vertical-align:middle!important;
+}
+@media(max-width:600px){
+ body>main>.ticker{font-size:10px!important;column-gap:8px!important;padding:14px 5vw!important}
+}

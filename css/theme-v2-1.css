@@ -1012,3 +1012,39 @@ body>main>.ticker .ticker-dot{
 @media(max-width:600px){
  body>main>.ticker{font-size:10px!important;column-gap:8px!important;padding:14px 5vw!important}
 }
+
+/* 2026-11-14 — SVG contour refinement: remove washed-out glow and rasterized gradient rings. */
+html:not([data-akarsh-art]) body>main>.hero.section::before,
+html[data-akarsh-art="contours"] body>main>.hero.section::before{
+ content:""!important;inset:0!important;width:100%!important;height:100%!important;
+ left:0!important;top:0!important;right:auto!important;bottom:auto!important;
+ background-image:url("../assets/hero-contours.svg")!important;
+ background-color:transparent!important;background-repeat:no-repeat!important;
+ background-size:cover!important;background-position:center center!important;
+ transform:none!important;opacity:1!important;
+ -webkit-mask-image:none!important;mask-image:none!important;
+ filter:none!important;border:0!important;border-radius:0!important;
+ box-shadow:none!important;pointer-events:none!important;
+}
+html:not([data-akarsh-art]) body>main>.hero.section::after,
+html[data-akarsh-art="contours"] body>main>.hero.section::after{
+ content:none!important;display:none!important;
+ background:none!important;box-shadow:none!important;filter:none!important;
+}
+/* Distinct footer composition: understated sweeping curves rising from bottom-left. */
+footer.site-footer::before{
+ content:""!important;inset:0!important;width:100%!important;height:100%!important;
+ left:0!important;top:0!important;right:auto!important;bottom:auto!important;
+ background-image:url("../assets/footer-contours.svg")!important;
+ background-color:transparent!important;background-repeat:no-repeat!important;
+ background-size:cover!important;background-position:center center!important;
+ transform:none!important;opacity:1!important;
+ -webkit-mask-image:none!important;mask-image:none!important;
+ filter:none!important;border:0!important;border-radius:0!important;
+ box-shadow:none!important;pointer-events:none!important;z-index:0!important;
+}
+footer.site-footer::after{content:none!important;display:none!important;background:none!important;}
+@media(max-width:850px){
+ html:not([data-akarsh-art]) body>main>.hero.section::before,
+ html[data-akarsh-art="contours"] body>main>.hero.section::before{opacity:1!important}
+}

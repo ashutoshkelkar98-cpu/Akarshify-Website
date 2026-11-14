@@ -1,3 +1,13 @@
+## Services — Preserve original animated illustration colors (2026-11-14)
+
+### Website Development and Digital Advertising overview cards
+- Restored the original animated image-area backgrounds, website mockup colors, ad creative, audience icons, and connecting-line colors by removing the illustration-specific overrides added in the previous theme update.
+- Kept only the updated **card text-panel backgrounds**: Deep Atlantic Blue `#102A43` and lighter Atlantic Blue `#173955`, plus readable white copy and saffron category labels.
+- Retained the updated footer diagonal-line motif from the preceding change.
+- **Files:** `css/theme-v2-1.css`, `pages/services.html`, `CHANGELOG.md`.
+- **Commits:** [restore illustration styling](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/d8c5773b2a534128847172d4e05f4a54d6b52732), [Services cache](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/4069b544600477be898e8ec5b10c18e6d93f7086).
+- **QA:** Committed to `main`; live browser verification pending.
+
 ## Theme v2.1 — Footer geometry and Services card palette (2026-11-14)
 
 ### Shared Footer — Hero-aligned background detail

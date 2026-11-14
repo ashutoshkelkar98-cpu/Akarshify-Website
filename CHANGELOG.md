@@ -1,3 +1,17 @@
+## Theme v2.1 — Footer geometry and Services card palette (2026-11-14)
+
+### Shared Footer — Hero-aligned background detail
+- Removed the legacy Cornflower Blue concentric-ring pseudo-element from the footer and replaced it with subtle diagonal geometric lines over Deep Atlantic Blue, echoing the homepage hero's linework.
+- Added a very faint saffron-toned glow on the blue footer, with no changes to navigation, content, or the saffron wordmark dot.
+
+### Services — Website Development and Digital Advertising cards
+- Recolored the two overview cards to Deep Atlantic Blue `#102A43` and lighter Atlantic Blue `#173955`, replacing the older midnight/cobalt backgrounds.
+- Reworked both illustrated header panels to use Atlantic blues with white website/ad mockups, blue elements inside white mockups, and saffron connecting lines on the blue advertising background.
+- Set service category labels to saffron and kept white headings, near-white descriptions, and high-contrast service lists. Preserved existing illustration animations, hover lift, and disabled CTA states.
+- **Files:** `css/theme-v2-1.css`, `index.html`, `pages/services.html`, `pages/about.html`, `CHANGELOG.md`.
+- **Commits:** [theme styling](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/004e3ccdce6ff539913fc6f3cf8ad9574ee92167), [homepage cache](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/de7f58e1cd5ba8e5c0cd4eecde8dd0b037b43fcf), [Services cache](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/d21cd258519f6623d7cc3f01be7d4e18c4f58487), [About cache](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/64f9e5a79a8348aad063f9c139deab40f8f31acf).
+- **QA:** Committed to `main`; live desktop/mobile visual verification remains pending. About Us content and layout have not been revised in this update.
+
 ## Services — Toolkit cards use Advertisement Pipeline blue (2026-11-13)
 
 ### Tools & Technologies

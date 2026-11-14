@@ -1,3 +1,17 @@
+## Theme v2.1 — Smooth hero and footer contour artwork (2026-11-14)
+
+### Homepage hero
+- Replaced transformed CSS repeating-radial gradients with a standalone vector SVG (`assets/hero-contours.svg`) to reduce contour edge aliasing.
+- Removed the translucent radial glow pseudo-element responsible for the washed-out bright area near the bottom-right of the hero.
+- Retained the right-side curved contour concept, Deep Atlantic Blue surface, hero content and Digital Journey animation.
+
+### Shared footer
+- Added distinct `assets/footer-contours.svg`: sweeping, restrained lines rising from the lower-left rather than copying the hero's right-centered elliptical rings.
+- Removed the footer glow and the previous duplicated CSS contour background; retained existing footer content and stacking order.
+- **Files:** `assets/hero-contours.svg`, `assets/footer-contours.svg`, `css/theme-v2-1.css`, `index.html`, `pages/services.html`, `pages/about.html`, `CHANGELOG.md`.
+- **Commits:** [hero SVG](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/0e16bde18b5afa1b2d4acb99676da1576be6e1a8), [footer SVG](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/0d7041c1c41d4fe984467be937bf1dcaf6c88ba3), [theme CSS](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/765073fdf98ec8a106fe2b3b4503998ae29b19cd).
+- **QA:** Committed to `main`; deployed desktop/mobile visual verification pending.
+
 ## Homepage ticker and shared footer motif correction (2026-11-14)
 
 ### Shared footer — match homepage hero contours

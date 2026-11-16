@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="950" viewBox="0 0 1400 950" fill="none" aria-hidden="true"><g stroke="#FFFFFF" stroke-opacity=".075" stroke-width="1" vector-effect="non-scaling-stroke"><ellipse cx="1450" cy="385" rx="210" ry="147"/><ellipse cx="1450" cy="385" rx="335" ry="234"/><ellipse cx="1450" cy="385" rx="460" ry="322"/><ellipse cx="1450" cy="385" rx="585" ry="410"/><ellipse cx="1450" cy="385" rx="710" ry="497"/><ellipse cx="1450" cy="385" rx="835" ry="585"/><ellipse cx="1450" cy="385" rx="960" ry="672"/><ellipse cx="1450" cy="385" rx="1085" ry="760"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="850" viewBox="0 0 1440 850" fill="none" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<defs>
+<linearGradient id="atmosphere" x1="340" y1="820" x2="1380" y2="180" gradientUnits="userSpaceOnUse">
+<stop stop-color="#173955" stop-opacity=".04"/><stop offset=".55" stop-color="#315B78" stop-opacity=".22"/><stop offset="1" stop-color="#557D9B" stop-opacity=".27"/>
+</linearGradient>
+<linearGradient id="middle" x1="390" y1="800" x2="1430" y2="380" gradientUnits="userSpaceOnUse">
+<stop stop-color="#173955" stop-opacity=".04"/><stop offset=".7" stop-color="#557D9B" stop-opacity=".13"/><stop offset="1" stop-color="#557D9B" stop-opacity=".18"/>
+</linearGradient>
+</defs>
+<path d="M0 850C295 834 560 767 786 642C1010 519 1188 370 1440 185V850H0Z" fill="url(#atmosphere)"/>
+<path d="M120 850C430 840 680 769 903 681C1123 594 1286 484 1440 423V850H120Z" fill="url(#middle)"/>
+<path d="M470 850C757 837 1031 791 1225 702C1326 655 1393 618 1440 595V850H470Z" fill="#FFFFFF" fill-opacity=".025"/>
+</svg>

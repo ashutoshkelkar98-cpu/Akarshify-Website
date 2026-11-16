@@ -1,3 +1,20 @@
+## About Us — Theme v2.1 Editorial Refresh (2026-11-16)
+
+### Hero and typography
+- Applied Deep Atlantic Blue `#102A43` to the About hero, with the same subtle asymmetric atmospheric band artwork as the homepage, and saffron `#F4B544` emphasis on the headline and eyebrow.
+- Replaced the legacy serif display headings with uppercase Google Sans styling, retaining all existing About page text and layout.
+
+### Who We Are and Values
+- Retained the white editorial introduction with Atlantic Blue headings and readable muted-blue body copy.
+- Introduced a soft off-white Values section and lighter Atlantic Blue `#173955` value cards, with white text and saffron numbering. Added restrained hover lift and reduced-motion support.
+- Scoped changes to `body.about-page` to avoid affecting the homepage or Services page. Existing shared header/footer and interactions remain intact.
+
+### Implementation and QA
+- **Files:** `css/theme-v2-1.css`, `pages/about.html`, `CHANGELOG.md`.
+- **Commits:** [About theme styling](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/274aeff0a8d028c4b4bd6488f49d23bff7069319), [About page activation](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/4de4d353a75d54ce34fd4c90a3ea32061405e6ec).
+- About page stylesheet cache bumped to `v2.1.26`; other pages retain `v2.1.25` because these rules are About-scoped.
+- **QA:** Source changes committed to `main`; deployed desktop/mobile visual verification pending.
+
 ## Shared Footer — Complementary Atmospheric Flow (2026-11-16)
 
 ### Layered footer background

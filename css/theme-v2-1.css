@@ -1060,8 +1060,8 @@ body.about-page>main>.hero{
 }
 body.about-page>main>.hero::before{
  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
- background:url("../assets/hero-contours.svg?v=3") center/cover no-repeat;
- opacity:.75;
+ background:url("../assets/hero-contours.svg?v=3") center center/cover no-repeat;
+ opacity:1;
 }
 body.about-page>main>.hero .eyebrow{
  color:#F4B544!important;font-size:.73rem;letter-spacing:.18em;font-weight:700;
@@ -1124,7 +1124,7 @@ body.about-page>main>.values .value-card p{color:rgba(255,255,255,.84)!important
 }
 @media(max-width:600px){
  body.about-page>main>.hero{padding-top:84px!important;padding-bottom:95px!important}
- body.about-page>main>.hero::before{background-position:60% center;opacity:.5}
+ body.about-page>main>.hero::before{background-position:center center;opacity:1}
  body.about-page>main>.values .value-card{padding:30px}
 }
 @media(prefers-reduced-motion:reduce){

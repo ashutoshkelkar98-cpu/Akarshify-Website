@@ -1,3 +1,13 @@
+## Fix Homepage and Services Two-Weight Headings (2026-11-16)
+
+- Investigated the prior CSS-only heading update. Home and Services headings still used legacy `<em>` elements and inherited page-specific heading styling, making the intended weight contrast less dependable.
+- Replaced emphasized text with explicit `<strong>` and `<span>` segments on five selected light-background headings: Home Services, Work and Process; Services What We Do and Benefits.
+- Added targeted `.editorial-weight-heading` CSS with `700` weight for the first segment and `400` for the second, preserving uppercase Google Sans, original copy and line breaks.
+- Left dark-background headings, the About Us heading, other sections, animations and interactions untouched. Updated Home and Services stylesheet cache references to `v2.1.30`.
+- **Files:** `index.html`, `pages/services.html`, `css/theme-v2-1.css`, `CHANGELOG.md`.
+- **Commits:** [Home markup](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/5660340b393bf960f10f3e31ba1887a41d7ecb10), [Services markup](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/88c4237032092861ee4fd75c16977b05d6ef4118), [explicit CSS](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/cb2417f538cddd4bad63e4975a79d9f49d7c90b0).
+- **QA:** Source changes committed to `main`; live visual verification pending.
+
 ## Editorial Two-Weight Headings Across Light Sections (2026-11-16)
 
 - Reduced the About Us **THOUGHTFUL WORK. / CLEAR PURPOSE.** heading size slightly, including a mobile-specific adjustment.

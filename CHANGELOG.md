@@ -1,3 +1,14 @@
+## Homepage Hero — Option 21B Asymmetric Flow (2026-11-16)
+
+### Atmospheric layered background
+- Replaced the homepage's eight elliptical contour strokes with three broad, overlapping asymmetric SVG bands that rise toward the right.
+- Kept the Deep Atlantic Blue `#102A43` hero base and used translucent lighter blues and a very faint white layer to create depth without bright hotspots or visible contour-line pixelation.
+- Preserved the existing hero headline, buttons, Digital Journey panel and all of its animation timings and markup. Footer's separate contour artwork remains unchanged.
+- Reused the existing `assets/hero-contours.svg` asset path with new Option 21B artwork to avoid unnecessary file dependencies; cache-busted the asset and homepage stylesheet to `v2.1.24`.
+- **Files:** `assets/hero-contours.svg`, `css/theme-v2-1.css`, `index.html`, `CHANGELOG.md`.
+- **Commits:** [asymmetric bands artwork](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/33f9356ef717878f8401e26c1dffd238286cdcfc), [CSS asset refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/78e6fe367e536b3ec10212f6a7e23fee0c91ced1), [homepage stylesheet refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/cf11d28c62dc9365d174bcc017cde540eb102edb).
+- **QA:** Code committed to `main`; deployed desktop/mobile visual verification pending.
+
 ## Footer — Saffron Built with Purpose sign-off (2026-11-16)
 
 - Updated the shared footer's **BUILT WITH PURPOSE.** sign-off to Saffron `#F4B544` against Deep Atlantic Blue.

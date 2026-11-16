@@ -1048,3 +1048,6 @@ footer.site-footer::after{content:none!important;display:none!important;backgrou
  html:not([data-akarsh-art]) body>main>.hero.section::before,
  html[data-akarsh-art="contours"] body>main>.hero.section::before{opacity:1!important}
 }
+
+/* Footer sign-off accent on Deep Atlantic Blue. */
+footer.site-footer .footer-bottom .footer-signoff{color:#F4B544!important;}

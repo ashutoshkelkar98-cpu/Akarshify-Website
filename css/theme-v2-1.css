@@ -1131,3 +1131,26 @@ body.about-page>main>.values .value-card p{color:rgba(255,255,255,.84)!important
  body.about-page>main>.values .value-card{transition:none!important}
  body.about-page>main>.values .value-card:hover{transform:none!important}
 }
+
+/* About hero layering fix: keep atmospheric artwork above the solid hero background. */
+body.about-page>main>.hero::before{
+ content:""!important;position:absolute!important;inset:0!important;
+ z-index:0!important;width:100%!important;height:100%!important;
+ background-image:url("../assets/hero-contours.svg?v=3")!important;
+ background-color:transparent!important;background-repeat:no-repeat!important;
+ background-position:center center!important;background-size:cover!important;
+ opacity:1!important;transform:none!important;filter:none!important;
+ border:0!important;border-radius:0!important;box-shadow:none!important;
+ pointer-events:none!important;
+}
+body.about-page>main>.hero::after{
+ content:none!important;display:none!important;
+}
+body.about-page>main>.hero> *{
+ position:relative;z-index:1;
+}
+@media(max-width:600px){
+ body.about-page>main>.hero::before{
+  background-position:center center!important;opacity:1!important;
+ }
+}

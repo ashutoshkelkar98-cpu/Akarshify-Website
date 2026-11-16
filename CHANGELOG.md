@@ -1,3 +1,12 @@
+## About Hero — Match Homepage Atmospheric Flow (2026-11-16)
+
+### Background consistency
+- Matched the About hero's Option 21B Asymmetric Flow artwork to the homepage's exact SVG positioning, sizing and full-opacity rendering on desktop and mobile (previously reduced to 75% desktop and 50% mobile).
+- Preserved About hero copy, typography, layout and all shared components; no changes to homepage or Services page.
+- **Files:** `css/theme-v2-1.css`, `pages/about.html`, `CHANGELOG.md`.
+- **Commits:** [About hero styling](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/1715cb66895913a35ba62283435532856c00cb29), [About stylesheet cache v2.1.27](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/c7603eae7c22600757e64b7ddc4b6d4afdefc552).
+- **QA:** Committed to `main`; deployed desktop/mobile visual verification pending.
+
 ## About Us — Theme v2.1 Editorial Refresh (2026-11-16)
 
 ### Hero and typography

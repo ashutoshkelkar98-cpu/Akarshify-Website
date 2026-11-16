@@ -1,3 +1,13 @@
+## Shared Footer — Complementary Atmospheric Flow (2026-11-16)
+
+### Layered footer background
+- Replaced the footer's twelve fine sweeping contour strokes with three broad translucent bands flowing from the upper-left toward the lower center, complementing (not duplicating) the homepage hero's Option 21B Asymmetric Flow.
+- Preserved the Deep Atlantic Blue footer background, existing layout, navigation, branding, links, and saffron **BUILT WITH PURPOSE.** signoff.
+- Updated the footer SVG asset cache reference to `footer-contours.svg?v=2` and the shared theme stylesheet to `v2.1.25` on the homepage, Services and About pages.
+- **Files:** `assets/footer-contours.svg`, `css/theme-v2-1.css`, `index.html`, `pages/services.html`, `pages/about.html`, `CHANGELOG.md`.
+- **Commits:** [footer artwork](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/6a009a3066cb1cd1bae99d18ab4e7bd3ef8b4c49), [theme reference](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/593c333eed180e6ae0374a9923500a92689d3455), [homepage](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/1c95078226a570c7c81092be4374a418a427cb2d), [Services](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/0b23d04c30734ec83711717fa17cb801088b1233), [About](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/f2ef198d6f6073368d100fe5a07185805fea79a6).
+- **QA:** Committed to `main`; live desktop/mobile visual review pending.
+
 ## Homepage Hero — Option 21B Asymmetric Flow (2026-11-16)
 
 ### Atmospheric layered background

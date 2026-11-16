@@ -1179,3 +1179,53 @@ body.about-page>main>.intro h2{font-size:clamp(2.25rem,4.15vw,4.2rem)!important}
 body>main>section .editorial-weight-heading{font-family:"Google Sans",Arial,sans-serif!important;font-weight:700!important;font-style:normal!important;text-transform:uppercase!important;letter-spacing:-.035em!important;line-height:1.1!important;color:#102A43!important}
 body>main>section .editorial-weight-heading>strong{font:inherit!important;font-weight:700!important;color:#102A43!important}
 body>main>section .editorial-weight-heading>span{font:inherit!important;font-weight:400!important;color:#102A43!important}
+
+/* Align light-section headlines and descriptions on a common vertical centerline. */
+body>main>#work .section-heading,
+body>main>#process .section-heading{
+ display:grid!important;grid-template-columns:minmax(0,1.55fr) minmax(260px,.9fr)!important;
+ align-items:center!important;column-gap:clamp(2rem,6vw,7rem)!important;
+}
+body>main>#work .section-heading>p,
+body>main>#process .section-heading>p{
+ margin:0!important;max-width:440px!important;justify-self:end;
+}
+body>main>#services .section-intro{
+ display:grid!important;grid-template-columns:minmax(0,1.55fr) minmax(260px,.9fr)!important;
+ align-items:center!important;column-gap:clamp(2rem,6vw,7rem)!important;
+}
+body>main>#services .section-intro>.eyebrow{grid-column:1;grid-row:1;align-self:end}
+body>main>#services .section-intro>h2{grid-column:1;grid-row:2}
+body>main>#services .section-intro>p:not(.eyebrow){
+ grid-column:2;grid-row:1 / span 2;margin:0!important;
+ max-width:440px!important;justify-self:end;
+}
+body>main>#what-we-do .editorial-intro-row{
+ display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,.9fr);
+ align-items:center;column-gap:clamp(2rem,6vw,7rem);margin-bottom:clamp(2rem,4vw,3.5rem);
+}
+body>main>#what-we-do .editorial-intro-row>p{
+ margin:0;max-width:440px;justify-self:end;color:#41566B!important;
+ line-height:1.8;
+}
+body>main>#what-we-do .editorial-intro-row h2{margin-bottom:0}
+body.about-page>main>.intro{align-items:center!important}
+@media(max-width:850px){
+ body>main>#work .section-heading,
+ body>main>#process .section-heading,
+ body>main>#services .section-intro,
+ body>main>#what-we-do .editorial-intro-row{
+  display:grid!important;grid-template-columns:minmax(0,1fr)!important;
+  row-gap:1.2rem!important;
+ }
+ body>main>#services .section-intro>.eyebrow{grid-column:1;grid-row:auto}
+ body>main>#services .section-intro>h2{grid-column:1;grid-row:auto}
+ body>main>#services .section-intro>p:not(.eyebrow){
+  grid-column:1;grid-row:auto;justify-self:start;max-width:680px!important;
+ }
+ body>main>#work .section-heading>p,
+ body>main>#process .section-heading>p,
+ body>main>#what-we-do .editorial-intro-row>p{
+  justify-self:start;max-width:680px!important;
+ }
+}

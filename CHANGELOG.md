@@ -1,3 +1,11 @@
+## Footer — Saffron Built with Purpose sign-off (2026-11-16)
+
+- Updated the shared footer's **BUILT WITH PURPOSE.** sign-off to Saffron `#F4B544` against Deep Atlantic Blue.
+- Preserved the sign-off wording, placement, and typography across Homepage, Services, and About Us.
+- **Files:** `css/theme-v2-1.css`, `index.html`, `pages/services.html`, `pages/about.html`, `CHANGELOG.md`.
+- **Commit:** [footer sign-off styling](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/a8cf49f5ea880d25852784a6f5bbe713ba997bed).
+- **QA:** Committed to `main`; live visual verification pending.
+
 ## Homepage — Subtle hero contour refinement (2026-11-16)
 
 ### Hero background artwork

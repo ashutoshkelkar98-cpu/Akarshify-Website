@@ -1,3 +1,15 @@
+## Align Editorial Headings and Descriptions (2026-11-16)
+
+- Vertically centered headings and supporting descriptions in two-column editorial layouts, following the Businesses & Projects reference screenshot.
+- **Home:** Updated Businesses & Projects and How We Work heading rows; aligned Digital Services eyebrow/heading against its description.
+- **Services:** Grouped What We Do heading and paragraph into a responsive `editorial-intro-row` for the same centered arrangement. Existing services cards and copy unchanged.
+- **About:** Centered Who We Are heading and description columns.
+- Added a responsive single-column layout at 850px and below, retaining natural reading order and existing content.
+- Bumped theme stylesheet references to `v2.1.31` on all three pages.
+- **Files:** `css/theme-v2-1.css`, `index.html`, `pages/services.html`, `pages/about.html`, `CHANGELOG.md`.
+- **Commits:** [Services markup](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/2fe84af406a7375cb8839c87a898c9f70ef30a14), [responsive alignment CSS](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/d057e3db16ca9cd033645b6747bce8b2a0579b68), [Home cache](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/916c45debb017d2dd88135acc1125e5d703ee7ed), [About cache](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/b025e67321e884bdb3198e897c31bfaf91393c04).
+- **QA:** Committed to `main`; live desktop/mobile visual verification pending.
+
 ## Fix Homepage and Services Two-Weight Headings (2026-11-16)
 
 - Investigated the prior CSS-only heading update. Home and Services headings still used legacy `<em>` elements and inherited page-specific heading styling, making the intended weight contrast less dependable.

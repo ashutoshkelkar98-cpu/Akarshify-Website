@@ -1,3 +1,13 @@
+## Homepage — Subtle hero contour refinement (2026-11-16)
+
+### Hero background artwork
+- Reduced the vector contour count from 18 to 8, increased spacing, and reduced white stroke opacity from 15% to 7.5%.
+- Moved the curve center slightly further right so the decoration stays peripheral rather than competing with hero copy and the Digital Journey animation.
+- Left the footer's separate curved-line composition, hero content, palette and animations unchanged.
+- **Files:** `assets/hero-contours.svg`, `css/theme-v2-1.css`, `index.html`, `CHANGELOG.md`.
+- **Commits:** [vector refinement](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/806a4d8c37441e3994753e9da9f8729d751eb6b6), [asset cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/574590ae539b0000b1b0c5cde6eba90e2e832249), [homepage cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/ef1be580da28fa0cb81d0f67ff95162d04ffcfe1).
+- **QA:** Committed to `main`; live visual verification pending.
+
 ## Theme v2.1 — Smooth hero and footer contour artwork (2026-11-14)
 
 ### Homepage hero

@@ -1,3 +1,12 @@
+## About Hero — Fix Hidden Atmospheric Background (2026-11-16)
+
+- Diagnosed the About hero's atmospheric `::before` artwork as being placed at `z-index:-1` behind the opaque hero surface; older theme CSS also supplied an independent circular `::after` overlay.
+- Moved the background artwork to stacking level `0`, placed hero content at `1`, removed the old `::after` overlay, and explicitly reset inherited background geometry and styling so Option 21B renders consistently.
+- Bumped About stylesheet cache from `v2.1.27` to `v2.1.28`; preserved all hero content and other pages.
+- **Files:** `css/theme-v2-1.css`, `pages/about.html`, `CHANGELOG.md`.
+- **Commits:** [stacking fix](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/ff93837a3298a4a8199e840e24deb8924a444c9b), [cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/94ce6771d53dcf6a08b30f89bea9f4fe5002c561).
+- **QA:** Source-level diagnosis and fix committed; deployed desktop/mobile rendering not yet visually verified.
+
 ## About Hero — Match Homepage Atmospheric Flow (2026-11-16)
 
 ### Background consistency

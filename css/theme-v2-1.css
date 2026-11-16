@@ -1051,3 +1051,83 @@ footer.site-footer::after{content:none!important;display:none!important;backgrou
 
 /* Footer sign-off accent on Deep Atlantic Blue. */
 footer.site-footer .footer-bottom .footer-signoff{color:#F4B544!important;}
+
+/* 2026-11-16 — About page: cohesive Deep Atlantic / White / Saffron editorial refresh. */
+body.about-page>main>.hero{
+ position:relative;isolation:isolate;overflow:hidden;
+ background:#102A43!important;color:#FFFFFF!important;
+ padding:clamp(92px,11vw,152px) clamp(22px,9vw,150px)!important;
+}
+body.about-page>main>.hero::before{
+ content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+ background:url("../assets/hero-contours.svg?v=3") center/cover no-repeat;
+ opacity:.75;
+}
+body.about-page>main>.hero .eyebrow{
+ color:#F4B544!important;font-size:.73rem;letter-spacing:.18em;font-weight:700;
+}
+body.about-page>main>.hero h1,
+body.about-page>main>.intro h2,
+body.about-page>main>.values h2{
+ font-family:"Google Sans",Arial,sans-serif!important;
+ font-style:normal!important;font-weight:650!important;text-transform:uppercase;
+ letter-spacing:-.035em!important;line-height:1.08!important;
+}
+body.about-page>main>.hero h1{font-size:clamp(2.9rem,6vw,6rem)!important;max-width:1050px;}
+body.about-page>main>.hero h1 em{
+ font-style:normal!important;color:#F4B544!important;
+}
+body.about-page>main>.hero p:last-child{
+ color:rgba(255,255,255,.82)!important;max-width:740px;
+}
+body.about-page>main>.intro,
+body.about-page>main>.values{
+ background:#FFFFFF!important;color:#102A43!important;
+}
+body.about-page>main>.intro .eyebrow,
+body.about-page>main>.values>.eyebrow{
+ color:#102A43!important;letter-spacing:.18em;
+}
+body.about-page>main>.intro h2,
+body.about-page>main>.values h2{
+ font-size:clamp(2.5rem,4.6vw,4.7rem)!important;color:#102A43!important;
+}
+body.about-page>main>.intro h2 em,
+body.about-page>main>.values h2 em{
+ color:#102A43!important;font-style:normal!important;
+}
+body.about-page>main>.intro .intro-copy,
+body.about-page>main>.intro .intro-copy p{
+ color:#41566B!important;line-height:1.8;
+}
+body.about-page>main>.values{
+ background:#F5F8FA!important;
+}
+body.about-page>main>.values .value-card{
+ background:#173955!important;border:1px solid rgba(16,42,67,.16)!important;
+ border-radius:16px;box-shadow:0 12px 28px rgba(16,42,67,.08);
+ transition:transform .25s ease,box-shadow .25s ease;
+}
+body.about-page>main>.values .value-card span{
+ color:#F4B544!important;font-weight:700;margin-bottom:32px;
+}
+body.about-page>main>.values .value-card h3{
+ color:#FFFFFF!important;font-family:"Google Sans",Arial,sans-serif!important;
+ font-weight:700;text-transform:uppercase;letter-spacing:.015em;
+}
+body.about-page>main>.values .value-card p{color:rgba(255,255,255,.84)!important;}
+@media(hover:hover){
+ body.about-page>main>.values .value-card:hover{
+  background:#173955!important;transform:translateY(-4px);
+  box-shadow:0 18px 34px rgba(16,42,67,.14);
+ }
+}
+@media(max-width:600px){
+ body.about-page>main>.hero{padding-top:84px!important;padding-bottom:95px!important}
+ body.about-page>main>.hero::before{background-position:60% center;opacity:.5}
+ body.about-page>main>.values .value-card{padding:30px}
+}
+@media(prefers-reduced-motion:reduce){
+ body.about-page>main>.values .value-card{transition:none!important}
+ body.about-page>main>.values .value-card:hover{transform:none!important}
+}

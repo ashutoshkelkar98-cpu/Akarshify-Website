@@ -1,3 +1,14 @@
+## Editorial Two-Weight Headings Across Light Sections (2026-11-16)
+
+- Reduced the About Us **THOUGHTFUL WORK. / CLEAR PURPOSE.** heading size slightly, including a mobile-specific adjustment.
+- Applied a consistent uppercase Google Sans heading treatment: bold main text (`700`) and regular-weight emphasized text (`400`) to light-background sections on About, Home and Services pages.
+- Kept existing copy, line breaks, content, animations, and dark-background hero/panel heading treatments unchanged.
+- Scoped the shared styling to About intro/values, Home services/work/process, and Services what-we-do/tools/benefits sections. Headings without an emphasized span remain a single weight.
+- Bumped stylesheet references to `v2.1.29` on all three pages.
+- **Files:** `css/theme-v2-1.css`, `index.html`, `pages/services.html`, `pages/about.html`, `CHANGELOG.md`.
+- **Commits:** [CSS typography](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/40aece11719975531cb32d08c8ca164186202d61), [Home](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/3e3f00f643ce2de6aa61ed8a86f2a227dac0d5a7), [Services](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/fb3ca6a786744b759f5b5eb4e889a09dc38ba109), [About](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/05a89739ecdc266522147eb130472ed7583d8bf3).
+- **QA:** Committed to `main`; live desktop/mobile visual verification pending.
+
 ## About Hero — Fix Hidden Atmospheric Background (2026-11-16)
 
 - Diagnosed the About hero's atmospheric `::before` artwork as being placed at `z-index:-1` behind the opaque hero surface; older theme CSS also supplied an independent circular `::after` overlay.

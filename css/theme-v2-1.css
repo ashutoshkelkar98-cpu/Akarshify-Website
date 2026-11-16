@@ -1154,3 +1154,23 @@ body.about-page>main>.hero> *{
   background-position:center center!important;opacity:1!important;
  }
 }
+
+/* 2026-11-16: editorial two-weight display headings on light sections. */
+body.about-page>main>.intro h2,
+body.about-page>main>.values h2,
+body>main>#services h2,
+body>main>#work h2,
+body>main>#process h2,
+body>main>#what-we-do h2,
+body>main>#tools h2,
+body>main>#benefits h2{font-family:"Google Sans",Arial,sans-serif!important;font-weight:700!important;font-style:normal!important;text-transform:uppercase!important;letter-spacing:-.035em!important;line-height:1.1!important}
+body.about-page>main>.intro h2 em,
+body.about-page>main>.values h2 em,
+body>main>#services h2 em,
+body>main>#work h2 em,
+body>main>#process h2 em,
+body>main>#what-we-do h2 em,
+body>main>#tools h2 em,
+body>main>#benefits h2 em{font-family:inherit!important;font-weight:400!important;font-style:normal!important;text-transform:inherit!important;letter-spacing:inherit!important;color:#102A43!important}
+body.about-page>main>.intro h2{font-size:clamp(2.25rem,4.15vw,4.2rem)!important}
+@media(max-width:600px){body.about-page>main>.intro h2{font-size:clamp(2.05rem,8.2vw,3rem)!important}}

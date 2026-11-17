@@ -1336,3 +1336,62 @@ html body>main>#services>.section-intro>.services-intro-heading h2{
   font-size:clamp(2rem,7.5vw,2.55rem)!important;
  }
 }
+
+/* Services: two-column editorial introductions for Tools and Benefits. */
+html body>main>#tools .editorial-split-intro,
+html body>main>#benefits .editorial-split-intro{
+ display:grid!important;
+ grid-template-columns:minmax(0,1.45fr) minmax(0,1fr)!important;
+ align-items:center!important;
+ column-gap:clamp(2rem,5vw,6rem)!important;
+ max-width:none!important;
+ margin-bottom:clamp(2rem,4vw,3.5rem)!important;
+}
+html body>main>#tools .editorial-split-title,
+html body>main>#benefits .editorial-split-title{
+ min-width:0!important;
+}
+html body>main>#tools .editorial-split-intro .editorial-weight-heading,
+html body>main>#benefits .editorial-split-intro .editorial-weight-heading{
+ font-family:"Google Sans",Arial,sans-serif!important;
+ font-size:clamp(2.25rem,3.6vw,4rem)!important;
+ font-weight:700!important;font-style:normal!important;
+ line-height:1.12!important;letter-spacing:-.035em!important;
+ text-transform:uppercase!important;color:#102A43!important;
+ margin:.7rem 0!important;
+}
+html body>main>#tools .editorial-split-intro .editorial-weight-heading strong,
+html body>main>#benefits .editorial-split-intro .editorial-weight-heading strong{
+ font:inherit!important;font-weight:700!important;color:#102A43!important;
+}
+html body>main>#tools .editorial-split-intro .editorial-weight-heading span,
+html body>main>#benefits .editorial-split-intro .editorial-weight-heading span{
+ font:inherit!important;font-weight:400!important;color:#102A43!important;
+}
+html body>main>#tools .editorial-split-description,
+html body>main>#benefits .editorial-split-description{
+ min-width:0!important;max-width:480px!important;
+ margin:0!important;justify-self:end!important;
+ color:#41566B!important;line-height:1.8!important;
+}
+html body>main>#tools .editorial-split-title .toolkit-accent{
+ margin-top:1.25rem!important;margin-bottom:0!important;
+ background:#F4B544!important;
+}
+@media(max-width:900px){
+ html body>main>#tools .editorial-split-intro,
+ html body>main>#benefits .editorial-split-intro{
+  grid-template-columns:minmax(0,1fr)!important;
+  gap:1.25rem!important;
+ }
+ html body>main>#tools .editorial-split-description,
+ html body>main>#benefits .editorial-split-description{
+  justify-self:start!important;max-width:680px!important;
+ }
+}
+@media(max-width:480px){
+ html body>main>#tools .editorial-split-intro .editorial-weight-heading,
+ html body>main>#benefits .editorial-split-intro .editorial-weight-heading{
+  font-size:clamp(2rem,7.5vw,2.65rem)!important;
+ }
+}

@@ -1,3 +1,13 @@
+## Services — Correct Intro Alignment and Reduce Benefits Heading (2026-11-17)
+
+- Follow-up to screenshots confirming the previous Services Tools and Benefits introductions still displayed descriptions **under** their headings instead of to the right.
+- Added a Services-page-local stylesheet override after the shared theme stylesheet, explicitly setting the two introduction wrappers to two-column CSS grids at desktop widths above 900px, with the supporting descriptions in the right column.
+- Reduced the **MORE THAN BEING ONLINE. / MAKE YOUR PRESENCE USEFUL.** heading to `clamp(2rem, 3vw, 3.25rem)`, with an additional mobile adjustment.
+- Preserved original copy, two-weight typography, cards, animations, and mobile single-column stacking. Updated Services stylesheet cache to `v2.1.40`.
+- **Files:** `pages/services.html`, `CHANGELOG.md`.
+- **Commit:** [Services layout correction](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/e5c8608457eb0cc4a997d467b182fc9d0538effd).
+- **QA:** Repository change verified; deployed rendering not independently verified.
+
 ## Services — Tools and Benefits Editorial Heading Layout (2026-11-17)
 
 - Reworked **Tools & Technologies** and **How It Helps Your Business** introduction areas into two-column editorial layouts: headings on the left and supporting descriptions vertically centered to the right.

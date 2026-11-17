@@ -1,3 +1,14 @@
+## Services — Tools and Benefits Editorial Heading Layout (2026-11-17)
+
+- Reworked **Tools & Technologies** and **How It Helps Your Business** introduction areas into two-column editorial layouts: headings on the left and supporting descriptions vertically centered to the right.
+- Applied the bold/regular Google Sans treatment to **TOOLS & / TECHNOLOGIES.**; preserved the existing bold/regular split in the Benefits heading.
+- Kept original wording, Tools accent, cards, illustrations, and interactions; changed only the introduction markup and styling.
+- Added responsive stacking below 900px to prevent heading/description collisions and preserved readable description widths.
+- Updated Services stylesheet cache reference to `v2.1.39`.
+- **Files:** `pages/services.html`, `css/theme-v2-1.css`, `CHANGELOG.md`.
+- **Commits:** [Services markup](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/4c7a9291521dd4dbe1f36a919b1ebe095255b0c0), [responsive styling](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/c90fa641db4bf1812a32d1a5fefda400dece9394).
+- **QA:** Committed to `main`; live desktop/mobile visual verification pending.
+
 ## Homepage Digital Services — Slightly Smaller Left Heading (2026-11-17)
 
 - Reduced the left-column **BUILD YOUR PRESENCE. / EXPAND YOUR REACH.** heading to `clamp(2.25rem, 3.45vw, 4rem)`, with a slightly smaller mobile-specific size.

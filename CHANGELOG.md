@@ -1,3 +1,14 @@
+## Homepage Digital Services — Responsive Heading Overlap Fix (2026-11-17)
+
+- Fixed the Digital Services heading overlapping its supporting description at narrower viewport widths after the earlier editorial alignment change.
+- Grouped the eyebrow and headline into a dedicated heading wrapper and the supporting paragraph into its own grid column, instead of assigning all three elements independent grid rows.
+- Applied a responsive two-column layout with narrower headline sizing and a single-column switch at 1050px, ensuring text does not collide and preserving desktop visual balance.
+- Preserved original wording, two-weight heading styling, services illustration, CTA, and animations.
+- Bumped Homepage stylesheet cache reference to `v2.1.36`.
+- **Files:** `index.html`, `css/theme-v2-1.css`, `CHANGELOG.md`.
+- **Commits:** [Homepage markup](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/3cdcca7359e93a309d17a0f81e75a133e99ae78a), [responsive CSS](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/8593b8a21c204fa23e920b320741157e962fdd43).
+- **QA:** Committed to `main`; live desktop/mobile visual verification pending.
+
 ## About Values — Force White Card Descriptions (2026-11-17)
 
 - Follow-up to a user screenshot showing the three value-card descriptions still rendered dark blue despite existing shared CSS white-color overrides.

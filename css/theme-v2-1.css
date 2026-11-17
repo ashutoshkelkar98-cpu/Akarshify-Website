@@ -1229,3 +1229,20 @@ body.about-page>main>.intro{align-items:center!important}
   justify-self:start;max-width:680px!important;
  }
 }
+
+/* About Values: restore contrast on blue cards and rebalance display size. */
+html body.about-page>main>section.values>h2{
+ font-size:clamp(2.2rem,3.65vw,3.9rem)!important;
+ line-height:1.12!important;
+}
+html body.about-page>main>section.values .value-grid .value-card h3{
+ color:#FFFFFF!important;
+}
+html body.about-page>main>section.values .value-grid .value-card p{
+ color:rgba(255,255,255,.85)!important;
+}
+@media(max-width:600px){
+ html body.about-page>main>section.values>h2{
+  font-size:clamp(2rem,7.4vw,2.8rem)!important;
+ }
+}

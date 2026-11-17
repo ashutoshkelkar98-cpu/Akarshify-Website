@@ -1,3 +1,12 @@
+## Homepage Digital Services — Slightly Smaller Left Heading (2026-11-17)
+
+- Reduced the left-column **BUILD YOUR PRESENCE. / EXPAND YOUR REACH.** heading to `clamp(2.25rem, 3.45vw, 4rem)`, with a slightly smaller mobile-specific size.
+- Preserved the bold/regular-weight text split, existing wording, left-column placement, and description above the right-side illustration panel.
+- Scoped the adjustment to the Homepage Digital Services heading only; refreshed the Homepage stylesheet reference to `v2.1.38`.
+- **Files:** `css/theme-v2-1.css`, `index.html`, `CHANGELOG.md`.
+- **Commits:** [heading size](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/2e3517d507cb9aac35abc17efffb19945412d306), [cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/33b8ffe8ccbd79be8ad9f31367c34154e1386d6e).
+- **QA:** Committed to `main`; live visual verification pending.
+
 ## Homepage Digital Services — Restore Description Above Right Panel (2026-11-17)
 
 - Restored the Digital Services supporting description to a position directly **above the illustration panel in the right-hand column**, rather than beside the oversized heading.

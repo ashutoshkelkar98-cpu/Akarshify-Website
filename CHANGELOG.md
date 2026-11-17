@@ -1,3 +1,13 @@
+## About Values — Saffron and White Card Typography (2026-11-17)
+
+- Updated the About Us Values cards to use saffron `#F4B544` for the three card titles (Clarity, Collaboration, Accountability), matching the existing saffron card numbers.
+- Retained soft-white descriptions (`rgba(255,255,255,.85)`) for contrast and readability against the Atlantic Blue card backgrounds.
+- No changes to card layout, content, animations, or other pages.
+- Bumped About stylesheet reference to `v2.1.33`.
+- **Files:** `css/theme-v2-1.css`, `pages/about.html`, `CHANGELOG.md`.
+- **Commits:** [card typography](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/27caf71ecac20adddde3d7f1d098466e8aeb1169), [About cache update](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/ded2d2bea7df1dab14505759a4a868d9ddae044f).
+- **QA:** Changes committed to `main`; deployed visual verification pending.
+
 ## About Values — Text Contrast and Heading Size (2026-11-17)
 
 - Fixed low-contrast text on the three blue Values cards: headings now white, descriptions soft white at 85% opacity; saffron numbering remains unchanged.

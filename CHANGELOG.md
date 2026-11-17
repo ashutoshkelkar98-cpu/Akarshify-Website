@@ -1,3 +1,13 @@
+## About Values — Force White Card Descriptions (2026-11-17)
+
+- Follow-up to a user screenshot showing the three value-card descriptions still rendered dark blue despite existing shared CSS white-color overrides.
+- Set `color:#FFFFFF!important` directly on the three description paragraphs in `pages/about.html`, matching the direct markup approach that successfully made the card titles saffron.
+- Preserved the saffron numbers and titles, blue backgrounds, and all card copy and layout.
+- Updated About stylesheet cache reference to `v2.1.35`.
+- **Files:** `pages/about.html`, `CHANGELOG.md`.
+- **Commit:** [white card description fix](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/5d4475f415f62734d14fdd981ac36c065e23623e).
+- **QA:** Committed to `main`; deployed visual verification pending.
+
 ## About Values — Reinforce Saffron Title Rendering (2026-11-17)
 
 - Investigated reports that the saffron value-card title change was not visible. The shared stylesheet already specified saffron, but the About page includes legacy inline styles for value cards and multiple competing theme rules.

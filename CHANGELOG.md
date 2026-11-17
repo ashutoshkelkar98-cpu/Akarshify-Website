@@ -1,3 +1,13 @@
+## About Values — Text Contrast and Heading Size (2026-11-17)
+
+- Fixed low-contrast text on the three blue Values cards: headings now white, descriptions soft white at 85% opacity; saffron numbering remains unchanged.
+- Reduced the oversized **THE VALUES BEHIND OUR WORK.** heading to `clamp(2.2rem, 3.65vw, 3.9rem)`, with a smaller mobile rule, while retaining its bold/regular typographic split.
+- Added high-specificity About Values selectors to override inherited legacy colors without affecting other sections.
+- Bumped About stylesheet cache to `v2.1.32`.
+- **Files:** `css/theme-v2-1.css`, `pages/about.html`, `CHANGELOG.md`.
+- **Commits:** [contrast and heading CSS](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/10417811d3107781adb555127b9232da84d5f131), [About cache refresh](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/c99f53679e7a6e7631bf40235d1fd507faec652f).
+- **QA:** Source changes committed to `main`; live visual verification pending.
+
 ## Align Editorial Headings and Descriptions (2026-11-16)
 
 - Vertically centered headings and supporting descriptions in two-column editorial layouts, following the Businesses & Projects reference screenshot.

@@ -1,3 +1,13 @@
+## About Values — Reinforce Saffron Title Rendering (2026-11-17)
+
+- Investigated reports that the saffron value-card title change was not visible. The shared stylesheet already specified saffron, but the About page includes legacy inline styles for value cards and multiple competing theme rules.
+- Added a direct `color:#F4B544!important` style to each of the three card titles (Clarity, Collaboration, Accountability) so the intended saffron is explicit in the page markup.
+- Kept description text soft white and card numbers saffron, with no copy or layout changes.
+- Refreshed the About stylesheet query from `v2.1.33` to `v2.1.34`.
+- **Files:** `pages/about.html`, `CHANGELOG.md`.
+- **Commit:** [About values title color reinforcement](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/19d04aaf546aa048bc8a02d1997de5f64c166ece).
+- **QA:** Source-level verification only; deployed page rendering not independently verified.
+
 ## About Values — Saffron and White Card Typography (2026-11-17)
 
 - Updated the About Us Values cards to use saffron `#F4B544` for the three card titles (Clarity, Collaboration, Accountability), matching the existing saffron card numbers.

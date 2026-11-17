@@ -1,3 +1,13 @@
+## Homepage Digital Services — Restore Description Above Right Panel (2026-11-17)
+
+- Restored the Digital Services supporting description to a position directly **above the illustration panel in the right-hand column**, rather than beside the oversized heading.
+- Kept the eyebrow and bold/regular-weight heading on the left; wrapped the existing description and unchanged illustration/CTA in a dedicated right column.
+- Updated responsive CSS to retain the original two-column composition on wider screens and stack content cleanly below 1050px.
+- Preserved all copy, artwork and animation; Homepage stylesheet cache bumped to `v2.1.37`.
+- **Files:** `index.html`, `css/theme-v2-1.css`, `CHANGELOG.md`.
+- **Commits:** [markup placement](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/8dd27178afd009a4f194ced42c2c0341ed519cb2), [responsive CSS](https://github.com/ashutoshkelkar98-cpu/Akarshify-Website/commit/e94c889a489034e67043b915aa8149c5b538d3ab).
+- **QA:** Committed to `main`; deployed visual verification pending.
+
 ## Homepage Digital Services — Responsive Heading Overlap Fix (2026-11-17)
 
 - Fixed the Digital Services heading overlapping its supporting description at narrower viewport widths after the earlier editorial alignment change.
